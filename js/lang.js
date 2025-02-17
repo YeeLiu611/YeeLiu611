@@ -27,7 +27,7 @@ const translations = {
       "en": "Contact"
     },
     "hero_title_1": {
-      "zh": "欢迎来到亚洲人本学院",
+      "zh": "欢迎来到",
       "en": "Welcome to The Person-Centered Institute of Asia"
     },
     "hero_title_2": {
