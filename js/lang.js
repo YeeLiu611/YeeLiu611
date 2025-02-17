@@ -105,7 +105,7 @@ const translations = {
     },
     // ---------- Programs 页面翻译字段 ----------
     "title_programs": {
-        "zh": "项目 | 亚洲人本学院",
+        "zh": "项目 | 亚洲人本研究院",
         "en": "Programs | Person Centered Institute of Asia"
     },
     "programs_title": {
