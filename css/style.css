@@ -163,7 +163,7 @@ header {
   background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
               /*url('https://picsum.photos/1920/1080?grayscale&blur=2') center/cover no-repeat;*/
               url('../images/image.jpg') center/cover no-repeat;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
