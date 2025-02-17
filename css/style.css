@@ -1,8 +1,8 @@
 /* ========== 1) 全局 CSS 变量 ========== */
 :root {
-  --color-primary: #006a71;    /* 蓝绿色 */
+  --color-primary: #5e7100;    /* 蓝绿色 */
   --color-secondary: #ff8a00;  /* 橙色 */
-  --color-accent: #228b66;     /* 深绿或其他相近色 */
+  --color-accent: #798b22;     /* 深绿或其他相近色 */
   --color-dark: #333;
   --color-light: #fff;
   --color-bg: #fdfdfd;         /* 比原先略微更亮 */
