@@ -12,17 +12,19 @@
   <!-- 导航栏 -->
   <header>
     <nav class="navbar container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Logo">
-        <span data-key="nav_institute_name">亚洲人本学院</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html" data-key="nav_home">首页</a></li>
-        <li><a href="about.html" class="active" data-key="nav_about">关于我们</a></li>
-        <li><a href="programs.html" data-key="nav_programs">项目</a></li>
-        <li><a href="contact.html" data-key="nav_contact">联系我们</a></li>
-      </ul>
-      <!-- 语言切换按钮 -->
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Logo">
+          <span data-key="nav_institute_name">亚洲人本学院</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-key="nav_home">首页</a></li>
+          <li><a href="about.html" class="active" data-key="nav_about">关于我们</a></li>
+          <li><a href="programs.html" data-key="nav_programs">项目</a></li>
+          <li><a href="contact.html" data-key="nav_contact">联系我们</a></li>
+        </ul>
+      </div>
+      <!-- 语言切换按钮，使用 margin-left:auto 将其推到右侧 -->
       <button id="lang-toggle-btn" class="btn-lang">EN</button>
     </nav>
   </header>
