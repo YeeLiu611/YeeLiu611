@@ -166,26 +166,7 @@ const translations = {
         "zh": "地址：",
         "en": "Address: "
     },
-    "contact_form_title": {
-        "zh": "在线留言",
-        "en": "Leave a Message"
-    },
-    "contact_form_name": {
-        "zh": "姓名 / Name",
-        "en": "Name"
-    },
-    "contact_form_email": {
-        "zh": "邮箱 / Email",
-        "en": "Email"
-    },
-    "contact_form_message": {
-        "zh": "留言 / Message",
-        "en": "Message"
-    },
-    "contact_form_submit": {
-        "zh": "提交",
-        "en": "Submit"
-    },
+    
     // 页脚
     "footer_copyright": {
       "zh": "© 2025 亚洲人本学院 (The Person Centered Institute of Asia). All rights reserved.",
