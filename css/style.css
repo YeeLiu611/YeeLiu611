@@ -253,5 +253,9 @@
     color: #555;
     font-size: 0.9rem;
   }
-
+  
+  .logo img {
+    max-width: 100px;  /* 根据实际需求调整 */
+    height: auto;
+  }
  
