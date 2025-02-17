@@ -1,12 +1,14 @@
-// 定义所有需要翻译的文字，注意 key 名称与 index.html 中 data-key 值保持一致
+// js/lang.js
+
 const translations = {
+    // index.html 翻译项
     "title_index": {
       "zh": "亚洲人本学院 | The Person Centered Institute of Asia",
       "en": "Person Centered Institute of Asia | Home"
     },
     "nav_institute_name": {
       "zh": "亚洲人本学院",
-      "en": "The Person Centered Institute of Asia"
+      "en": "PCIA"
     },
     "nav_home": {
       "zh": "首页",
@@ -80,16 +82,34 @@ const translations = {
       "zh": "查看所有项目",
       "en": "View All Programs"
     },
+    // about.html 翻译项
+    "title_about": {
+      "zh": "关于我们 | 亚洲人本学院",
+      "en": "About | Person Centered Institute of Asia"
+    },
+    "about_title": {
+      "zh": "关于我们",
+      "en": "About Us"
+    },
+    "about_section_title": {
+      "zh": "学院简介",
+      "en": "Institute Overview"
+    },
+    "about_text": {
+      "zh": "亚洲人本学院成立于20XX年，致力于将人本主义教育理念在亚洲地区推广。我们秉持着尊重、关怀、理解的原则，旨在帮助每一个人发掘潜力，实现自我成长。",
+      "en": "The Person Centered Institute of Asia was established in 20XX with the aim of promoting person-centered education across Asia. We adhere to principles of respect, care, and understanding to help individuals realize their potential and achieve personal growth."
+    },
+    // 页脚
     "footer_copyright": {
       "zh": "© 2025 亚洲人本学院 (The Person Centered Institute of Asia). All rights reserved.",
       "en": "© 2025 The Person Centered Institute of Asia. All rights reserved."
     }
   };
   
-  // 设置默认语言为中文（"zh"），你也可以改为 "en"
-  let currentLang = "en";
+  // 尝试从 localStorage 中获取用户上次选择的语言，默认为中文
+  let currentLang = localStorage.getItem("siteLang") || "zh";
   
-  // 根据当前语言更新页面中所有带 data-key 的元素的内容
+  // 根据当前语言更新页面中所有带 data-key 属性的元素的内容
   function updateLanguage(lang) {
     const elements = document.querySelectorAll("[data-key]");
     elements.forEach((el) => {
@@ -100,39 +120,16 @@ const translations = {
     });
   }
   
-  // 等待页面 DOM 加载完成后再执行
+  // 等待页面 DOM 加载完成后执行
   document.addEventListener("DOMContentLoaded", () => {
-    // 初始化页面语言
     updateLanguage(currentLang);
-  
-    // 找到语言切换按钮并添加点击事件
     const langToggleBtn = document.getElementById("lang-toggle-btn");
     if (langToggleBtn) {
       langToggleBtn.addEventListener("click", () => {
-        // 切换语言：如果当前为中文，则切换为英文；反之亦然
         currentLang = currentLang === "zh" ? "en" : "zh";
+        localStorage.setItem("siteLang", currentLang);
         updateLanguage(currentLang);
-        // 同时更新按钮文字：当前为中文时，按钮显示 "EN"，当前为英文时，按钮显示 "中"
         langToggleBtn.textContent = currentLang === "zh" ? "EN" : "中";
       });
     }
   });
-
-  /* 为语言切换按钮添加样式 */
-const style = document.createElement('style');
-style.innerHTML = `
-.btn-lang {
-    margin-left: 20px;        /* 与其他元素有一定间距 */
-    padding: 0.5em 1em;         /* 内边距 */
-    border: none;
-    border-radius: 4px;
-    background-color: var(--color-primary); /* 使用你主题的主色调 */
-    color: var(--color-light);              /* 白色文字 */
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  .btn-lang:hover {
-    background-color: var(--color-secondary); /* 悬停时换成次要色调 */
-  }
-`;
-document.head.appendChild(style);
