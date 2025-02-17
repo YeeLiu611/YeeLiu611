@@ -286,7 +286,7 @@ a.logo:active {
     display: block;
     background: none;
     border: none;
-    font-size: 4rem; /* 增大字体 */
+    font-size: 5rem; /* 增大字体 */
     cursor: pointer;
     z-index: 2000; /* 保证在最上层 */
     position: relative; /* 如果需要的话 */
@@ -297,7 +297,7 @@ a.logo:active {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100px; /* 调整 top 值，留出足够空间给汉堡按钮 */
+    top: 150px; /* 调整 top 值，留出足够空间给汉堡按钮 */
     left: 0;
     width: 100%;
     background-color: var(--color-light);
