@@ -12,17 +12,21 @@
   <!-- 导航栏 -->
   <header>
     <nav class="navbar container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="Logo" />
-        <span data-key="nav_institute_name">亚洲人本学院</span>
-      </a>
-      <ul class="nav-links">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Logo" />
+          <span data-key="nav_institute_name">亚洲人本学院</span>
+        </a>
+        <!-- 添加汉堡按钮 -->
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+      </div>
+      <!-- 给导航链接列表添加 id -->
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html" class="active" data-key="nav_home">首页</a></li>
         <li><a href="about.html" data-key="nav_about">关于我们</a></li>
         <li><a href="programs.html" data-key="nav_programs">项目</a></li>
         <li><a href="contact.html" data-key="nav_contact">联系我们</a></li>
       </ul>
-      <!-- 语言切换按钮，初始显示 "EN"，表示点击后切换为英文 -->
       <button id="lang-toggle-btn" class="btn-lang">简体中文</button>
     </nav>
   </header>

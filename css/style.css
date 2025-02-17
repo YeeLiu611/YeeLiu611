@@ -277,7 +277,28 @@
   }
 }
 
-/* 先隐藏 .hamburger 按钮，只有移动端才显示 */
-.hamburger {
-  display: none;
+@media (max-width: 768px) {
+  /* 显示汉堡按钮 */
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* 隐藏导航链接 */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* 根据实际导航栏高度调整 */
+    left: 0;
+    width: 100%;
+    background-color: var(--color-light);
+  }
+  
+  .nav-links li {
+    margin: 1rem;
+  }
 }
