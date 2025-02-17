@@ -287,7 +287,7 @@
     cursor: pointer;
   }
   
-  /* 隐藏导航链接 */
+  /* 默认隐藏导航链接 */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -296,6 +296,11 @@
     left: 0;
     width: 100%;
     background-color: var(--color-light);
+  }
+  
+  /* 当 .nav-links 添加 active 类后显示 */
+  .nav-links.active {
+    display: flex;
   }
   
   .nav-links li {
