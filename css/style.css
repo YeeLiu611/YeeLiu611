@@ -2,7 +2,7 @@
 :root {
   --color-primary: #5e7100;    /* 蓝绿色 */
   --color-secondary: #ff8a00;  /* 橙色 */
-  --color-accent: #798b22;     /* 深绿或其他相近色 */
+  --color-accent: #84ab5b;     /* 深绿或其他相近色 */
   --color-dark: #333;
   --color-light: #fff;
   --color-bg: #fdfdfd;         /* 比原先略微更亮 */
