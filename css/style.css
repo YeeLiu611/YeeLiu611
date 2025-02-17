@@ -207,6 +207,7 @@ header {
   color: var(--color-light);
   padding: 2rem 0;
   text-align: center;
+  height: fit-content;
 }
 
 .about-content,
