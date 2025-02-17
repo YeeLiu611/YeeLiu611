@@ -3,11 +3,11 @@
 const translations = {
     // index.html 翻译项
     "title_index": {
-      "zh": "亚洲人本学院 | The Person Centered Institute of Asia",
+      "zh": "亚洲人本研究院 | The Person Centered Institute of Asia",
       "en": "Person Centered Institute of Asia | Home"
     },
     "nav_institute_name": {
-      "zh": "亚洲人本学院",
+      "zh": "亚洲人本研究院",
       "en": "The Person Centered Institute of Asia"
     },
     "nav_home": {
@@ -88,7 +88,7 @@ const translations = {
     },
     // about.html 翻译项
     "title_about": {
-      "zh": "关于我们 | 亚洲人本学院",
+      "zh": "关于我们 | 亚洲人本研究院",
       "en": "About | Person Centered Institute of Asia"
     },
     "about_title": {
@@ -96,11 +96,11 @@ const translations = {
       "en": "About Us"
     },
     "about_section_title": {
-      "zh": "学院简介",
+      "zh": "研究院简介",
       "en": "Institute Overview"
     },
     "about_text": {
-      "zh": "亚洲人本学院成立于20XX年，致力于将人本主义教育理念在亚洲地区推广。我们秉持着尊重、关怀、理解的原则，旨在帮助每一个人发掘潜力，实现自我成长。",
+      "zh": "亚洲人本研究院成立于20XX年，致力于将人本主义教育理念在亚洲地区推广。我们秉持着尊重、关怀、理解的原则，旨在帮助每一个人发掘潜力，实现自我成长。",
       "en": "The Person Centered Institute of Asia was established in 20XX with the aim of promoting person-centered education across Asia. We adhere to principles of respect, care, and understanding to help individuals realize their potential and achieve personal growth."
     },
     // ---------- Programs 页面翻译字段 ----------
@@ -147,7 +147,7 @@ const translations = {
     
     // ---------- Contact 页面翻译字段 ----------
     "title_contact": {
-        "zh": "联系我们 | 亚洲人本学院",
+        "zh": "联系我们 | 亚洲人本研究院",
         "en": "Contact | Person Centered Institute of Asia"
     },
     "contact_title": {
@@ -173,7 +173,7 @@ const translations = {
     
     // 页脚
     "footer_copyright": {
-      "zh": "© 2025 亚洲人本学院 (The Person Centered Institute of Asia). All rights reserved.",
+      "zh": "© 2025 亚洲人本研究院 (The Person Centered Institute of Asia). All rights reserved.",
       "en": "© 2025 The Person Centered Institute of Asia. All rights reserved."
     }
   };
