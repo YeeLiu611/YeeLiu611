@@ -31,8 +31,8 @@ const translations = {
       "en": "The Person-Centered Institute of Asia"
     },
     "hero_subtitle": {
-      "zh": "通过以人为本的教育与创新来助力成长。",
-      "en": "Empowering growth through person-centered education and innovation."
+      "zh": "欢迎来到亚洲人本研究院(PICA)的网站。PCIA 旨在链接亚洲地区的以人为中心方法咨询师与实践者，促进以人为中心方法在亚洲的发展与实践。",
+      "en": "Welcome to the website of the People-Centred Institute for Asia (PICA). PICA aims to link people-centred approach consultants and practitioners in the Asian region and promote the development and practice of the people-centred approach in Asia."
     },
     "hero_btn_1": {
       "zh": "了解更多",
