@@ -62,7 +62,7 @@ a.logo {
 }
 
 a.logo img {
-  max-width: 100px;  
+  max-width: 70px;  
   height: auto;
   margin-right: 8px; 
 }
@@ -109,7 +109,7 @@ a.logo img {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .btn-lang:hover {
