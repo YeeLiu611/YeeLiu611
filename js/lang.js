@@ -8,7 +8,7 @@ const translations = {
     },
     "nav_institute_name": {
       "zh": "亚洲人本学院",
-      "en": "PCIA"
+      "en": "The Person Centered Institute of Asia"
     },
     "nav_home": {
       "zh": "首页",

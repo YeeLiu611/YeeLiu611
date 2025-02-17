@@ -93,6 +93,27 @@
     background-color: var(--color-secondary);
     transform: scale(1.05);
   }
+
+  /* 设置 .logo 文字为黑色并去掉下划线 */
+.logo {
+    display: flex;          /* 让图片和文字在同一行 */
+    align-items: center;    /* 垂直居中 */
+    text-decoration: none;  /* 去掉链接下划线 */
+    color: #000;            /* 或者使用 var(--color-dark) */
+  }
+  
+  /* 为了避免访问过的链接等状态又改回紫色/下划线，可以再写一遍 */
+  .logo:visited,
+  .logo:hover,
+  .logo:active {
+    text-decoration: none;
+    color: #000; /* 保持一致 */
+  }
+  
+  /* 如果需要在图片和文字之间留点间距，可加一行 */
+  .logo img {
+    margin-right: 8px; /* 自由调节 */
+  }
   
   /* ========== 主视觉 (Hero) ========== */
   .hero {
@@ -253,7 +274,7 @@
     color: #555;
     font-size: 0.9rem;
   }
-  
+
   .logo img {
     max-width: 100px;  /* 根据实际需求调整 */
     height: auto;
