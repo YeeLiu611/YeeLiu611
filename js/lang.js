@@ -1,10 +1,4 @@
-// lang.js
-
-// 1. 定义所有要翻译的文字（按照 data-key 匹配）
-//   key: {
-//       zh: "中文翻译",
-//       en: "English translation"
-//   }
+// 定义所有需要翻译的文字，注意 key 名称与 index.html 中 data-key 值保持一致
 const translations = {
     "title_index": {
       "zh": "亚洲人本学院 | The Person Centered Institute of Asia",
@@ -51,8 +45,8 @@ const translations = {
       "en": "We are committed to person-centered education, helping individuals and organizations unlock potential and foster growth, building an Asian educational community rooted in care, respect, and understanding."
     },
     "intro_text2": {
-      "zh": "我们的目标是为更多人提供优质学习环境，并与世界各地的专家学者共享研究与实践成果。",
-      "en": "Our goal is to provide quality learning environments for more people, sharing research and practice with experts and scholars worldwide."
+      "zh": "Our mission is to foster personal and organizational potential through person-centered education, building an Asian educational community based on empathy, respect, and understanding.",
+      "en": "Our mission is to foster personal and organizational potential through person-centered education, building an Asian educational community based on empathy, respect, and understanding."
     },
     "features_title": {
       "zh": "我们的主要项目",
@@ -92,38 +86,33 @@ const translations = {
     }
   };
   
-  // 2. 设置一个变量来存储当前语言（默认为 'zh' 或者 'en'）
-  //    你也可以从 localStorage 中读取，记住上一次用户的选择
+  // 设置默认语言为中文（"zh"），你也可以改为 "en"
   let currentLang = "zh";
   
-  // 3. 定义一个函数，用于根据当前语言更新页面上的文本
+  // 根据当前语言更新页面中所有带 data-key 的元素的内容
   function updateLanguage(lang) {
-    // 获取页面上所有带有 data-key 的元素
     const elements = document.querySelectorAll("[data-key]");
-  
     elements.forEach((el) => {
       const key = el.getAttribute("data-key");
       if (translations[key] && translations[key][lang]) {
         el.textContent = translations[key][lang];
-        // 如果是 <title> 标签或者其他特定情况，需要考虑 .textContent vs. .innerText
-        // 一般 textContent 就足够了
       }
     });
   }
   
-  // 4. 监听切换按钮事件
+  // 等待页面 DOM 加载完成后再执行
   document.addEventListener("DOMContentLoaded", () => {
-    // 默认先初始化一次语言（如果要默认中文，可以在这里写成 updateLanguage('zh')）
+    // 初始化页面语言
     updateLanguage(currentLang);
   
-    // 获取切换按钮
+    // 找到语言切换按钮并添加点击事件
     const langToggleBtn = document.getElementById("lang-toggle-btn");
     if (langToggleBtn) {
       langToggleBtn.addEventListener("click", () => {
-        // 切换当前语言
+        // 切换语言：如果当前为中文，则切换为英文；反之亦然
         currentLang = currentLang === "zh" ? "en" : "zh";
         updateLanguage(currentLang);
-        // 顺便更新按钮上的文字，比如如果切换到英文，就显示 "中"
+        // 同时更新按钮文字：当前为中文时，按钮显示 "EN"，当前为英文时，按钮显示 "中"
         langToggleBtn.textContent = currentLang === "zh" ? "EN" : "中";
       });
     }
