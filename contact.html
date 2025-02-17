@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>联系我们 | 亚洲人本学院</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="title_contact">联系我们 | 亚洲人本学院</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 引入语言切换脚本 -->
+  <script src="js/lang.js" defer></script>
 </head>
 <body>
   <!-- 导航栏 -->
   <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="亚洲人本学院 Logo" />
-        <span>亚洲人本学院</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="about.html">关于我们</a></li>
-        <li><a href="programs.html">项目</a></li>
-        <li><a href="contact.html" class="active">联系我们</a></li>
-      </ul>
+    <nav class="navbar container">
+      <div class="nav-left">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Logo">
+          <span data-key="nav_institute_name">亚洲人本学院</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" data-key="nav_home">首页</a></li>
+          <li><a href="about.html" data-key="nav_about">关于我们</a></li>
+          <li><a href="programs.html" data-key="nav_programs">项目</a></li>
+          <li><a href="contact.html" class="active" data-key="nav_contact">联系我们</a></li>
+        </ul>
+      </div>
+      <!-- 语言切换按钮 -->
+      <button id="lang-toggle-btn" class="btn-lang">简体中文</button>
     </nav>
   </header>
 
-  <!-- 主体内容 -->
+  <!-- 页面标题区域 -->
   <section class="page-header">
     <div class="container">
-      <h1>联系我们</h1>
+      <h1 data-key="contact_title">联系我们</h1>
     </div>
   </section>
 
+  <!-- 联系内容区域 -->
   <section class="contact-content">
     <div class="container">
-      <p>若您对我们的项目感兴趣，或希望与我们建立合作关系，欢迎随时与我们联系！</p>
-      
+      <p data-key="contact_intro">
+        若您对我们的项目感兴趣，或希望与我们建立合作关系，请随时与我们联系！
+      </p>
       <div class="contact-info">
-        <p><strong>电话：</strong>+86 1234-5678</p>
-        <p><strong>邮箱：</strong>info@personcenteredasia.org</p>
-        <p><strong>地址：</strong>北京市朝阳区某某路 123 号</p>
+        <p><strong data-key="contact_phone_label">电话：</strong>+86 1234-5678</p>
+        <p><strong data-key="contact_email_label">邮箱：</strong>info@personcenteredasia.org</p>
+        <p><strong data-key="contact_address_label">地址：</strong>北京市朝阳区某某路 123 号</p>
       </div>
 
-      <h2>在线留言</h2>
+      <h2 data-key="contact_form_title">在线留言</h2>
       <form class="contact-form">
-        <label for="name">姓名 / Name</label>
-        <input type="text" id="name" name="name" required />
+        <label for="name" data-key="contact_form_name">姓名 / Name</label>
+        <input type="text" id="name" name="name" required>
 
-        <label for="email">邮箱 / Email</label>
-        <input type="email" id="email" name="email" required />
+        <label for="email" data-key="contact_form_email">邮箱 / Email</label>
+        <input type="email" id="email" name="email" required>
 
-        <label for="message">留言 / Message</label>
+        <label for="message" data-key="contact_form_message">留言 / Message</label>
         <textarea id="message" name="message" rows="6" required></textarea>
 
-        <button type="submit" class="btn">提交</button>
+        <button type="submit" class="btn" data-key="contact_form_submit">提交</button>
       </form>
     </div>
   </section>
 
+  <!-- 页脚 -->
   <footer>
     <div class="container footer-container">
-      <p>© 2025 亚洲人本学院. All rights reserved.</p>
+      <p data-key="footer_copyright">
+        © 2025 亚洲人本学院 (The Person Centered Institute of Asia). All rights reserved.
+      </p>
     </div>
   </footer>
 </body>
