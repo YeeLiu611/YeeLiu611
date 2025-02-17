@@ -1,15 +1,17 @@
-/* ========== 1) 仅放置全局 CSS 变量 ========== */
+/* ========== 1) 全局 CSS 变量 ========== */
 :root {
-  --color-primary: #006a71;   /* 蓝绿色 */
-  --color-secondary: #ff8a00; /* 橙色 */
-  --color-accent: #228b66;    /* 深绿或其他相近色 */
+  --color-primary: #006a71;    /* 蓝绿色 */
+  --color-secondary: #ff8a00;  /* 橙色 */
+  --color-accent: #228b66;     /* 深绿或其他相近色 */
   --color-dark: #333;
   --color-light: #fff;
-  --color-bg: #f9f9f9;
+  --color-bg: #fdfdfd;         /* 比原先略微更亮 */
+  --color-gray-light: #f1f1f1; /* 新增浅灰 */
+  --color-gray-dark: #888;     /* 新增深灰 */
   --font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
-/* ========== 2) 全局基础样式（写在 :root {} 之外） ========== */
+/* ========== 2) 全局基础样式 ========== */
 
 /* 通用重置 */
 * {
@@ -22,20 +24,21 @@ body {
   font-family: var(--font-family);
   color: var(--color-dark);
   background-color: var(--color-bg);
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 /* 容器常用布局 */
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 /* ========== 导航栏 ========== */
 header {
   background-color: var(--color-light);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
 }
 
 .navbar {
@@ -51,15 +54,30 @@ header {
   align-items: center;
 }
 
+a.logo {
+  display: flex;          
+  align-items: center;    
+  text-decoration: none;  
+  color: #000;            
+}
+
+a.logo img {
+  max-width: 100px;  
+  height: auto;
+  margin-right: 8px; 
+}
+
 /* 导航链接样式 */
 .nav-links {
   list-style: none;
-  display: flex;       /* 桌面端默认显示 */
+  display: flex;       
   margin-left: 20px;
+  transition: max-height 0.4s ease; /* 用于小屏动画 */
+  max-height: none; /* 桌面端不受限 */
 }
 
 .nav-links li {
-  margin-left: 1.5rem;
+  margin-left: 1rem; 
 }
 
 .nav-links a {
@@ -69,16 +87,21 @@ header {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+/* 当前页面的导航高亮 */
 .nav-links a.active {
+  border-bottom: 2px solid var(--color-primary);
   color: var(--color-primary);
 }
 
 /* 语言切换按钮样式 */
 .btn-lang {
-  margin-left: auto;     /* 将按钮推到最右侧 */
-  margin-right: 20px;    /* 右侧预留一定间距 */
-  padding: 0.6em 1.2em;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
   background-color: var(--color-primary);
@@ -86,7 +109,7 @@ header {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .btn-lang:hover {
@@ -96,10 +119,10 @@ header {
 
 /* ========== 主视觉 (Hero) ========== */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-              url('https://picsum.photos/1920/1080?blur=3') center/cover no-repeat;
-  /* 你可以换成与 Logo 色调更匹配的图片或纯色背景 */
-  height: 60vh;
+  /* 可替换自己的图片; 这里采用一张示例图做线性渐变 */
+  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+              url('https://picsum.photos/1920/1080?grayscale&blur=2') center/cover no-repeat;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,8 +135,9 @@ header {
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .hero-content p {
@@ -124,15 +148,30 @@ header {
 .btn {
   background-color: var(--color-primary);
   color: var(--color-light);
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.6rem;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   font-weight: bold;
 }
 
 .btn:hover {
   background-color: var(--color-secondary);
+  transform: scale(1.02);
+}
+
+/* ========== 通用版块 ========== */
+.page-header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about-content,
+.programs-content,
+.contact-content {
+  padding: 3rem 0;
 }
 
 /* ========== 首页 - 介绍区域 ========== */
@@ -154,7 +193,7 @@ header {
 
 /* ========== 首页 - 项目特色 ========== */
 .features {
-  padding: 3rem 0;
+  padding: 4rem 0; /* 留出更多垂直空间 */
   background-color: var(--color-bg);
 }
 
@@ -169,9 +208,15 @@ header {
   flex: 1;
   min-width: 250px;
   background-color: var(--color-light);
-  padding: 1.5rem;
+  padding: 2rem; 
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1);
 }
 
 .feature-item h3 {
@@ -184,28 +229,7 @@ header {
   line-height: 1.5;
 }
 
-/* ========== 页头区通用 ========== */
-.page-header {
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-/* ========== 内容区通用 ========== */
-.about-content,
-.programs-content,
-.contact-content {
-  padding: 3rem 0;
-}
-
-.about-content h2,
-.programs-content h2 {
-  margin-bottom: 1rem;
-  color: var(--color-primary);
-}
-
-/* ========== 联系我们表单 ========== */
+/* ========== 联系我们 - 表单区(如后续添加) ========== */
 .contact-info p {
   margin-bottom: 0.5rem;
 }
@@ -254,62 +278,50 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ========== Logo 与文字 ========== */
-a.logo {
-  display: flex;          /* 让图片和文字在同一行 */
-  align-items: center;    /* 垂直居中 */
-  text-decoration: none;  /* 去掉链接下划线 */
-  color: #000;            /* 让文字保持黑色 */
-}
-
-a.logo img {
-  max-width: 100px;  /* 控制 logo 最大宽度 */
-  height: auto;
-  margin-right: 8px; /* 自由调整 */
-}
-
-a.logo:visited,
-a.logo:hover,
-a.logo:active {
-  text-decoration: none;
-  color: #000;
-}
-
 /* ========== 3) 默认隐藏汉堡按钮（桌面端） ========== */
 .hamburger {
   display: none;
 }
 
-/* ========== 4) 媒体查询：在小屏幕下显示汉堡按钮并隐藏 nav-links ========== */
+/* ========== 4) 媒体查询（小屏幕下） ========== */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
     background: none;
     border: none;
-    font-size: 5rem; /* 增大字体 */
+    font-size: 2rem; 
     cursor: pointer;
-    z-index: 2000; /* 保证在最上层 */
-    position: relative; /* 如果需要的话 */
-    padding: 0.5rem; /* 可以增加点击区域 */
-    color: #007168;
+    z-index: 2000; 
+    position: relative;
+    padding: 0.25rem; 
+    color: var(--color-primary);
   }
 
+  /* 小屏幕下隐藏 nav-links，点击汉堡按钮再展开 */
   .nav-links {
-    display: none;
+    display: block;       /* 从桌面端的flex 改为 block 以便折叠 */
     flex-direction: column;
     position: absolute;
-    top: 150px; /* 调整 top 值，留出足够空间给汉堡按钮 */
+    top: 60px;            /* 根据实际导航高度做调整 */
     left: 0;
     width: 100%;
+    max-height: 0;        /* 初始不显示 */
+    overflow: hidden;
     background-color: var(--color-light);
-    z-index: 800; /* 低于汉堡按钮 */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 800; 
   }
 
   .nav-links.active {
-    display: flex;
+    max-height: 300px; /* 打开时预设一个高度，或可通过动画渐进 */
   }
 
   .nav-links li {
     margin: 1rem;
+  }
+
+  /* 语言切换按钮位置可根据实际需求再做调整 */
+  .btn-lang {
+    margin-right: 1rem;
   }
 }

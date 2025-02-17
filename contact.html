@@ -13,24 +13,19 @@
   <!-- 导航栏 -->
   <header>
     <nav class="navbar container">
-      <!-- 左侧：Logo + 汉堡按钮 -->
       <div class="nav-left">
         <a href="index.html" class="logo">
           <img src="images/logo.png" alt="Logo" />
           <span data-key="nav_institute_name">PCIA</span>
         </a>
-        <!-- 汉堡按钮，点击后显示/隐藏导航 -->
         <button class="hamburger" id="hamburger-btn">&#9776;</button>
       </div>
-  
-      <!-- 导航链接列表 -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="about.html">关于我们</a></li>
-        <li><a href="programs.html">项目</a></li>
-        <li><a href="contact.html">联系我们</a></li>
+        <li><a href="index.html" data-key="nav_home">首页</a></li>
+        <li><a href="about.html" data-key="nav_about">关于我们</a></li>
+        <li><a href="programs.html" data-key="nav_programs">项目</a></li>
+        <li><a href="contact.html" class="active" data-key="nav_contact">联系我们</a></li>
       </ul>
-  
       <!-- 语言切换按钮 -->
       <button id="lang-toggle-btn" class="btn-lang">简体中文</button>
     </nav>
