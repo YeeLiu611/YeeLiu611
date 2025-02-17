@@ -436,23 +436,3 @@ footer {
   background-color: var(--color-secondary);
   transform: scale(1.02);
 }
-
-/* ===== Swiper 分页器和导航按钮 ===== */
-.swiper-pagination-bullet {
-  background: var(--color-light);
-  opacity: 0.7;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--color-primary);
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--color-light);
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: var(--color-secondary);
-}
