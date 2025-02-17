@@ -41,43 +41,43 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.07);
 }
 
+/* 父容器：横向分布左中右 */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* 先让两端对齐 */
   padding: 1rem 0;
 }
 
-/* 左侧区域（logo + nav-links） */
+/* 左侧：logo */
 .nav-left {
   display: flex;
   align-items: center;
 }
 
-a.logo {
-  display: flex;          
-  align-items: center;    
-  text-decoration: none;  
-  color: #000;            
+/* logo里的图片 + 文本并排 */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
 }
-
-a.logo img {
-  max-width: 70px;  
+.logo img {
+  max-width: 60px; /* 根据需要修改logo尺寸 */
   height: auto;
-  margin-right: 8px; 
+  margin-right: 8px;
 }
 
-/* 导航链接样式 */
+/* 中间：导航链接 */
 .nav-links {
   list-style: none;
-  display: flex;       
-  margin-left: 20px;
-  transition: max-height 0.4s ease; /* 用于小屏动画 */
-  max-height: none; /* 桌面端不受限 */
+  display: flex;
+  /* margin: 0 auto; 如果想精确居中可以加上这个 */
+  gap: 1.5rem; /* 让链接之间有一定间距 */
 }
 
 .nav-links li {
-  margin-left: 1rem; 
+  /* 这里无需再写 margin-left, 改用 gap 更灵活 */
 }
 
 .nav-links a {
@@ -91,16 +91,20 @@ a.logo img {
   color: var(--color-primary);
 }
 
-/* 当前页面的导航高亮 */
 .nav-links a.active {
   border-bottom: 2px solid var(--color-primary);
   color: var(--color-primary);
 }
 
-/* 语言切换按钮样式 */
+/* 右侧：语言切换 + 汉堡按钮 */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 语言切换和汉堡按钮之间的间距 */
+}
+
+/* 语言切换按钮 */
 .btn-lang {
-  margin-left: auto;
-  margin-right: 10px;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
@@ -109,12 +113,48 @@ a.logo img {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  font-size: 0.6rem;
+  font-size: 0.95rem;
 }
-
 .btn-lang:hover {
   background-color: var(--color-secondary);
   transform: scale(1.05);
+}
+
+/* 汉堡按钮：桌面端隐藏，移动端显示 */
+.hamburger {
+  display: none; /* 先隐藏 */
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+/* ========== 移动端适配 (小屏幕) ========== */
+@media (max-width: 768px) {
+  /* 小屏时，汉堡按钮出现 */
+  .hamburger {
+    display: block;
+  }
+
+  /* 小屏时，隐藏原本横向的导航链接，用点击汉堡按钮再展开 */
+  .nav-links {
+    position: absolute;
+    top: 70px; /* 调整为你的导航栏高度 */
+    left: 0;
+    width: 100%;
+    flex-direction: column; /* 竖列 */
+    gap: 1rem;
+    background-color: var(--color-light);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-height: 0; /* 初始折叠 */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+  .nav-links.active {
+    max-height: 300px; /* 打开时的固定高度，或可通过别的方式做动画 */
+  }
 }
 
 /* ========== 主视觉 (Hero) ========== */
