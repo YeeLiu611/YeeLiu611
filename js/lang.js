@@ -194,12 +194,12 @@ const translations = {
     const langToggleBtn = document.getElementById("lang-toggle-btn");
     if (langToggleBtn) {
       // 根据当前语言设置按钮初始文本
-      langToggleBtn.textContent = currentLang === "zh" ? "English" : "简体中文";
+      langToggleBtn.textContent = currentLang === "zh" ? "EN" : "中文";
       langToggleBtn.addEventListener("click", () => {
         currentLang = currentLang === "zh" ? "en" : "zh";
         localStorage.setItem("siteLang", currentLang);
         updateLanguage(currentLang);
-        langToggleBtn.textContent = currentLang === "zh" ? "English" : "简体中文";
+        langToggleBtn.textContent = currentLang === "zh" ? "EN" : "中文";
       });
     }
   });
