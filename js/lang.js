@@ -87,7 +87,7 @@ const translations = {
   };
   
   // 设置默认语言为中文（"zh"），你也可以改为 "en"
-  let currentLang = "zh";
+  let currentLang = "en";
   
   // 根据当前语言更新页面中所有带 data-key 的元素的内容
   function updateLanguage(lang) {
