@@ -26,9 +26,13 @@ const translations = {
       "zh": "联系我们",
       "en": "Contact"
     },
-    "hero_title": {
+    "hero_title_1": {
       "zh": "欢迎来到亚洲人本学院",
-      "en": "Welcome to \n The Person-Centered Institute of Asia"
+      "en": "Welcome to The Person-Centered Institute of Asia"
+    },
+    "hero_title_2": {
+      "zh": "亚洲人本学院",
+      "en": "The Person-Centered Institute of Asia"
     },
     "hero_subtitle": {
       "zh": "通过以人为本的教育与创新来助力成长。",
