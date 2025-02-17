@@ -8,7 +8,6 @@
     --color-light: #fff;
     --color-bg: #f9f9f9;
     --font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  }
   
   * {
     margin: 0;
@@ -276,35 +275,9 @@
     text-decoration: none;
     color: #000;
   }
+}
 
-  @media (max-width: 768px) {
-    /* 将导航栏改为垂直排列 */
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-    /* logo 和导航菜单之间加点间距 */
-    a.logo {
-      margin-bottom: 0.5rem;
-    }
-    /* 导航链接也改为垂直排列，并居中 */
-    .nav-links {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-    .nav-links li {
-      margin: 0.5rem 0;
-    }
-    /* 语言切换按钮也居中显示 */
-    .btn-lang {
-      margin: 0.5rem 0;
-    }
-    /* 限制 logo 图片在手机上显示的尺寸 */
-    a.logo img {
-      max-width: 80px;
-      height: auto;
-    }
-  }
+/* 先隐藏 .hamburger 按钮，只有移动端才显示 */
+.hamburger {
+  display: none;
+}
