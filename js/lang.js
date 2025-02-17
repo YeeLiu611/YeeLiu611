@@ -34,7 +34,11 @@ const translations = {
       "zh": "通过以人为本的教育与创新来助力成长。",
       "en": "Empowering growth through person-centered education and innovation."
     },
-    "hero_btn": {
+    "hero_btn_1": {
+      "zh": "了解更多",
+      "en": "Learn More"
+    },
+    "hero_btn_2": {
       "zh": "了解更多",
       "en": "Learn More"
     },
