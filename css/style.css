@@ -337,30 +337,27 @@ footer {
     color: var(--color-primary);
   }
 
-  /* 小屏幕下隐藏 nav-links，点击汉堡按钮再展开 */
+  /* 小屏幕下隐藏导航菜单 */
   .nav-links {
-    display: block;       /* 从桌面端的flex 改为 block 以便折叠 */
-    flex-direction: column;
+    display: none;       /* 改为 none，隐藏整个菜单 */
     position: absolute;
-    top: 60px;            /* 根据实际导航高度做调整 */
+    top: 60px;           /* 根据实际导航高度做调整 */
     left: 0;
     width: 100%;
-    max-height: 0;        /* 初始不显示 */
-    overflow: hidden;
     background-color: var(--color-light);
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     z-index: 800; 
   }
 
+  /* 当菜单展开时 */
   .nav-links.active {
-    max-height: 300px; /* 打开时预设一个高度，或可通过动画渐进 */
+    display: block;
   }
 
   .nav-links li {
     margin: 1rem;
   }
 
-  /* 语言切换按钮位置可根据实际需求再做调整 */
   .btn-lang {
     margin-right: 1rem;
   }
