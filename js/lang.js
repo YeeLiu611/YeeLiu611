@@ -117,3 +117,22 @@ const translations = {
       });
     }
   });
+
+  /* 为语言切换按钮添加样式 */
+const style = document.createElement('style');
+style.innerHTML = `
+.btn-lang {
+    margin-left: 20px;        /* 与其他元素有一定间距 */
+    padding: 0.5em 1em;         /* 内边距 */
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-primary); /* 使用你主题的主色调 */
+    color: var(--color-light);              /* 白色文字 */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  .btn-lang:hover {
+    background-color: var(--color-secondary); /* 悬停时换成次要色调 */
+  }
+`;
+document.head.appendChild(style);
