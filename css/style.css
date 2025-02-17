@@ -286,22 +286,24 @@ a.logo:active {
     display: block;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem; /* 增大字体 */
     cursor: pointer;
+    z-index: 2000; /* 保证在最上层 */
+    position: relative; /* 如果需要的话 */
+    padding: 0.5rem; /* 可以增加点击区域 */
   }
 
-  /* 默认隐藏导航链接 */
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* 根据实际导航栏高度调整 */
+    top: 70px; /* 调整 top 值，留出足够空间给汉堡按钮 */
     left: 0;
     width: 100%;
     background-color: var(--color-light);
+    z-index: 1000; /* 低于汉堡按钮 */
   }
 
-  /* 当 nav-links 有 .active 类时，显示 */
   .nav-links.active {
     display: flex;
   }
