@@ -291,6 +291,7 @@ a.logo:active {
     z-index: 2000; /* 保证在最上层 */
     position: relative; /* 如果需要的话 */
     padding: 0.5rem; /* 可以增加点击区域 */
+    color: #007168;
   }
 
   .nav-links {
