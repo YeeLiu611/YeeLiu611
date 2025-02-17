@@ -161,8 +161,8 @@ header {
 .hero {
   /* 可替换自己的图片; 这里采用一张示例图做线性渐变 */
   background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
-              /*url('https://picsum.photos/1920/1080?grayscale&blur=2') center/cover no-repeat;*/
-              url('/images/banner_copy.jpg') center/cover no-repeat;
+              url('https://picsum.photos/1920/1080?grayscale&blur=2') center/cover no-repeat;
+              /*url('/images/banner_copy.jpg') center/cover no-repeat;*/
   height: 70vh;
   display: flex;
   align-items: center;
