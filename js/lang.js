@@ -32,7 +32,7 @@ const translations = {
     },
     "hero_subtitle": {
       "zh": "促进以人为中心方法在亚洲的发展",
-      "en": "Advancing person-centered approaches in Asia"
+      "en": "Advancing the person-centered approach in Asia"
     },
     "hero_btn": {
       "zh": "了解更多",
