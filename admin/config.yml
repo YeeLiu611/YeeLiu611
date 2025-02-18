@@ -21,19 +21,19 @@ collections:
           - { name: "intro_title", label: "介绍标题", widget: "string" }
           - { name: "intro_text", label: "介绍文本", widget: "text" }
           - { name: "body", label: "正文内容", widget: "markdown" }
-      - file: "content/about.md"
+      - file: "about.md"
         label: "关于我们"
         name: "about"
         fields:
           - { name: "title", label: "页面标题", widget: "string" }
           - { name: "body", label: "正文内容", widget: "markdown" }
-      - file: "content/programs.md"
+      - file: "programs.md"
         label: "项目"
         name: "programs"
         fields:
           - { name: "title", label: "页面标题", widget: "string" }
           - { name: "body", label: "正文内容", widget: "markdown" }
-      - file: "content/contact.md"
+      - file: "contact.md"
         label: "联系我们"
         name: "contact"
         fields:
