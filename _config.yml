@@ -1,0 +1,4 @@
+title: "亚洲人本研究院 | PCIA - The Person Centered Institute of Asia"
+baseurl: ""         # 如果你的网站不在子目录下可以留空
+url: "https://pcia.asia"  # 替换为你的 GitHub Pages 域名
+markdown: kramdown

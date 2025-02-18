@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: yeeliu611/YeeLiu611  # 请替换为你的 GitHub 用户名和仓库名
+  branch: main                 # 默认分支
+  auth:
+    client_id: Ov23lil8yXEgwjwxg75d  # 在 GitHub OAuth 应用中获得
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "homepage"
+    label: "首页内容"
+    files:
+      - file: "content/homepage.md"
+        label: "首页"
+        name: "homepage"
+        fields:
+          - { name: "hero_title", label: "首页大标题", widget: "string" }
+          - { name: "hero_subtitle", label: "副标题", widget: "string" }
+          - { name: "hero_btn", label: "按钮文字", widget: "string" }
+          - { name: "intro_title", label: "介绍标题", widget: "string" }
+          - { name: "intro_text", label: "介绍文本", widget: "text" }
+  - name: "blog"
+    label: "博客文章"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "标题", widget: "string" }
+      - { name: "date", label: "日期", widget: "datetime" }
+      - { name: "body", label: "内容", widget: "markdown" }
