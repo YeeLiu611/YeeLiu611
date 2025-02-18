@@ -32,7 +32,7 @@ const translations = {
     },
     "hero_subtitle": {
       "zh": "以人为中心 培训 教育 会议 期刊 会心团体",
-      "en": "Person-Centered Training, Education, Conferences, Journals, Encounter Groups in Asia"
+      "en": "PCA Training Education Conferences Journals Encounter-Groups"
     },
     "hero_btn": {
       "zh": "了解更多",
@@ -96,7 +96,7 @@ const translations = {
       "en": "Institute Overview"
     },
     "about_text": {
-      "zh": "亚洲人本研究院成立于20XX年，致力于将人本主义教育理念在亚洲地区推广。我们秉持着尊重、关怀、理解的原则，旨在帮助每一个人发掘潜力，实现自我成长。",
+      "zh": "亚洲人本研究院，致力于将人本主义教育理念在亚洲地区推广。我们秉持着尊重、关怀、理解的原则，旨在帮助每一个人发掘潜力，实现自我成长。",
       "en": "The Person Centered Institute of Asia was established in 20XX with the aim of promoting person-centered education across Asia. We adhere to principles of respect, care, and understanding to help individuals realize their potential and achieve personal growth."
     },
     // ---------- Programs 页面翻译字段 ----------
