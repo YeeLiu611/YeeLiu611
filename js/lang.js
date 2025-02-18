@@ -31,8 +31,8 @@ const translations = {
       "en": "In Light We Grow"
     },
     "hero_subtitle": {
-      "zh": "培训、教育、会议、期刊、会心团体",
-      "en": "Training, Education, Conferences, Journals, Encounter Groups"
+      "zh": "亚洲地区的以人为中心培训、教育、会议、期刊、会心团体",
+      "en": "Person-Centered Training, Education, Conferences, Journals, Encounter Groups in Asia"
     },
     "hero_btn": {
       "zh": "了解更多",
