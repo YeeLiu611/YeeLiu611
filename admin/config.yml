@@ -10,7 +10,7 @@ collections:
   - name: "pages"
     label: "页面"
     files:
-      - file: "content/homepage.md"
+      - file: "index.md"
         label: "首页"
         name: "homepage"
         fields:
