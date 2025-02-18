@@ -1,9 +1,10 @@
 backend:
   name: github
-  repo: yeeliu611/YeeLiu611  # 你的 GitHub 用户名和仓库名
-  branch: main               # 默认分支
+  repo: yeeliu611/YeeLiu611
+  branch: main
+  proxy: false
   auth:
-    client_id: Ov23lil8yXEgwjwxg75d  # 在 GitHub OAuth 应用中获得的 Client ID
+    client_id: Ov23lil8yXEgwjwxg75d
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 collections:
