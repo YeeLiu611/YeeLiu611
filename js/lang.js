@@ -3,8 +3,8 @@
 const translations = {
     // index.html 翻译项
     "title_index": {
-      "zh": "亚洲人本研究院 | The Person Centered Institute of Asia",
-      "en": "Person Centered Institute of Asia | Home"
+      "zh": "亚洲人本研究院 | The Person Centered Institute of Asia | 首页",
+      "en": "The Person Centered Institute of Asia | Home | 亚洲人本研究院"
     },
     "nav_institute_name": {
       "zh": "亚洲人本研究院",
