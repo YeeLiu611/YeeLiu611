@@ -162,6 +162,10 @@ const translations = {
         "zh": "地址：",
         "en": "Address: "
     },
+    "contact_address": {
+      "zh": "中国广东省深圳市龙华新区观澜街道隆添利工业区 H 栋 4 楼灯火辉煌科技有限公司",
+      "en": "4th Floor, Building H, Long Tian Li Industrial Zone, Guanlan Street, Longhua New District, Shenzhen City, Guangdong Province, China. Lv Deng Hui Guang Technology Co., Ltd."
+  },
     
     // 页脚
     "footer_copyright": {
