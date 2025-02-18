@@ -44,11 +44,7 @@ const translations = {
     },
     "intro_text1": {
       "zh": "我们致力于通过人本主义教育理念，帮助个人和组织挖掘潜力、促进成长，构建以关怀、尊重、理解为核心的亚洲人本教育社区。",
-      "en": "We are committed to person-centered education, helping individuals and organizations unlock potential and foster growth, building an Asian educational community rooted in care, respect, and understanding."
-    },
-    "intro_text2": {
-      "zh": "Our mission is to foster personal and organizational potential through person-centered education, building an Asian educational community based on empathy, respect, and understanding.",
-      "en": "Our mission is to foster personal and organizational potential through person-centered education, building an Asian educational community based on empathy, respect, and understanding."
+      "en": "We are committed to person-centered approach, helping individuals and organizations unlock potential and foster growth, building an Asian person-centered community rooted in congruence, acceptance, and understanding."
     },
     "features_title": {
       "zh": "我们的主要项目",
