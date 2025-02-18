@@ -27,12 +27,12 @@ const translations = {
       "en": "Contact"
     },
     "hero_title": {
-      "zh": "亚洲人本研究院",
-      "en": "The Person-Centered Institute of Asia"
+      "zh": "生长自有光",
+      "en": "In Light We Grow"
     },
     "hero_subtitle": {
-      "zh": "促进以人为中心方法在亚洲的发展",
-      "en": "Advancing the person-centered approach in Asia"
+      "zh": "培训、教育、会议、期刊、会心团体",
+      "en": "Training, Education, Conferences, Journals, Encounter Groups"
     },
     "hero_btn": {
       "zh": "了解更多",
