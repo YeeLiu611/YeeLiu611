@@ -32,7 +32,7 @@ const translations = {
     },
     "hero_subtitle": {
       "zh": "以人为中心 培训 教育 会议 期刊 会心团体",
-      "en": "PCA | Training | Education | Conference | Journal | Encounter-Groups"
+      "en": "PCA | Training | Education | Conference | Journal | Encounter-Groups | Aisa"
     },
     "hero_btn": {
       "zh": "了解更多",
