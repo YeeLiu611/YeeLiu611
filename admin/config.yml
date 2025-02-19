@@ -356,6 +356,7 @@ collections:
     create: true                   # 允许在 CMS 后台新建文件
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { name: "layout", widget: "hidden", default: "post" }
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title_zh", label: "标题（中文）", widget: "string" }
       - { name: "title_en", label: "标题（英文）", widget: "string" }
