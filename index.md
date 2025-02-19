@@ -7,7 +7,6 @@ hero_btn: "了解更多"
 intro_title: "我们的使命"
 intro_text: "我们致力于通过以人为中心方法，帮助个人和组织挖掘潜力、促进成长，构建以关怀、尊重、理解为核心的亚洲人本教育社区。"
 ---
-
 <section class="hero">
   <div class="hero-content">
     <h1 data-key="hero_title">{{ page.hero_title }}</h1>
