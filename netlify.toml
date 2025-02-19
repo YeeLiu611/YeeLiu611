@@ -1,6 +1,7 @@
 [build]
-  command = "gem update --system 3.3.22 && bundle install && bundle exec jekyll build"
+  command = "bundle install && bundle exec jekyll build"
   publish = "_site"
 
 [build.environment]
-  NODE_VERSION = "16"
+  RUBY_VERSION = "3.1.2"
+  NODE_VERSION = "16"  # 如果你需要 Node 16
