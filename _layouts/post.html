@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="blog-post">
+  <!-- 标题存放在 data-zh / data-en -->
+  <h1
+    class="post-title"
+    data-zh="{{ page.title_zh }}"
+    data-en="{{ page.title_en }}"
+  >
+    {{ page.title_zh }}  <!-- 默认先显示中文或英文都行 -->
+  </h1>
+
+  <!-- 正文存放在 data-zh / data-en -->
+  <div
+    class="post-body"
+    data-zh="{{ page.body_zh | markdownify | escape }}"
+    data-en="{{ page.body_en | markdownify | escape }}"
+  >
+    {{ page.body_zh | markdownify }}
+  </div>
+</article>
