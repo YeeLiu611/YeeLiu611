@@ -162,5 +162,13 @@
   "footer_copyright": {
     "zh": "© 2025 亚洲人本研究院 (The Person Centered Institute of Asia). All rights reserved.",
     "en": "© 2025 The Person Centered Institute of Asia. All rights reserved."
+  },
+  "blog_listing_title": {
+    "zh": "博客文章",
+    "en": "Blog Posts"
+  },
+  "nav_blog": {
+  "zh": "博客",
+  "en": "Blog"
   }
 }
