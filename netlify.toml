@@ -1,16 +1,6 @@
 [build]
-  # 在 Netlify 上的构建命令：
-  # 1) 先更新 Rubygems
-  # 2) 安装 Gemfile 依赖
-  # 3) 执行 Jekyll 构建
   command = "gem update --system 3.3.22 && bundle install && bundle exec jekyll build"
-  
-  # 指定 Jekyll 输出目录
   publish = "_site"
 
 [build.environment]
-  # 如果你想固定 Node.js 版本（替代 .nvmrc）
   NODE_VERSION = "16"
-
-  # （可选）如果你还想固定 Ruby 版本，也可以加
-  # RUBY_VERSION = "3.1.2"
