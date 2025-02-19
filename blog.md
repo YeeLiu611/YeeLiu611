@@ -4,30 +4,24 @@ title: "Blog"
 permalink: /blog.html
 ---
 
-<!-- 
-  1) 标题通过 data-key 从 lang.json 里取文字 
-  2) 也可在 lang.json 中设置 "blog_listing_title" : { zh, en } 
--->
+<section class="blog-listing">
+  <!-- 标题从 lang.json 加载多语言 -->
+  <h1 data-key="blog_listing_title">Blog Posts</h1>
 
-<h1 data-key="blog_listing_title">Blog Posts (默认显示英文)</h1>
-
-<!-- 
-  2) 遍历 site.posts，列出每篇文章的链接
-  每篇文章在 front matter 里有 title_zh, title_en
-  我们用 data-zh / data-en 存起来，切换按钮可变换它的文字
--->
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a 
-        href="{{ post.url }}"
-        class="post-link"
-        data-zh="{{ post.title_zh }}"
-        data-en="{{ post.title_en }}"
-      >
-        {{ post.title_zh }} <!-- 默认先显示中文 -->
-      </a>
-      <span> - {{ post.date | date: "%Y-%m-%d" }}</span>
-    </li>
-  {% endfor %}
-</ul>
+  <ul class="blog-list">
+    {% for post in site.posts %}
+      <li class="blog-item">
+        <a 
+          class="post-link"
+          href="{{ post.url }}"
+          data-zh="{{ post.title_zh }}"
+          data-en="{{ post.title_en }}"
+        >
+          <!-- 默认显示中文标题 -->
+          {{ post.title_zh }}
+        </a>
+        <span class="blog-date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
