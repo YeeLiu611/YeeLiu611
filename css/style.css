@@ -86,7 +86,7 @@ header {
   color: var(--color-dark);
   font-weight: 500;
   transition: color 0.3s ease;
-  font: bold 1.2em Arial;
+  font: bold 1em Arial;
 }
 
 .nav-links a:hover {
