@@ -33,6 +33,12 @@ p {
   margin-bottom: 1rem;
 }
 
+.container {
+  max-width: 1200px; /* 或其他合适的宽度 */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* ========== 导航栏 ========== */
 header {
   background-color: var(--color-light);
