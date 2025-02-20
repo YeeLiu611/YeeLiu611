@@ -28,14 +28,6 @@ body {
   font-size: 16px;
 }
 
-/* 容器常用布局 */
-.container {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px; /* 增加左右内边距 */
-}
-
 /* 通用段落样式 */
 p {
   margin-bottom: 1rem;
@@ -436,8 +428,9 @@ footer {
 }
 
 .post-title {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 0.5rem;
+  align-items: center;
 }
 
 .post-meta {

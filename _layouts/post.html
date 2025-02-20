@@ -13,11 +13,9 @@ layout: default
     </h1>
     <p class="post-meta">
       <span class="post-date">
-        {{ page.date | date: "%Y-%m-%d" }}
+        {{ page.date | date: "%Y-%m-%d-%H" }}
       </span>
     </p>
-    <!-- 添加分割线 -->
-    <hr class="post-divider">
   </header>
 
   <div 
@@ -28,3 +26,13 @@ layout: default
     {{ page.body_zh | markdownify }}
   </div>
 </article>
+
+<!-- 上一篇 / 下一篇导航 -->
+<nav class="post-nav">
+  {% if page.previous %}
+    <a class="post-nav-link prev" href="{{ page.previous.url }}">上一篇: {{ page.previous.title_zh }}</a>
+  {% endif %}
+  {% if page.next %}
+    <a class="post-nav-link next" href="{{ page.next.url }}">下一篇: {{ page.next.title_zh }}</a>
+  {% endif %}
+</nav>
