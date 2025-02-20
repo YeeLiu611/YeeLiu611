@@ -12,11 +12,17 @@
         <li><a href="{{ '/programs.html' | relative_url }}" data-key="nav_programs">项目</a></li>
         <li><a href="{{ '/contact.html' | relative_url }}" data-key="nav_contact">联系我们</a></li>
         <li><a href="{{ '/blog.html' | relative_url }}" data-key="nav_blog">博客</a></li>
-
       </ul>
       <div class="nav-right">
         <button id="lang-toggle-btn" class="btn-lang">中文</button>
         <button class="hamburger" id="hamburger-btn">&#9776;</button>
       </div>
     </nav>
+    <!-- 新增的页面标题区域 -->
+    {% if page.title %}
+    <div class="header-title">
+        <h1 data-key="page_title">{{ page.title }}</h1>
+    </div>
+    {% endif %}
+</header>
   </header>
