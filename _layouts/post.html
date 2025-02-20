@@ -29,10 +29,10 @@ layout: default
 
 <!-- 上一篇 / 下一篇导航 -->
 <nav class="post-nav">
-  {% if page.previous %}
-    <a class="post-nav-link prev" href="{{ page.previous.url }}">上一篇: {{ page.previous.title_zh }}</a>
-  {% endif %}
-  {% if page.next %}
-    <a class="post-nav-link next" href="{{ page.next.url }}">下一篇: {{ page.next.title_zh }}</a>
-  {% endif %}
+  <a class="post-nav-link prev {% unless page.previous %}disabled{% endunless %}" href="{% if page.previous %}{{ page.previous.url }}{% else %}#{% endif %}">
+    上一篇: {% if page.previous %}{{ page.previous.title_zh }}{% else %}No Previous 无上一篇{% endif %}
+  </a>
+  <a class="post-nav-link next {% unless page.next %}disabled{% endunless %}" href="{% if page.next %}{{ page.next.url }}{% else %}#{% endif %}">
+    下一篇: {% if page.next %}{{ page.next.title_zh }}{% else %} No next 无下一篇{% endif %}
+  </a>
 </nav>
