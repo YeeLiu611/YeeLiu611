@@ -16,12 +16,10 @@ layout: default
         {{ page.date | date: "%Y-%m-%d" }}
       </span>
     </p>
+    <!-- 添加分割线 -->
+    <hr class="post-divider">
   </header>
 
-  <!-- 
-    正文存放在 data-zh/data-en 
-    默认先显示中文 
-  -->
   <div 
     class="post-body"
     data-zh="{{ page.body_zh | markdownify | escape }}"

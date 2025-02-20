@@ -17,7 +17,10 @@
 <body>
   {% include header.html %}
   <main>
-    {{ content }}
+    <!-- 包裹一层 container 便于统一控制页边距 -->
+    <div class="container">
+      {{ content }}
+    </div>
   </main>
   {% include footer.html %}
 </body>

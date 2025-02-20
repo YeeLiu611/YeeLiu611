@@ -33,6 +33,12 @@ body {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 20px; /* 增加左右内边距 */
+}
+
+/* 通用段落样式 */
+p {
+  margin-bottom: 1rem;
 }
 
 /* ========== 导航栏 ========== */
@@ -45,7 +51,7 @@ header {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 先让两端对齐 */
+  justify-content: space-between;
   padding: 1rem 0;
 }
 
@@ -63,7 +69,7 @@ header {
   color: #000;
 }
 .logo img {
-  max-width: 60px; /* 根据需要修改logo尺寸 */
+  max-width: 60px;
   height: auto;
   margin-right: 8px;
 }
@@ -72,12 +78,7 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  /* margin: 0 auto; 如果想精确居中可以加上这个 */
-  gap: 1.5rem; /* 让链接之间有一定间距 */
-}
-
-.nav-links li {
-  /* 这里无需再写 margin-left, 改用 gap 更灵活 */
+  gap: 1.5rem;
 }
 
 .nav-links a {
@@ -100,7 +101,7 @@ header {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 1rem; /* 语言切换和汉堡按钮之间的间距 */
+  gap: 1rem;
 }
 
 /* 语言切换按钮 */
@@ -122,7 +123,7 @@ header {
 
 /* 汉堡按钮：桌面端隐藏，移动端显示 */
 .hamburger {
-  display: none; /* 先隐藏 */
+  display: none;
   background: none;
   border: none;
   font-size: 1.8rem;
@@ -132,36 +133,31 @@ header {
 
 /* ========== 移动端适配 (小屏幕) ========== */
 @media (max-width: 768px) {
-  /* 小屏时，汉堡按钮出现 */
   .hamburger {
     display: block;
   }
-
-  /* 小屏时，隐藏原本横向的导航链接，用点击汉堡按钮再展开 */
   .nav-links {
     position: absolute;
-    top: 70px; /* 调整为你的导航栏高度 */
+    top: 70px;
     left: 0;
     width: 100%;
-    flex-direction: column; /* 竖列 */
+    flex-direction: column;
     gap: 1rem;
     background-color: var(--color-light);
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     padding: 1rem;
-    max-height: 0; /* 初始折叠 */
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
   }
   .nav-links.active {
-    max-height: 300px; /* 打开时的固定高度，或可通过别的方式做动画 */
+    max-height: 300px;
   }
 }
 
 /* ========== 主视觉 (Hero) ========== */
 .hero {
-  /* 可替换自己的图片; 这里采用一张示例图做线性渐变 */
   background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
-              /*url('https://picsum.photos/1920/1080?grayscale&blur=2') center/cover no-repeat;*/
               url('../images/image.jpg') center/cover no-repeat;
   height: 90vh;
   display: flex;
@@ -207,7 +203,6 @@ header {
   color: var(--color-light);
   padding: 2rem 0;
   text-align: center;
-  height: fit-content;
 }
 
 .about-content,
@@ -235,7 +230,7 @@ header {
 
 /* ========== 首页 - 项目特色 ========== */
 .features {
-  padding: 4rem 0; /* 留出更多垂直空间 */
+  padding: 4rem 0;
   background-color: var(--color-bg);
 }
 
@@ -271,7 +266,7 @@ header {
   line-height: 1.5;
 }
 
-/* ========== 联系我们 - 表单区(如后续添加) ========== */
+/* ========== 联系我们 - 表单区 ========== */
 .contact-info p {
   margin-bottom: 0.5rem;
 }
@@ -320,12 +315,12 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ========== 3) 默认隐藏汉堡按钮（桌面端） ========== */
+/* ========== 移动端汉堡按钮设置 ========== */
 .hamburger {
   display: none;
 }
 
-/* ========== 4) 媒体查询（小屏幕下） ========== */
+/* ========== 小屏幕样式 (移动端) ========== */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -338,28 +333,22 @@ footer {
     padding: 0.25rem; 
     color: var(--color-primary);
   }
-
-  /* 小屏幕下隐藏导航菜单 */
   .nav-links {
-    display: none;       /* 改为 none，隐藏整个菜单 */
+    display: none;
     position: absolute;
-    top: 60px;           /* 根据实际导航高度做调整 */
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: var(--color-light);
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    z-index: 800; 
+    z-index: 800;
   }
-
-  /* 当菜单展开时 */
   .nav-links.active {
     display: block;
   }
-
   .nav-links li {
     margin: 1rem;
   }
-
   .btn-lang {
     margin-right: 1rem;
   }
@@ -369,17 +358,15 @@ footer {
 .hero {
   position: relative;
   width: 100%;
-  height: 70vh; /* 根据需求调整高度 */
+  height: 70vh;
   overflow: hidden;
 }
 
-/* Swiper 主容器 */
 .swiper-container {
   width: 100%;
   height: 100%;
 }
 
-/* 每个轮播 Slide */
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -391,7 +378,6 @@ footer {
   position: relative;
 }
 
-/* 半透明遮罩，提升文字对比度 */
 .swiper-slide::before {
   content: "";
   position: absolute;
@@ -403,27 +389,23 @@ footer {
   z-index: 1;
 }
 
-/* Slide 内部内容放在遮罩上方 */
 .swiper-slide > * {
   position: relative;
   z-index: 2;
   color: var(--color-light);
 }
 
-/* 标题样式 */
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
 }
 
-/* 描述样式 */
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
-/* 按钮样式 */
 .hero .btn {
   background-color: var(--color-primary);
   color: var(--color-light);
@@ -439,95 +421,60 @@ footer {
   transform: scale(1.02);
 }
 
-
-/* post layout styles */
-/* ========== Blog Listing ========== */
-.blog-listing {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.blog-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.blog-item {
-  margin-bottom: 1rem;
-}
-
-.post-link {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-}
-
-.post-link:hover {
-  color: #007bff; /* 鼠标悬停变蓝 */
-}
-
-.blog-date {
-  color: #999;
-  font-size: 0.9rem;
-}
-
-/* ========== Single Post ========== */
+/* ===== Post 页面样式 ===== */
 .post-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 2rem;
   background-color: #fff;
 }
 
 .post-header {
-  border-bottom: 1px solid #ddd;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .post-title {
   font-size: 2rem;
-  margin: 0;
-  line-height: 1.3;
+  margin-bottom: 0.5rem;
 }
 
 .post-meta {
   color: #999;
-  margin-top: 0.5rem;
   font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.post-date {
-  margin-right: 1rem;
+.post-divider {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
 }
 
 .post-body {
   line-height: 1.8;
   font-size: 1.1rem;
-  margin-top: 1.5rem;
 }
 
 .post-body p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.post-nav {
-  max-width: 800px;
-  margin: 1.5rem auto;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
+/* ===== Programs 页面样式 ===== */
+.programs-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-primary);
 }
 
-.post-nav-link {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
+.program-item {
+  margin-bottom: 2rem;
 }
 
-.post-nav-link:hover {
-  text-decoration: underline;
+.program-divider {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
 }
