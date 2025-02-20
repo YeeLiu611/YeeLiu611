@@ -9,9 +9,7 @@ contact_address: "中国广东省深圳市龙华新区观澜街道隆添利工�
 ---
 
 <section class="page-header">
-  <div class="container">
     <h1 data-key="contact_title">{{ page.contact_title }}</h1>
-  </div>
 </section>
 
 <section class="contact-content">
