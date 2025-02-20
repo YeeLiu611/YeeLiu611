@@ -6,9 +6,7 @@ about_text: "亚洲人本研究院成立于20XX年，致力于将人本主义教
 ---
 
 <section class="page-header">
-  <div class="container">
     <h1 data-key="about_title">关于我们</h1>
-  </div>
 </section>
 
 <section class="about-content">
