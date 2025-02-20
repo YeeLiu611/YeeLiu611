@@ -5,9 +5,7 @@ programs_title: "我们的项目"
 ---
 
 <section class="page-header">
-  <div class="container">
     <h1 data-key="programs_title">我们的项目</h1>
-  </div>
 </section>
 
 <section class="programs-content">
