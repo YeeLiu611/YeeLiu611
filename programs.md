@@ -11,7 +11,7 @@ programs_title: "我们的项目"
 </section>
 
 <section class="programs-content">
-  <div class="container">
+  <div class="container content.container">
     <div class="program-item">
       <h2 data-key="program1_title">人本教育工作坊</h2>
       <p data-key="program1_desc">

@@ -23,7 +23,7 @@ intro_text: "我们致力于通过以人为中心方法，帮助个人和组织�
 </section>
 
 <section class="features">
-  <div class="container">
+  <div class="container content-container">
     <h2 data-key="features_title">我们的主要项目</h2>
     <div class="feature-list">
       <div class="feature-item">

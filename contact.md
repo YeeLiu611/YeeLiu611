@@ -15,7 +15,7 @@ contact_address: "中国广东省深圳市龙华新区观澜街道隆添利工�
 </section>
 
 <section class="contact-content">
-  <div class="container">
+  <div class="container content-container">
     <p data-key="contact_intro">{{ page.contact_intro }}</p>
     <div class="contact-info">
       <p><strong data-key="contact_phone_label">电话：</strong>{{ page.contact_phone }}</p>

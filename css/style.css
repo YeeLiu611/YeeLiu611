@@ -204,6 +204,12 @@ header {
   padding: 2rem 0;
 }
 
+.content-container {
+  max-width: 1200px; /* 设置最大宽度 */
+  margin: 0 auto;    /* 自动左右 margin，实现居中 */
+  padding: 0 1rem;   /* 添加左右内边距，保证内容不会贴边 */
+}
+
 /* ========== 首页 - 介绍区域 ========== */
 .intro {
   padding: 3rem 0;

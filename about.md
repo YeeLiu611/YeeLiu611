@@ -12,7 +12,7 @@ about_text: "亚洲人本研究院成立于20XX年，致力于将人本主义教
 </section>
 
 <section class="about-content">
-  <div class="container">
+  <div class="container content-container">
     <h2 data-key="about_section_title">{{ page.about_section_title }}</h2>
     <p data-key="about_text">{{ page.about_text }}</p>
   </div>
