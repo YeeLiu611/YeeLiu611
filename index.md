@@ -33,7 +33,11 @@ intro_text: "我们致力于通过以人为中心方法，帮助个人和组织�
         </p>
       </div>
       <div class="feature-item">
-        <h3 data-key="feature_item2_title">国际研讨会与论坛</h3>
+        <h3 data-key="feature_item2_title">
+          <a href="{{ '/programs.html' | relative_url }}" style="text-decoration: none; color: inherit;">
+            国际研讨会与论坛
+          </a>
+        </h3>
         <p data-key="feature_item2_desc">
           定期举办国际研讨会与交流活动，与世界各地的专家学者分享研究与实践成果。
         </p>
