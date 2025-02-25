@@ -209,6 +209,9 @@ header {
 .programs-content,
 .contact-content {
   padding: 2rem 0;
+  line-height: 1.6;      /* 行距 */
+  margin-bottom: 20px;   /* 段后距 */
+  margin-top: 10px; 
 }
 
 .content-container {
