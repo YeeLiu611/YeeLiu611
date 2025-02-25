@@ -8,30 +8,26 @@ let translations = {};
  * @param {String} lang  'zh' or 'en'
  */
 
-
-/**
- * 切换 单篇博客文章 (post.html) 中的标题、正文
- * 依赖 .post-title、.post-body 的 data-zh/data-en 属性
- * @param {String} lang
- */
-function updateBlogPostLang(lang) {
-  const titleEl = document.querySelector(".post-title");
-  const bodyEl = document.querySelector(".post-body");
-  // 如果不是博客文章页面，就没有这些元素
-  if (!titleEl || !bodyEl) return;
-
-  // 标题
-  const newTitle = titleEl.dataset[lang];
-  if (newTitle !== undefined) {
-    titleEl.textContent = newTitle;
-  }
-
-  // 正文: data-zh / data-en
-  const newBodyHTML = bodyEl.dataset[lang];
-  if (newBodyHTML !== undefined) {
-    // 这里直接替换 innerHTML
-    bodyEl.innerHTML = newBodyHTML;
-  }
+function updateLanguage(lang) {
+  const elements = document.querySelectorAll("[data-key]");
+  elements.forEach((el) => {
+    const key = el.getAttribute("data-key");
+    // 如果 lang.json 中有这个 key
+    if (translations[key] && translations[key][lang]) {
+      const text = translations[key][lang];
+      // 判断是否包含 '\n'，如果有，则渲染为多个 <p> 标签
+      if (text.includes('\n')) {
+        const paragraphs = text.split('\n').map(paragraph => {
+          // 检查是否为空字符串，避免渲染空段落
+          return paragraph.trim() ? `<p>${paragraph.trim()}</p>` : '';
+        }).join('');
+        el.innerHTML = paragraphs;
+      } else {
+        // 如果没有 \n，保持原本的 textContent
+        el.textContent = text;
+      }
+    }
+  });
 }
 
 /**
