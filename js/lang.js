@@ -7,16 +7,7 @@ let translations = {};
  * 切换 [data-key] 的元素，用于UI文案（从 lang.json 读取）
  * @param {String} lang  'zh' or 'en'
  */
-function updateLanguage(lang) {
-  const elements = document.querySelectorAll("[data-key]");
-  elements.forEach((el) => {
-    const key = el.getAttribute("data-key");
-    // 如果 lang.json 中有这个 key
-    if (translations[key] && translations[key][lang]) {
-      el.textContent = translations[key][lang];
-    }
-  });
-}
+
 
 /**
  * 切换 单篇博客文章 (post.html) 中的标题、正文
