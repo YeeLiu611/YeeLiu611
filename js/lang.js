@@ -7,7 +7,6 @@ let translations = {};
  * 切换 [data-key] 的元素，用于UI文案（从 lang.json 读取）
  * @param {String} lang  'zh' or 'en'
  */
-
 function updateLanguage(lang) {
   const elements = document.querySelectorAll("[data-key]");
   elements.forEach((el) => {
@@ -17,15 +16,35 @@ function updateLanguage(lang) {
       const text = translations[key][lang];
       // 判断是否包含 '\n'，如果有，则渲染为多个 <p> 标签
       if (text.includes('\n')) {
-        const paragraphs = text.split('\n').map(paragraph => {
-          // 检查是否为空字符串，避免渲染空段落
-          return paragraph.trim() ? `<p>${paragraph.trim()}</p>` : '';
-        }).join('');
+        const paragraphs = text
+          .split('\n')
+          .map((paragraph) => {
+            // 检查是否为空字符串，避免渲染空段落
+            return paragraph.trim() ? `<p>${paragraph.trim()}</p>` : '';
+          })
+          .join('');
         el.innerHTML = paragraphs;
       } else {
         // 如果没有 \n，保持原本的 textContent
         el.textContent = text;
       }
+    }
+  });
+}
+
+/**
+ * 切换 博客正文 (如果有需要在博客内容页进行切换)
+ * @param {String} lang
+ */
+function updateBlogPostLang(lang) {
+  // 如果需要对文章正文也做多语言切换，可以在此实现
+  // 例如：根据类名或 data 属性，切换正文中某些段落
+  // 这里先留空或简单演示
+  const postElements = document.querySelectorAll(".post-content [data-key]");
+  postElements.forEach((el) => {
+    const key = el.getAttribute("data-key");
+    if (translations[key] && translations[key][lang]) {
+      el.textContent = translations[key][lang];
     }
   });
 }
@@ -37,7 +56,7 @@ function updateLanguage(lang) {
  */
 function updateBlogListLang(lang) {
   const links = document.querySelectorAll(".post-link");
-  links.forEach(link => {
+  links.forEach((link) => {
     const text = link.dataset[lang];
     if (text !== undefined) {
       link.textContent = text;
