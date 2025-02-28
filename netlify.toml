@@ -8,6 +8,7 @@
 
 [[redirects]]
   from = "/"
-  to = "/zh/index.html"
+  to = "/en/"
   status = 200
   force = true
+

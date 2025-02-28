@@ -1,47 +1,22 @@
 ---
 layout: default
-lang: zh
-title: "亚洲人本研究院 | PCIA - The Person Centered Institute of Asia"
-alternate_url: "/en/index.html"
+lang: en
+title: "The Person Centered Institute of Asia | Home"
+alternate_url: "/zh/"
+permalink: /en/
 hero_title: "In Light We Grow"
-hero_subtitle: "PCA | Training | Education | Conference | Journal | Encounter-Groups | Aisa"
-hero_btn: "了解更多"
-intro_title: "我们的使命"
-intro_text: "我们致力于通过以人为中心方法，帮助个人和组织发掘潜力、促进成长，构建以关怀、尊重、理解为核心的亚洲人本教育社区。"
+hero_subtitle: "Training, Education, Conferences, Journals, Encounter-Groups"
+hero_btn: "Learn More"
+intro_title: "Our Mission"
+intro_text: "We are dedicated to helping individuals and organizations unlock their potential and grow, building a community rooted in care, respect, and understanding."
 ---
-
+<!-- 页面内容 -->
 <section class="hero">
   <div class="hero-content">
     <h1>{{ page.hero_title }}</h1>
     <p>{{ page.hero_subtitle }}</p>
-    <a href="/zh/about.html" class="btn">{{ page.hero_btn }}</a>
+    <a href="/en/about.html" class="btn">{{ page.hero_btn }}</a>
   </div>
 </section>
+<!-- 其他内容 -->
 
-<section class="intro">
-  <div class="container">
-    <h2>{{ page.intro_title }}</h2>
-    <p>{{ page.intro_text }}</p>
-  </div>
-</section>
-
-<section class="features">
-  <div class="container content-container">
-    <h2>我们的主要项目</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <h3>人本教育培训</h3>
-        <p>这里是关于人本教育培训的占位文本，介绍培训内容和目标。</p>
-      </div>
-      <div class="feature-item">
-        <h3>国际研讨会与论坛</h3>
-        <p>这里是关于国际研讨会与论坛的占位文本，展示活动信息和亮点。</p>
-      </div>
-      <div class="feature-item">
-        <h3>线上资源与课程</h3>
-        <p>这里是关于线上资源与课程的占位文本，介绍在线学习平台和课程详情。</p>
-      </div>
-    </div>
-    <a href="/zh/programs.html" class="btn">查看所有项目</a>
-  </div>
-</section>

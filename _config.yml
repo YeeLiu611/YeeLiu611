@@ -11,7 +11,9 @@ defaults:
       path: "zh"  # 针对 /zh 文件夹下的所有页面
     values:
       lang: zh
+      categories: zh
   - scope:
       path: "en"  # 针对 /en 文件夹下的所有页面
     values:
       lang: en
+      categories: en
