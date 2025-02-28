@@ -2,8 +2,7 @@
 layout: default
 lang: zh
 title: "博客 | 亚洲人本研究院"
-alternate_url: "/en/blog.html"
-permalink: /blog.html
+alternate_url: "/en/blog"
 ---
 
 <section class="page-header">

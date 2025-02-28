@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: "项目 | 亚洲人本研究院"
-alternate_url: "/zh/programs.html"
+alternate_url: "/zh/programs"
 programs_title: "我们的项目"
 ---
 

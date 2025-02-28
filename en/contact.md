@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: "联系我们 | 亚洲人本研究院"
-alternate_url: "/zh/contact.html"
+alternate_url: "/zh/contact"
 contact_title: "Contact Us"
 contact_intro: "Test！"
 contact_phone: "+1 778-636-2517"

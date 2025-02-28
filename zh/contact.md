@@ -2,7 +2,7 @@
 layout: default
 lang: zh
 title: "联系我们 | 亚洲人本研究院"
-alternate_url: "/en/contact.html"
+alternate_url: "/en/contact"
 contact_title: "联系我们"
 contact_intro: "若您对我们的项目感兴趣，或希望与我们建立合作关系，请随时与我们联系！"
 contact_phone: "+1 778-636-2517"

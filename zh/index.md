@@ -2,7 +2,7 @@
 layout: default
 lang: zh
 title: "亚洲人本研究院 | PCIA - The Person Centered Institute of Asia"
-alternate_url: "/en/index.html"
+alternate_url: "/en/index"
 hero_title: "生长自有光"
 hero_subtitle: "以人为中心 培训 教育 会议 期刊 会心团体"
 hero_btn: "了解更多"

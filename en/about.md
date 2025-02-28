@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: "关于我们 | 亚洲人本研究院"
-alternate_url: "/zh/about.html"
+alternate_url: "/zh/about"
 about_section_title: "About Us"
 about_text: "Space Holder。"
 ---
