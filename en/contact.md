@@ -1,6 +1,6 @@
 ---
 layout: default
-lang: zh
+lang: en
 title: "联系我们 | 亚洲人本研究院"
 alternate_url: "/en/contact.html"
 contact_title: "Contact Us"
