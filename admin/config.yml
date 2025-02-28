@@ -10,7 +10,7 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 # ----------------------------------------------
-# Netlify CMS 中的内容管理配置
+# Netlify CMS 的内容管理配置
 # ----------------------------------------------
 collections:
 
@@ -52,8 +52,8 @@ collections:
       - { name: "intro_text", label: "介绍文本", widget: "text", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
 
-# ================================
-  # 博客文章（中文）
+  # ================================
+  # 3) 博客文章（中文）
   # ================================
   - name: "blog_zh"
     label: "博客文章（中文）"
@@ -69,7 +69,7 @@ collections:
       - { name: "alternate_url", label: "对应英文链接", widget: "string", default: "/en/blog/", required: false }
 
   # ================================
-  # 博客文章（英文）
+  # 4) 博客文章（英文）
   # ================================
   - name: "blog_en"
     label: "博客文章（英文）"

@@ -55,14 +55,3 @@ layout: default
     <span class="post-nav-link next disabled">No Next 无下一篇</span>
   {% endif %}
 </nav>
-
-<!-- 语言切换按钮 -->
-<div class="lang-switch">
-  {% if page.alternate_url %}
-    {% if page.lang == "zh" %}
-      <a href="{{ page.alternate_url }}" class="btn-lang">EN</a>
-    {% else %}
-      <a href="{{ page.alternate_url }}" class="btn-lang">中文</a>
-    {% endif %}
-  {% endif %}
-</div>
