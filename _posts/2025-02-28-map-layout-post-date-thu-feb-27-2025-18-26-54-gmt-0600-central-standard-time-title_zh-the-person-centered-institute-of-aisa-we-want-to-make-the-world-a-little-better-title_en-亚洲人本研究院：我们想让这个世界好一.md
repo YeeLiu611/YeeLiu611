@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2025-02-28T00:26:54.639Z
-title_zh: "The Person-Centered Institute of Aisa: We want to make the world a
+title_zh: 亚洲人本研究院：我们想让这个世界好一点点
+title_en: "The Person-Centered Institute of Aisa: We want to make the world a
   little better."
-title_en: 亚洲人本研究院：我们想让这个世界好一点点
 body_zh: >-
   ## 亚洲人本研究院简介
 
