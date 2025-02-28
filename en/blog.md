@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: en
-title: "博客 | 亚洲人本研究院"
+title: "Articles | The Person-Centered Institute of Asia"
 alternate_url: "/zh/blog"
 ---
 
