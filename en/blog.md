@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: "博客 | 亚洲人本研究院"
-alternate_url: "/en/blog.html"
+alternate_url: "/zh/blog.html"
 ---
 
 <section class="page-header">

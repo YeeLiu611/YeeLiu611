@@ -2,7 +2,7 @@
 layout: default
 lang: zh
 title: "关于我们 | 亚洲人本研究院"
-alternate_url: "/zh/about.html"
+alternate_url: "/en/about.html"
 about_section_title: "研究院简介"
 about_text: "亚洲人本研究院成立于20XX年，致力于将人本主义教育理念在亚洲地区推广。我们秉持着尊重、关怀、理解的原则，旨在帮助每一个人发掘潜力，实现自我成长。"
 ---
