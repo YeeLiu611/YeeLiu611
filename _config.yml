@@ -1,4 +1,17 @@
 title: "亚洲人本研究院 | PCIA - The Person Centered Institute of Asia"
 baseurl: ""  # 如果你的网站在根目录，则留空
-url: "https://pcia.asia"  # 请替换成你实际的 GitHub Pages 域名
+url: "https://pcia.asia"  # 请替换成你实际的域名
 markdown: kramdown
+
+# 可选：配置 permalink 格式，让 URL 更清晰
+permalink: /:categories/:title/
+
+defaults:
+  - scope:
+      path: "zh"  # 针对 /zh 文件夹下的所有页面
+    values:
+      lang: zh
+  - scope:
+      path: "en"  # 针对 /en 文件夹下的所有页面
+    values:
+      lang: en
