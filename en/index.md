@@ -2,8 +2,7 @@
 layout: default
 lang: en
 title: "The Person Centered Institute of Asia | Home"
-alternate_url: "/zh/"
-permalink: /en/
+alternate_url: "/en/contact.html"
 hero_title: "In Light We Grow"
 hero_subtitle: "Training, Education, Conferences, Journals, Encounter-Groups"
 hero_btn: "Learn More"
