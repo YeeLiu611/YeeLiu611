@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: yeeliu611/YeeLiu611       # <-- 这里替换成你的仓库地址
+  repo: yeeliu611/YeeLiu611       # <-- 这里替换成你的 GitHub 仓库地址
   branch: main
   proxy: false
   auth:
@@ -9,14 +9,14 @@ backend:
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-# ----------------------------------------------------------------
-# Netlify CMS 会根据以下 collections 配置，管理你的 Jekyll 内容
-# ----------------------------------------------------------------
-
+# ----------------------------------------------
+# Netlify CMS 中的内容管理配置
+# ----------------------------------------------
 collections:
-  # ---------------------------------
+
+  # ================================
   # 1) 中文页面
-  # ---------------------------------
+  # ================================
   - name: "pages_zh"
     label: "中文页面"
     folder: "zh"          # 存放中文页面的目录
@@ -25,7 +25,7 @@ collections:
     fields:
       - { name: "lang", label: "语言", widget: "hidden", default: "zh" }
       - { name: "title", label: "页面标题", widget: "string" }
-      - { name: "alternate_url", label: "对应英文页面链接", widget: "string", required: false }
+      - { name: "alternate_url", label: "对应英文页面链接", widget: "string", default: "/en/", required: false }
       - { name: "hero_title", label: "首页大标题", widget: "string", required: false }
       - { name: "hero_subtitle", label: "副标题", widget: "string", required: false }
       - { name: "hero_btn", label: "按钮文字", widget: "string", required: false }
@@ -33,9 +33,9 @@ collections:
       - { name: "intro_text", label: "介绍文本", widget: "text", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
 
-  # ---------------------------------
+  # ================================
   # 2) 英文页面
-  # ---------------------------------
+  # ================================
   - name: "pages_en"
     label: "英文页面"
     folder: "en"
@@ -44,7 +44,7 @@ collections:
     fields:
       - { name: "lang", label: "语言", widget: "hidden", default: "en" }
       - { name: "title", label: "页面标题", widget: "string" }
-      - { name: "alternate_url", label: "对应中文页面链接", widget: "string", required: false }
+      - { name: "alternate_url", label: "对应中文页面链接", widget: "string", default: "/zh/", required: false }
       - { name: "hero_title", label: "首页大标题", widget: "string", required: false }
       - { name: "hero_subtitle", label: "副标题", widget: "string", required: false }
       - { name: "hero_btn", label: "按钮文字", widget: "string", required: false }
@@ -52,9 +52,9 @@ collections:
       - { name: "intro_text", label: "介绍文本", widget: "text", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
 
-  # ---------------------------------
+  # ================================
   # 3) 中文博客文章
-  # ---------------------------------
+  # ================================
   - name: "blog_zh"
     label: "博客文章（中文）"
     folder: "_posts/zh"   # 存放中文博客的文件夹
@@ -66,11 +66,11 @@ collections:
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title", label: "标题（中文）", widget: "string" }
       - { name: "body",  label: "正文（中文）", widget: "markdown" }
-      - { name: "alternate_url", label: "对应英文链接", widget: "string", required: false }
+      - { name: "alternate_url", label: "对应英文链接", widget: "string", default: "/en/blog/", required: false }
 
-  # ---------------------------------
+  # ================================
   # 4) 英文博客文章
-  # ---------------------------------
+  # ================================
   - name: "blog_en"
     label: "博客文章（英文）"
     folder: "_posts/en"   # 存放英文博客的文件夹
@@ -82,22 +82,4 @@ collections:
       - { name: "date",   label: "发布日期", widget: "datetime" }
       - { name: "title",  label: "标题（英文）", widget: "string" }
       - { name: "body",   label: "正文（英文）", widget: "markdown" }
-      - { name: "alternate_url", label: "对应中文链接", widget: "string", required: false }
-
-  # ---------------------------------
-  # 5) JSON 语言文件 (如果需要保留)
-  # ---------------------------------
-  - name: "json_lang"
-    label: "语言文件 (lang.json)"
-    files:
-      - file: "lang.json"
-        label: "lang.json"
-        name: "lang"
-        fields:
-          - label: "title_index"
-            name: "title_index"
-            widget: "object"
-            fields:
-              - { name: "zh", label: "简体中文", widget: "string" }
-              - { name: "en", label: "English",   widget: "string" }
-          # … 其他字段保持不变
+      - { name: "alternate_url", label: "对应中文链接", widget: "string", default: "/zh/blog/", required: false }
