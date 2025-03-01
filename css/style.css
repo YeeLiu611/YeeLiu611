@@ -204,6 +204,7 @@ header {
   position: relative;
   z-index: 2;
   color: var(--color-light);
+  max-width: 80%;
 }
 
 .slide-content h1 {
