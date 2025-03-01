@@ -13,7 +13,7 @@ layout: default
     </p>
     <p>地点：{{ page.location }}</p>
     <div class="project-body">
-      {{ content | markdownify }}
+      {{ body_zh | default: content }}
     </div>
   </div>
 </section>

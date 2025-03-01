@@ -19,11 +19,7 @@ layout: default
   </div>
 
   <div class="post-body">
-    {% if page.lang == "zh" %}
-      {{ page.body_zh | markdownify }}
-    {% else %}
-      {{ page.body_en | markdownify }}
-    {% endif %}
+    {{ content | markdownify }}
   </div>
 </article>
 
