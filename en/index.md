@@ -11,7 +11,7 @@ alternate_url: "/zh/index"
       <!-- Slide 1 -->
       <div class="swiper-slide" style="background-image: url('/images/slide1.jpg');">
         <div class="slide-content">
-          <h1>Welcome to PCIA</h1>
+          <h1>In Light We Grow</h1>
           <p>Training | Education | Conferences | Journals | Encounter-Groups</p>
           <a href="/en/about.html" class="btn">Learn More</a>
         </div>
@@ -19,8 +19,8 @@ alternate_url: "/zh/index"
       <!-- Slide 2 -->
       <div class="swiper-slide" style="background-image: url('/images/slide2.jpg');">
         <div class="slide-content">
-          <h1>In Light We Grow</h1>
-          <p>Caring · Trust · Understanding</p>
+          <h1>Welcome to PCIA</h1>
+          <p>Training | Education | Conferences | Journals | Encounter-Groups</p>
           <a href="/en/programs/" class="btn">View Our Programs</a>
         </div>
       </div>

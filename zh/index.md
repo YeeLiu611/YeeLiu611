@@ -11,22 +11,20 @@ alternate_url: "/en/index"
       <!-- Slide 1 -->
       <div class="swiper-slide" style="background-image: url('/images/slide1.jpg');">
         <div class="slide-content">
-          <h1>欢迎来到亚洲人本研究院</h1>
+          <h1>生长自有光</h1>
           <p>以人为中心 培训 教育 会议 期刊 会心团体</p>
           <a href="/zh/about.html" class="btn">了解更多</a>
         </div>
       </div>
-
       <!-- Slide 2 -->
       <div class="swiper-slide" style="background-image: url('/images/slide2.jpg');">
         <div class="slide-content">
-          <h1>生长自有光</h1>
-          <p>关怀 · 信任 · 理解</p>
+          <h1>欢迎来到亚洲人本研究院</h1>
+          <p>以人为中心 培训 教育 会议 期刊 会心团体</p>
           <a href="/zh/programs/" class="btn">查看我们的项目</a>
         </div>
       </div>
     </div>
-
     <!-- 分页器（小圆点） -->
     <div class="swiper-pagination"></div>
     <!-- 左右箭头，如果要的话 -->

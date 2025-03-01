@@ -12,8 +12,6 @@
 }
 
 /* ========== 2) 全局基础样式 ========== */
-
-/* 通用重置 */
 * {
   margin: 0;
   padding: 0;
@@ -28,13 +26,12 @@ body {
   font-size: 16px;
 }
 
-/* 通用段落样式 */
 p {
   margin-bottom: 1rem;
 }
 
 .container {
-  max-width: 1200px; /* 或其他合适的宽度 */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -45,7 +42,6 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.07);
 }
 
-/* 父容器：横向分布左中右 */
 .navbar {
   display: flex;
   align-items: center;
@@ -53,13 +49,11 @@ header {
   padding: 1rem 0;
 }
 
-/* 左侧：logo */
 .nav-left {
   display: flex;
   align-items: center;
 }
 
-/* logo里的图片 + 文本并排 */
 .logo {
   display: flex;
   align-items: center;
@@ -67,13 +61,13 @@ header {
   color: #000;
   font: bold 1.1em Arial;
 }
+
 .logo img {
   max-width: 60px;
   height: auto;
   margin-right: 8px;
 }
 
-/* 中间：导航链接 */
 .nav-links {
   list-style: none;
   display: flex;
@@ -97,14 +91,12 @@ header {
   color: var(--color-primary);
 }
 
-/* 右侧：语言切换 + 汉堡按钮 */
 .nav-right {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-/* 语言切换按钮 */
 .btn-lang {
   padding: 1rem 1rem;
   border: none;
@@ -116,12 +108,13 @@ header {
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-size: 0.95rem;
 }
+
 .btn-lang:hover {
   background-color: var(--color-secondary);
   transform: scale(1.05);
 }
 
-/* 汉堡按钮：桌面端隐藏，移动端显示 */
+/* 移动端菜单按钮（仅小屏显示） */
 .hamburger {
   display: none;
   background: none;
@@ -131,7 +124,7 @@ header {
   color: var(--color-primary);
 }
 
-/* ========== 移动端适配 (小屏幕) ========== */
+/* ========== 移动端适配 ========== */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -149,37 +142,14 @@ header {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
+    z-index: 800;
   }
   .nav-links.active {
     max-height: 300px;
   }
 }
 
-/* ========== 主视觉 (Hero) ========== */
-.hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--color-light);
-}
-
-.hero-content {
-  max-width: 600px;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
+/* ========== 通用按钮样式 ========== */
 .btn {
   background-color: var(--color-primary);
   color: var(--color-light);
@@ -189,203 +159,12 @@ header {
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-weight: bold;
 }
-
 .btn:hover {
   background-color: var(--color-secondary);
   transform: scale(1.02);
 }
 
-/* ========== 通用版块 ========== */
-.page-header {
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.about-content,
-.programs-content,
-.contact-content {
-  padding: 2rem 0;
-  line-height: 2;      /* 行距 */
-  margin-bottom: 20px;   /* 段后距 */
-  margin-top: 10px;
-}
-
-.content-container {
-  max-width: 1200px; /* 设置最大宽度 */
-  margin: 0 auto;    /* 自动左右 margin，实现居中 */
-  padding: 0 1rem;   /* 添加左右内边距，保证内容不会贴边 */
-}
-
-/* ========== 首页 - 介绍区域 ========== */
-.intro {
-  padding: 3rem 0;
-  background-color: var(--color-light);
-  text-align: center;
-}
-
-.intro h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.intro p {
-  margin-bottom: 0.5rem;
-  color: #555;
-}
-
-/* ========== 首页 - 最新动态 ========== */
-
-.useful-info {
-  background-color: #f9f9f9;  /* 选择一个柔和的背景色 */
-  padding: 3rem 0;
-}
-
-.useful-info h2 {
-  text-align: center;
-  color: var(--color-primary);
-  margin-bottom: 2rem;
-}
-
-.events-and-blogs {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.events-and-blogs .upcoming-events,
-.events-and-blogs .recent-posts {
-  flex: 1;
-  min-width: 300px;
-  background-color: var(--color-light);
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.events-and-blogs h3 {
-  margin-bottom: 1rem;
-  color: var(--color-primary);
-}
-
-.event-item {
-  margin-bottom: 1.5rem;
-}
-
-.blog-list {
-  list-style: none;
-  padding: 0;
-}
-
-/* ========== 联系我们 - 表单区 ========== */
-.contact-info p {
-  margin-bottom: 0.5rem;
-}
-
-.contact-form {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-form label {
-  font-weight: 600;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contact-form button {
-  align-self: flex-start;
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: var(--color-secondary);
-}
-
-/* ========== 页脚 ========== */
-footer {
-  background-color: #eee;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.footer-container p {
-  color: #555;
-  font-size: 0.9rem;
-}
-
-/* ========== 移动端汉堡按钮设置 ========== */
-.hamburger {
-  display: none;
-}
-
-/* ========== 小屏幕样式 (移动端) ========== */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 2000;
-    position: relative;
-    padding: 0.25rem;
-    color: var(--color-primary);
-  }
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: var(--color-light);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    z-index: 800;
-  }
-  .nav-links.active {
-    display: block;
-  }
-  .nav-links li {
-    margin: 1rem;
-  }
-  .btn-lang {
-    margin-right: 1rem;
-  }
-
-  /* ========== Additional Mobile Tweaks ========== */
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .features .feature-list {
-    flex-direction: column;
-  }
-
-  .feature-item {
-    margin-bottom: 1rem;
-  }
-
-  .intro,
-  .features {
-    padding: 2rem 1rem;
-  }
-}
-
-/* ===== Hero Carousel 区域 ===== */
+/* ========== Hero 轮播区域 ========== */
 .hero {
   position: relative;
   width: 100%;
@@ -420,75 +199,127 @@ footer {
   z-index: 1;
 }
 
-.swiper-slide > * {
+/* slide-content 用于包裹文字和按钮 */
+.slide-content > * {
   position: relative;
   z-index: 2;
   color: var(--color-light);
 }
 
-.hero h1 {
+.slide-content h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
 }
 
-.hero p {
+.slide-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
-.hero .btn {
+/* ========== 页面头部区域 (如 About, Programs 等) ========== */
+.page-header {
   background-color: var(--color-primary);
   color: var(--color-light);
-  padding: 0.8rem 1.6rem;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-.hero .btn:hover {
-  background-color: var(--color-secondary);
-  transform: scale(1.02);
+/* ========== 主页面内容常用区块 ========== */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* ===== Blog Listing Page Styles ===== */
+/* ========== 首页 - 介绍区域 ========== */
+.intro {
+  padding: 3rem 0;
+  background-color: var(--color-light);
+  text-align: center;
+}
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.intro p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* ========== 首页 - 最新动态 ========== */
+.useful-info {
+  background-color: #f9f9f9;
+  padding: 3rem 0;
+}
+.useful-info h2 {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+.events-and-blogs {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.events-and-blogs .upcoming-events,
+.events-and-blogs .recent-posts {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--color-light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.events-and-blogs h3 {
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+.event-item {
+  margin-bottom: 1.5rem;
+}
+.blog-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* ========== 关于我们 / 项目 / 联系我们等公共区块 ========== */
+.about-content,
+.programs-content,
+.contact-content {
+  padding: 2rem 0;
+  line-height: 2;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* ========== 联系我们区块(非表单) ========== */
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== 博客列表页面 ========== */
 .blog-listing .blog-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .blog-listing .blog-item {
   margin-bottom: 1.5rem;
 }
-
 .blog-listing .blog-item .post-link {
-  color: var(--color-primary);  /* 蓝绿色 */
-  font-size: 1rem;            /* 稍大字体 */
-  line-height: 2;             /* 2 倍行距 */
-  margin-bottom: 1.5rem;      /* 较大的段后距 */
+  color: var(--color-primary);
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
   display: block;
-  text-decoration: underline; /* 显示下划线 */
-  text-decoration-color: var(--color-primary); /* 下划线颜色 */
-  text-decoration-thickness: 2px; /* 下划线粗细 */
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 2px;
 }
 
-/* ===== Homepage Header Adjustments ===== */
-.navbar {
-  padding-left: 1rem;   /* 左侧内边距 */
-  padding-right: 1rem;  /* 右侧内边距 */
-}
-
-/* ===== Post Navigation Buttons ===== */
-.post-nav {
-  max-width: 800px;     /* 与文章显示宽度一致 */
-  margin: 1.5rem auto;  /* 居中显示 */
-  display: flex;
-  justify-content: space-between;
-}
-
-/* ===== Post 页面样式 ===== */
+/* ========== 博客文章页面布局 ========== */
 .post-container {
   max-width: 800px;
   margin: 1rem auto;
@@ -497,37 +328,27 @@ footer {
   border: none;
   box-shadow: none !important;
 }
-
-/* 文章主标题 */
 .post-title {
-  text-align: center;          /* 标题居中 */
-  color: var(--color-primary); /* 标题颜色 */
+  text-align: center;
+  color: var(--color-primary);
   font-size: 2rem;
   margin-bottom: 0.5rem;
   border: none;
   padding: 0;
   font-weight: bold;
 }
-
-/* 文章元信息（日期等） */
 .post-meta {
   color: #999;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
-
-/* 正文容器 */
 .post-body {
   line-height: 2;
   font-size: 1rem;
 }
-
-/* 正文段落下方间距 */
 .post-body p {
   margin-bottom: 1rem;
 }
-
-/* 正文内的各级标题居中 + 蓝绿色 */
 .post-body h1,
 .post-body h2,
 .post-body h3,
@@ -538,19 +359,15 @@ footer {
   color: var(--color-primary);
   line-height: 2;
 }
-
-/* 正文中加粗文字蓝绿色 */
 .post-body strong,
 .post-body b {
   color: var(--color-primary);
 }
-
-/* 插入的图片自适应宽度，居中显示 */
 .post-body img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1rem auto; 
+  margin: 1rem auto;
 }
 
 /* 上一篇 / 下一篇导航 */
@@ -559,33 +376,82 @@ footer {
   justify-content: space-between;
   margin-top: 1.5rem;
 }
-
 .post-nav-link {
   text-decoration: none;
   color: var(--color-primary);
   font-weight: bold;
 }
-
 .post-nav-link.disabled {
   color: #ccc;
   cursor: not-allowed;
 }
 
-/* ===== Programs 页面样式 ===== */
+/* ========== Programs 页面样式 ========== */
 .programs-content h2 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--color-primary);
 }
-
 .program-item {
   margin-bottom: 2rem;
 }
-
 .program-divider {
   margin: 1.5rem 0;
   border: none;
   border-top: 1px solid #ddd;
 }
 
+/* ========== 页脚 ========== */
+footer {
+  background-color: #eee;
+  padding: 1rem 0;
+  text-align: center;
+}
+.footer-container p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* ========== 小屏幕扩展 ========== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2000;
+    position: relative;
+    padding: 0.25rem;
+    color: var(--color-primary);
+  }
+  .nav-links {
+    display: none; /* 初始隐藏，点汉堡后再展开 */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-light);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 800;
+  }
+  .nav-links.active {
+    display: block;
+  }
+  .nav-links li {
+    margin: 1rem;
+  }
+  .btn-lang {
+    margin-right: 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .intro {
+    padding: 2rem 1rem;
+  }
+  .useful-info {
+    padding: 2rem 1rem;
+  }
+}
