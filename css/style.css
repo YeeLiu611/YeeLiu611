@@ -205,6 +205,7 @@ header {
   z-index: 2;
   color: var(--color-light);
   max-width: 80%;
+  text-align: center;
 }
 
 .slide-content h1 {
