@@ -497,7 +497,7 @@ footer {
 
 /* 正文容器 */
 .post-body {
-  line-height: 1.8;
+  line-height: 2;
   font-size: 1rem;
 }
 
@@ -515,6 +515,7 @@ footer {
 .post-body h6 {
   text-align: center;
   color: var(--color-primary);
+  line-height: 2;
 }
 
 /* 正文中加粗文字蓝绿色 */
