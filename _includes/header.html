@@ -19,28 +19,24 @@
           {% if page.lang == "zh" %} 首页 {% else %} Home {% endif %}
         </a>
       </li>
-      
       <!-- 关于我们 -->
       <li>
         <a href="{{ '/' | append: page.lang | append: '/about/' | relative_url }}">
           {% if page.lang == "zh" %} 关于我们 {% else %} About Us {% endif %}
         </a>
       </li>
-      
       <!-- 项目 -->
       <li>
         <a href="{{ '/' | append: page.lang | append: '/programs/' | relative_url }}">
           {% if page.lang == "zh" %} 项目 {% else %} Programs {% endif %}
         </a>
       </li>
-      
       <!-- 联系我们 -->
       <li>
         <a href="{{ '/' | append: page.lang | append: '/contact/' | relative_url }}">
           {% if page.lang == "zh" %} 联系我们 {% else %} Contact {% endif %}
         </a>
       </li>
-      
       <!-- 博客 -->
       <li>
         <a href="{{ '/' | append: page.lang | append: '/blog/' | relative_url }}">
@@ -50,14 +46,19 @@
     </ul>
     <div class="nav-right">
       <!-- 语言切换按钮 -->
-      {% if page.lang == "zh" %}
-        <a href="{{ page.alternate_url }}" id="lang-toggle-btn" class="btn-lang">EN</a>
+      {% if page.alternate_url %}
+        <a href="{{ page.alternate_url }}" id="lang-toggle-btn" class="btn-lang">
+          {% if page.lang == "zh" %} EN {% else %} 中文 {% endif %}
+        </a>
       {% else %}
-        <a href="{{ page.alternate_url }}" id="lang-toggle-btn" class="btn-lang">中文</a>
+        {% if page.lang == "zh" %}
+          <a href="/en/{{ page.title }}" id="lang-toggle-btn" class="btn-lang">EN</a>
+        {% else %}
+          <a href="/zh/{{ page.title }}" id="lang-toggle-btn" class="btn-lang">中文</a>
+        {% endif %}
       {% endif %}
       <!-- 移动端菜单按钮 -->
       <button class="hamburger" id="hamburger-btn">&#9776;</button>
     </div>
   </nav>
 </header>
-
