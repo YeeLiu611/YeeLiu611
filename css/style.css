@@ -202,6 +202,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #fff; /* 添加这行，使文字变为白色 */
 }
 
 /* 标题 */
