@@ -190,18 +190,6 @@ header {
   position: relative;
 }
 
-/* 轮播 slide 的半透明遮罩 */
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.15);
-  z-index: 1;
-}
-
 /* slide-content 用于包裹文字和按钮 */
 .slide-content {
   position: relative;
