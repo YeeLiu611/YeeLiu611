@@ -273,6 +273,7 @@ header {
   color: var(--color-light);
   padding: 2rem 0;
   text-align: center;
+  margin-top: auto;
 }
 
 /* ========== 主页面内容常用区块 ========== */
