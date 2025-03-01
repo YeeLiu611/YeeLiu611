@@ -75,7 +75,7 @@ collections:
   # ================================
   - name: "programs_zh"
     label: "项目（中文）"
-    folder: "_programs/zh"
+    folder: "_programs_zh"    # 修改后的文件夹名称
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -94,7 +94,7 @@ collections:
   # ================================
   - name: "programs_en"
     label: "Projects (English)"
-    folder: "_programs/en"
+    folder: "_programs_en"    # 修改后的文件夹名称
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
