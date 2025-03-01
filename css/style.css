@@ -346,12 +346,12 @@ header {
   flex-wrap: wrap;
 }
 .blog-listing .blog-item .post-link {
-  color: var(--color-primary);
   font-size: 1rem;
-  text-decoration: underline;
-  text-decoration-color: var(--color-primary);
   text-decoration-thickness: 2px;
   margin: 0;
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 .blog-listing .blog-item .blog-date {
   color: #999;
