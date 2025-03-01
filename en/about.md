@@ -12,7 +12,9 @@ We hope to influence and change the world a little – to enable everyone to be 
 
 ## **Our core objectives and projects**
 
+
 ### **1. Building Person-Centered communities in Asia and across the globe**
+
 
 * **Asian Person-Centered Conference**: A regular academic and practical exchange conference to promote dialogue and cooperation among Person-Centered practitioners in Asian countries.
 * **Person-Centered Asia Journal**: Establish an academic exchange platform in Asia to promote the integration of theory and practice.
