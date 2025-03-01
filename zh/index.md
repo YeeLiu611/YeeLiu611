@@ -61,7 +61,6 @@ alternate_url: "/en/index"
           <a href="/zh/programs/">查看详情</a>
         </div>
       </div>
-
       <!-- 最新博客文章 -->
       <div class="recent-posts">
         <h3>最新博客</h3>
