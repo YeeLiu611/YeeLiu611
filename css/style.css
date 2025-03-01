@@ -211,7 +211,7 @@ header {
   padding: 2rem 0;
   line-height: 2;      /* 行距 */
   margin-bottom: 20px;   /* 段后距 */
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .content-container {
@@ -254,7 +254,7 @@ header {
   flex: 1;
   min-width: 250px;
   background-color: var(--color-light);
-  padding: 2rem; 
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -335,11 +335,11 @@ footer {
     display: block;
     background: none;
     border: none;
-    font-size: 2rem; 
+    font-size: 2rem;
     cursor: pointer;
-    z-index: 2000; 
+    z-index: 2000;
     position: relative;
-    padding: 0.25rem; 
+    padding: 0.25rem;
     color: var(--color-primary);
   }
   .nav-links {
@@ -360,6 +360,24 @@ footer {
   }
   .btn-lang {
     margin-right: 1rem;
+  }
+
+  /* ========== Additional Mobile Tweaks ========== */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features .feature-list {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    margin-bottom: 1rem;
+  }
+
+  .intro,
+  .features {
+    padding: 2rem 1rem;
   }
 }
 
@@ -444,12 +462,12 @@ footer {
 .blog-listing .blog-item .post-link {
   color: var(--color-primary);  /* 蓝绿色 */
   font-size: 1rem;            /* 稍大字体 */
-  line-height: 2;               /* 2 倍行距 */
-  margin-bottom: 1.5rem;        /* 较大的段后距 */
+  line-height: 2;             /* 2 倍行距 */
+  margin-bottom: 1.5rem;      /* 较大的段后距 */
   display: block;
-  text-decoration: underline;           /* 显示下划线 */
+  text-decoration: underline; /* 显示下划线 */
   text-decoration-color: var(--color-primary); /* 下划线颜色 */
-  text-decoration-thickness: 2px;         /* 下划线粗细 */
+  text-decoration-thickness: 2px; /* 下划线粗细 */
 }
 
 /* ===== Homepage Header Adjustments ===== */
@@ -466,7 +484,6 @@ footer {
   justify-content: space-between;
 }
 
-
 /* ===== Post 页面样式 ===== */
 .post-container {
   max-width: 800px;
@@ -479,8 +496,8 @@ footer {
 
 /* 文章主标题 */
 .post-title {
-  text-align: center;               /* 标题居中 */
-  color: var(--color-primary);      /* 标题颜色 */
+  text-align: center;          /* 标题居中 */
+  color: var(--color-primary); /* 标题颜色 */
   font-size: 2rem;
   margin-bottom: 0.5rem;
   border: none;
@@ -529,7 +546,7 @@ footer {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1rem auto; /* 若想图片靠左，可去掉 margin */
+  margin: 1rem auto; 
 }
 
 /* 上一篇 / 下一篇导航 */

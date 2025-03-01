@@ -43,6 +43,12 @@
           {% if page.lang == "zh" %} 博客 {% else %} Blog {% endif %}
         </a>
       </li>
+      <!-- 加入我们 / Volunteer -->
+      <li>
+        <a href="{{ '/' | append: page.lang | append: '/volunteer/' | relative_url }}">
+          {% if page.lang == "zh" %} 加入我们 {% else %} Join Us {% endif %}
+        </a>
+      </li>
     </ul>
     <div class="nav-right">
       <!-- 语言切换按钮 -->
