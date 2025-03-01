@@ -4,10 +4,11 @@ lang: en
 title: The Person-Centered Institute of Asia
 alternate_url: /zh/about
 ---
-#﻿# 
 
 
 The Person-Centered Institute of Asia (PCIA) is a Person-Centered organisation serving the whole of Asia. We are dedicated to promoting Person-Centered approaches and values, not only in the field of counselling, but also in education, social development, community building and conflict mediation. Our core belief is **"*To treat  Person as Person, and life as life*".** We believe that everyone deserves to be respected and accepted, and that this will promote a more inclusive and humane social and cultural environment.
+
+
 
 ## **Our vision**
 
@@ -16,8 +17,8 @@ We hope to influence and change the world a little – to enable everyone to be 
 ## **Our core objectives and projects**
 
 
-### **1. Building Person-Centered communities in Asia and across the globe**
 
+### **1. Building Person-Centered communities in Asia and across the globe**
 
 * **Asian Person-Centered Conference**: A regular academic and practical exchange conference to promote dialogue and cooperation among Person-Centered practitioners in Asian countries.
 * **Person-Centered Asia Journal**: Establish an academic exchange platform in Asia to promote the integration of theory and practice.
