@@ -5,12 +5,12 @@ date: 2025-03-01T15:28:46.422Z
 title: Core_Value
 title_en: The Core Values of the Person-Centered Approach
 ---
-Jerold D. Bozarth\
+Jerold D. Bozarth
 
 University of Georgia, Athens, Georgia
 
 
-Barbara Temaner Brodley\
+Barbara Temaner Brodley
 
 Illinois School of Professional Psychology, Chicago
 

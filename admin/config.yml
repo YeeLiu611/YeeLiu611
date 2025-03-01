@@ -52,7 +52,7 @@ collections:
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_zh", label: "文章标题（中文）", widget: "string" }
-      # 删除 body_zh 字段；正文内容直接写在编辑器中
+      - { name: "body", label: "正文内容", widget: "markdown" }
 
 
   # ================================
@@ -69,7 +69,7 @@ collections:
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_en", label: "文章标题（英文）", widget: "string" }
-      # 删除 body_en 字段；正文内容直接写在编辑器中
+      - { name: "body", label: "Post Content", widget: "markdown" }
 
 
   # ================================
