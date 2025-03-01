@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="project-details container content-container">
+  <div class="event-item">
+    <h4>{{ page.title_zh | default: page.title_en }}</h4>
+    <p>
+      时间：{{ page.date | date: "%Y 年 %m 月 %d 日" }}
+      {% if page.time %}
+        - {{ page.time | date: "%Y 年 %m 月 %d 日" }}
+      {% endif %}
+    </p>
+    <p>地点：{{ page.location }}</p>
+    <div class="project-body">
+      {{ content | markdownify }}
+    </div>
+  </div>
+</section>
