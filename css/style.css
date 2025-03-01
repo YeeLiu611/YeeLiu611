@@ -413,6 +413,11 @@ header {
   display: block;
   margin: 1rem auto;
 }
+.post-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
 /* 上一篇 / 下一篇导航 */
 .post-nav {

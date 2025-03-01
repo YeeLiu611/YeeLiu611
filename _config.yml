@@ -52,7 +52,7 @@ defaults:
     values:
       lang: zh
       categories: zh
-      
+
   # （F）项目（英文）：_programs/en
   - scope:
       path: "_programs/en"
@@ -60,3 +60,6 @@ defaults:
     values:
       lang: en
       categories: en
+
+future: true
+timezone: Asia/Shanghai
