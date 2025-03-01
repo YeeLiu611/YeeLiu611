@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: yeeliu611/YeeLiu611       # <-- 这里替换成你的 GitHub 仓库地址
+  repo: yeeliu611/YeeLiu611       # 请替换成你的 GitHub 仓库地址
   branch: main
   proxy: false
   auth:
@@ -21,7 +21,7 @@ collections:
     label: "中文页面"
     folder: "zh"          # 存放中文页面的目录
     create: true          # 允许在 CMS 里新建页面
-    slug: "{{slug}}"      # 文件命名方式
+    slug: "{{slug}}"
     fields:
       - { name: "lang", label: "语言", widget: "hidden", default: "zh" }
       - { name: "title", label: "页面标题", widget: "string" }
@@ -62,10 +62,12 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", widget: "hidden", default: "post" }
-      - { name: "lang",   widget: "hidden", default: "zh" }
-      - { name: "date",   label: "发布日期", widget: "datetime" }
+      - { name: "lang", widget: "hidden", default: "zh" }
+      - { name: "date", label: "发布日期", widget: "datetime" }
+      # 统一标题字段，用于生成 URL
+      - { name: "title", label: "标题", widget: "string" }
       - { name: "title_zh", label: "标题（中文）", widget: "string" }
-      - { name: "body_zh",  label: "正文（中文）", widget: "markdown" }
+      - { name: "body_zh", label: "正文（中文）", widget: "markdown" }
       - { name: "alternate_url", label: "对应英文链接", widget: "string", default: "/en/blog/", required: false }
 
   # ================================
@@ -78,8 +80,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", widget: "hidden", default: "post" }
-      - { name: "lang",   widget: "hidden", default: "en" }
-      - { name: "date",   label: "发布日期", widget: "datetime" }
-      - { name: "title_en",  label: "标题（英文）", widget: "string" }
-      - { name: "body_en",   label: "正文（英文）", widget: "markdown" }
+      - { name: "lang", widget: "hidden", default: "en" }
+      - { name: "date", label: "发布日期", widget: "datetime" }
+      # 统一标题字段，用于生成 URL
+      - { name: "title", label: "标题", widget: "string" }
+      - { name: "title_en", label: "标题（英文）", widget: "string" }
+      - { name: "body_en", label: "正文（英文）", widget: "markdown" }
       - { name: "alternate_url", label: "对应中文链接", widget: "string", default: "/zh/blog/", required: false }
