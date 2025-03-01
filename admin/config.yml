@@ -52,38 +52,30 @@ collections:
       - { name: "intro_text", label: "介绍文本", widget: "text", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
 
-  # ================================
-  # 3) 博客文章（中文）
-  # ================================
   - name: "blog_zh"
     label: "博客文章（中文）"
-    folder: "_posts/zh"   # 存放中文博客的文件夹
+    folder: "_posts/zh"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", widget: "hidden", default: "post" }
       - { name: "lang", widget: "hidden", default: "zh" }
       - { name: "date", label: "发布日期", widget: "datetime" }
-      # 统一标题字段，用于生成 URL
-      - { name: "title", label: "标题", widget: "string" }
+      - { name: "title", label: "URL 标识", widget: "string" }  # 新增
       - { name: "title_zh", label: "标题（中文）", widget: "string" }
       - { name: "body_zh", label: "正文（中文）", widget: "markdown" }
-      - { name: "alternate_url", label: "对应英文链接", widget: "string", default: "/en/blog/", required: false }
+      - { name: "alternate_url", label: "对应英文链接", widget: "string", required: false }
 
-  # ================================
-  # 4) 博客文章（英文）
-  # ================================
   - name: "blog_en"
     label: "博客文章（英文）"
-    folder: "_posts/en"   # 存放英文博客的文件夹
+    folder: "_posts/en"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: "layout", widget: "hidden", default: "post" }
       - { name: "lang", widget: "hidden", default: "en" }
       - { name: "date", label: "发布日期", widget: "datetime" }
-      # 统一标题字段，用于生成 URL
-      - { name: "title", label: "标题", widget: "string" }
+      - { name: "title", label: "URL 标识", widget: "string" }  # 新增
       - { name: "title_en", label: "标题（英文）", widget: "string" }
       - { name: "body_en", label: "正文（英文）", widget: "markdown" }
-      - { name: "alternate_url", label: "对应中文链接", widget: "string", default: "/zh/blog/", required: false }
+      - { name: "alternate_url", label: "对应中文链接", widget: "string", required: false }
