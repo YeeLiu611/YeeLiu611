@@ -45,21 +45,23 @@ alternate_url: "/en/index"
   <div class="container content-container">
     <h2>最新动态</h2>
     <div class="events-and-blogs">
-      <!-- 近期活动 -->
+    <!-- 近期活动 -->
       <div class="upcoming-events">
         <h3>近期活动</h3>
+        {% assign latest_projects = site.programs_zh | sort: "date" | reverse | slice: 0, 2 %}
+        {% for project in latest_projects %}
         <div class="event-item">
-          <h4>亚洲人本大会</h4>
-          <p>时间：2025 年 5 月 10 日 - 12 日</p>
-          <p>地点：上海虹桥国际会议中心</p>
-          <a href="/zh/programs/">查看详情</a>
+          <h4>{{ project.title_zh }}</h4>
+          <p>
+            时间：{{ project.date | date: "%Y 年 %m 月 %d 日" }}
+            {% if project.time %}
+              - {{ project.time | date: "%Y 年 %m 月 %d 日" }}
+            {% endif %}
+          </p>
+          <p>地点：{{ project.location }}</p>
+          <a href="{{ project.url }}">查看详情</a>
         </div>
-        <div class="event-item">
-          <h4>以人为中心咨询工作坊</h4>
-          <p>时间：2025 年 6 月 2 日 - 4 日</p>
-          <p>地点：北京海淀区某教育中心</p>
-          <a href="/zh/programs/">查看详情</a>
-        </div>
+        {% endfor %}
       </div>
       <!-- 最新博客文章 -->
       <div class="recent-posts">

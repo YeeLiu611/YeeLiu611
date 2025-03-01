@@ -45,21 +45,23 @@ alternate_url: "/zh/index"
   <div class="container content-container">
     <h2>Latest Updates</h2>
     <div class="events-and-blogs">
-      <!-- Upcoming Events -->
+      <!-- Upcoming Projects -->
       <div class="upcoming-events">
-        <h3>Upcoming Events</h3>
+        <h3>Upcoming Projects</h3>
+        {% assign latest_projects = site.programs_en | sort: "date" | reverse | slice: 0, 2 %}
+        {% for project in latest_projects %}
         <div class="event-item">
-          <h4>Person-Centered Asia Conference</h4>
-          <p>Date: May 10 - 12, 2025</p>
-          <p>Location: Shanghai Hongqiao International Conference Center</p>
-          <a href="/en/programs/">Learn More</a>
+          <h4>{{ project.title_en }}</h4>
+          <p>
+            Date: {{ project.date | date: "%B %d, %Y" }}
+            {% if project.time %}
+              - {{ project.time | date: "%B %d, %Y" }}
+            {% endif %}
+          </p>
+          <p>Location: {{ project.location }}</p>
+          <a href="{{ project.url }}">Learn More</a>
         </div>
-        <div class="event-item">
-          <h4>Person-Centered Counseling Workshop</h4>
-          <p>Date: June 2 - 4, 2025</p>
-          <p>Location: A venue in Haidian District, Beijing</p>
-          <a href="/en/programs/">Learn More</a>
-        </div>
+        {% endfor %}
       </div>
       <!-- Recent Blog Posts -->
       <div class="recent-posts">
