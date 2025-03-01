@@ -179,8 +179,8 @@ header {
 
 .swiper-slide {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
   flex-direction: column;
   text-align: center;
   background-size: cover;
@@ -206,6 +206,11 @@ header {
   color: var(--color-light);
   max-width: 80%;
   text-align: center;
+  /* 重点：确保水平居中 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide-content h1 {
