@@ -17,3 +17,69 @@ layout: post
     </div>
   </div>
 </section>
+
+{% comment %}
+  根据当前页面语言，从对应项目集合中计算前后项目
+{% endcomment %}
+<nav class="project-nav">
+  {% if page.lang == "zh" %}
+    {% assign siblings = site.programs_zh | sort: "date" | reverse %}
+  {% else %}
+    {% assign siblings = site.programs_en | sort: "date" | reverse %}
+  {% endif %}
+
+  {% assign current_index = 0 %}
+  {% for proj in siblings %}
+    {% if proj.url == page.url %}
+      {% assign current_index = forloop.index0 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+  {% assign total_projects = siblings.size %}
+
+  {% if prev_index >= 0 %}
+    {% assign previous_project = siblings[prev_index] %}
+  {% endif %}
+  {% if next_index < total_projects %}
+    {% assign next_project = siblings[next_index] %}
+  {% endif %}
+
+  {% if previous_project %}
+    <a class="project-nav-link prev" href="{{ previous_project.url }}">
+      {% if page.lang == "zh" %}
+        上一个项目：{{ previous_project.title_zh }}
+      {% else %}
+        Previous Project: {{ previous_project.title_en }}
+      {% endif %}
+    </a>
+  {% else %}
+    <span class="project-nav-link prev disabled">
+      {% if page.lang == "zh" %}
+        无上一个项目
+      {% else %}
+        No Previous Project
+      {% endif %}
+    </span>
+  {% endif %}
+
+  {% if next_project %}
+    <a class="project-nav-link next" href="{{ next_project.url }}">
+      {% if page.lang == "zh" %}
+        下一个项目：{{ next_project.title_zh }}
+      {% else %}
+        Next Project: {{ next_project.title_en }}
+      {% endif %}
+    </a>
+  {% else %}
+    <span class="project-nav-link next disabled">
+      {% if page.lang == "zh" %}
+        无下一个项目
+      {% else %}
+        No Next Project
+      {% endif %}
+    </span>
+  {% endif %}
+</nav>
