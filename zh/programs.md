@@ -10,22 +10,17 @@ programs_title: "我们的项目"
   <h1>{{ page.programs_title }}</h1>
 </section>
 
-<section class="page-content container content-container programs-content">
-
-  <p>欢迎查看我们最新的项目列表：</p>
-
-  <ul>
-  {% for item in site.programs_zh %}
-    <li>
-      <!-- 标题，链接到项目详情页 -->
-      <a href="{{ item.url }}">{{ item.title_zh }}</a>
-      <!-- 可按需补充显示地点或时间等信息 -->
-      <br>
-      <small>地点：{{ item.location }} | 时间：{{ item.date | date: '%Y-%m-%d' }}</small>
-    </li>
-    <hr>
+<div class="programs-content container content-container">
+  <!-- 遍历 _programs/zh 集合中的所有项目 -->
+  {% for project in site.programs_zh %}
+    <div class="program-item">
+      <h2>{{ project.title_zh }}</h2>
+      <p>地点：{{ project.location }}</p>
+      <p>时间：{{ project.time | date: "%Y-%m-%d" }}</p>
+      <div>
+        {{ project.body_zh | markdownify }}
+      </div>
+      <hr class="program-divider" />
+    </div>
   {% endfor %}
-  </ul>
-
-</section>
-
+</div>

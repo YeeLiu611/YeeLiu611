@@ -25,9 +25,9 @@ alternate_url: "/zh/index"
         </div>
       </div>
     </div>
-    <!-- If you want pagination -->
+    <!-- Pagination dots -->
     <div class="swiper-pagination"></div>
-    <!-- If you want next/prev arrows -->
+    <!-- Navigation arrows -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
@@ -40,7 +40,7 @@ alternate_url: "/zh/index"
   </div>
 </section>
 
-<!-- Latest Updates -->
+<!-- Latest Updates Section -->
 <section class="useful-info">
   <div class="container content-container">
     <h2>Latest Updates</h2>

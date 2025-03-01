@@ -27,7 +27,7 @@ alternate_url: "/en/index"
     </div>
     <!-- 分页器（小圆点） -->
     <div class="swiper-pagination"></div>
-    <!-- 左右箭头，如果要的话 -->
+    <!-- 左右箭头（可选） -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
@@ -36,7 +36,7 @@ alternate_url: "/en/index"
 <section class="intro">
   <div class="container">
     <h2>我们的使命</h2>
-    <p>我们致力于通过以人为中心方法，帮助个人和组织发掘潜力、促进成长，构建以关怀、尊重、理解为核心的亚洲人本教育社区。</p>
+    <p>我们致力于通过以人为中心的方法，帮助个人和组织发掘潜力、促进成长，构建以关怀、尊重、理解为核心的亚洲人本教育社区。</p>
   </div>
 </section>
 
@@ -45,7 +45,7 @@ alternate_url: "/en/index"
   <div class="container content-container">
     <h2>最新动态</h2>
     <div class="events-and-blogs">
-      <!-- 近期活动 -->
+      <!-- 近期活动（项目） -->
       <div class="upcoming-events">
         <h3>近期活动</h3>
         {% if site.programs_zh and site.programs_zh.size > 0 %}

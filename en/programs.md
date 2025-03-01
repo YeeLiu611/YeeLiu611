@@ -10,19 +10,17 @@ programs_title: "Our Programs"
   <h1>{{ page.programs_title }}</h1>
 </section>
 
-<section class="page-content container content-container programs-content">
-
-  <p>Welcome to our latest project list:</p>
-
-  <ul>
-  {% for item in site.programs_en %}
-    <li>
-      <a href="{{ item.url }}">{{ item.title_en }}</a>
-      <br>
-      <small>Location: {{ item.location }} | Date: {{ item.date | date: '%Y-%m-%d' }}</small>
-    </li>
-    <hr>
+<div class="programs-content container content-container">
+  <!-- 遍历 _programs/en 集合中的所有项目 -->
+  {% for project in site.programs_en %}
+    <div class="program-item">
+      <h2>{{ project.title_en }}</h2>
+      <p>Location: {{ project.location }}</p>
+      <p>Time: {{ project.time | date: "%Y-%m-%d" }}</p>
+      <div>
+        {{ project.body_en | markdownify }}
+      </div>
+      <hr class="program-divider" />
+    </div>
   {% endfor %}
-  </ul>
-
-</section>
+</div>
