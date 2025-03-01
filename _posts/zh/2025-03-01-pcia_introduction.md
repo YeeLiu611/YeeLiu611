@@ -5,9 +5,6 @@ date: 2025-03-01T03:35:18.730Z
 title: PCIA_Introduction
 title_zh: 亚洲人本研究院：我们想让这个世界好一点点
 body_zh: >-
-  # 亚洲人本研究院：我们想让这个世界好一点点
-
-
   李梅花、张亚琳 [](javascript:void(0);)
 
 
