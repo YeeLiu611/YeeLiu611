@@ -443,11 +443,13 @@ footer {
 
 .blog-listing .blog-item .post-link {
   color: var(--color-primary);  /* 蓝绿色 */
-  font-size: 1.5rem;            /* 稍大字体 */
+  font-size: 1rem;            /* 稍大字体 */
   line-height: 2;               /* 2 倍行距 */
   margin-bottom: 1.5rem;        /* 较大的段后距 */
   display: block;
-  text-decoration: none;
+  text-decoration: underline;           /* 显示下划线 */
+  text-decoration-color: var(--color-primary); /* 下划线颜色 */
+  text-decoration-thickness: 2px;         /* 下划线粗细 */
 }
 
 /* ===== Homepage Header Adjustments ===== */
