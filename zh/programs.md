@@ -14,9 +14,13 @@ programs_title: "我们的项目"
   <!-- 遍历 _programs/zh 集合中的所有项目 -->
   {% for project in site.programs_zh %}
     <div class="program-item">
-      <h2>{{ project.title_zh }}</h2>
-      <p>地点：{{ project.location }}</p>
-      <p>时间：{{ project.time | date: "%Y-%m-%d" }}</p>
+      <h2>
+        <a href="{{ project.url }}">
+          {{ project.title_zh }}
+        </a>
+      </h2>
+      <p>Location: {{ project.location }}</p>
+      <p>Time: {{ project.time | date: "%Y-%m-%d" }}</p>
       <div>
         {{ project.body_zh | markdownify }}
       </div>

@@ -14,7 +14,11 @@ programs_title: "Our Programs"
   <!-- 遍历 _programs/en 集合中的所有项目 -->
   {% for project in site.programs_en %}
     <div class="program-item">
-      <h2>{{ project.title_en }}</h2>
+      <h2>
+        <a href="{{ project.url }}">
+          {{ project.title_en }}
+        </a>
+      </h2>
       <p>Location: {{ project.location }}</p>
       <p>Time: {{ project.time | date: "%Y-%m-%d" }}</p>
       <div>

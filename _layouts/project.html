@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 <section class="project-details container content-container">
@@ -13,7 +13,7 @@ layout: default
     </p>
     <p>地点：{{ page.location }}</p>
     <div class="project-body">
-      {{ body_zh | default: content }}
+      {{ content | markdownify }}
     </div>
   </div>
 </section>
