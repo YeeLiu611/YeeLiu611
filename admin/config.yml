@@ -52,8 +52,12 @@ collections:
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_zh", label: "文章标题（中文）", widget: "string" }
-      - { name: "body", label: "正文内容", widget: "markdown" }
 
+      # 自动生成英文链接，例如 /en/blog/xxxx/
+      - name: "alternate_url"
+        label: "Auto-generated alternate URL"
+        widget: "hidden"
+        default: "/en/blog/{{title}}/"
 
   # ================================
   # 4) 博客文章（英文）
@@ -69,15 +73,19 @@ collections:
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_en", label: "文章标题（英文）", widget: "string" }
-      - { name: "body", label: "Post Content", widget: "markdown" }
 
+      # 自动生成中文链接，例如 /zh/blog/xxxx/
+      - name: "alternate_url"
+        label: "Auto-generated alternate URL"
+        widget: "hidden"
+        default: "/zh/blog/{{title}}/"
 
   # ================================
   # 5) 项目列表（中文）
   # ================================
   - name: "programs_zh"
     label: "项目（中文）"
-    folder: "_programs_zh"    # 假设你已经调整了文件夹名称
+    folder: "_programs_zh"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -88,12 +96,16 @@ collections:
       - { name: "title_zh", label: "项目标题（中文）", widget: "string" }
       - { name: "location", label: "项目地点", widget: "string" }
       - { name: "time", label: "项目时间", widget: "datetime" }
-      # 移除 body_zh 字段，此处正文内容将放在文档正文部分
+
+      # 自动生成英文链接，例如 /en/programs/xxxx/
+      - name: "alternate_url"
+        label: "Auto-generated alternate URL"
+        widget: "hidden"
+        default: "/en/programs/{{title}}/"
 
   # ================================
   # 6) 项目列表（英文）
   # ================================
-
   - name: "programs_en"
     label: "Projects (English)"
     folder: "_programs_en"
@@ -107,5 +119,9 @@ collections:
       - { name: "title_en", label: "Project Title (English)", widget: "string" }
       - { name: "location", label: "Project Location", widget: "string" }
       - { name: "time", label: "Project Time", widget: "datetime" }
-      # 移除 body_en 字段，此处正文内容将放在文件正文部分
 
+      # 自动生成中文链接，例如 /zh/programs/xxxx/
+      - name: "alternate_url"
+        label: "Auto-generated alternate URL"
+        widget: "hidden"
+        default: "/zh/programs/{{title}}/"
