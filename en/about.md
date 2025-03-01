@@ -4,7 +4,7 @@ lang: en
 title: The Person-Centered Institute of Asia
 alternate_url: /zh/about
 ---
-The Person-Centered Institute of Asia (PCIA) is a Person-Centered organisation serving the whole of Asia. We are dedicated to promoting Person-Centered approaches and values, not only in the field of counselling, but also in education, social development, community building and conflict mediation. Our core belief is **‘treating people in a human way and treating life in a life-affirming way’.** We believe that everyone deserves to be respected and accepted, and that this will promote a more inclusive and humane social and cultural environment.
+The Person-Centered Institute of Asia (PCIA) is a Person-Centered organisation serving the whole of Asia. We are dedicated to promoting Person-Centered approaches and values, not only in the field of counselling, but also in education, social development, community building and conflict mediation. Our core belief is **"*To treat  Person as Person, and life as life*".** We believe that everyone deserves to be respected and accepted, and that this will promote a more inclusive and humane social and cultural environment.
 
 ## **Our vision**
 
@@ -30,7 +30,6 @@ Register for conferences and forums, contribute to our journals, or join our vol
 
 #### **How to get involved?**
 
-
 Apply for incubator support, donate to the foundation, or join the volunteer team of an incubator project.
 
 ### **3. Promote the growth of Person-Centered consultants**
@@ -41,7 +40,6 @@ Apply for incubator support, donate to the foundation, or join the volunteer tea
 
 #### **How to participate?**
 
-
 Sign up for training, become a registered consultant, or join a learning community to grow with your peers.
 
 ### **4. Promote cross-disciplinary applications such as education and conflict mediation**
@@ -51,7 +49,6 @@ Sign up for training, become a registered consultant, or join a learning communi
 * **Mediator Training**: Use a Person-Centered approach to train community conflict mediation talents and promote peaceful coexistence.
 
 #### **How can you get involved?**
-
 
 Sign up for a programme, propose an innovative idea, or join the volunteer team to work together for social change.
 
