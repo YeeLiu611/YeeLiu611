@@ -45,7 +45,7 @@ alternate_url: "/en/index"
   <div class="container content-container">
     <h2>最新动态</h2>
     <div class="events-and-blogs">
-    <!-- 近期活动 -->
+      <!-- 近期活动 -->
       <div class="upcoming-events">
         <h3>近期活动</h3>
         {% if site.programs_zh and site.programs_zh.size > 0 %}

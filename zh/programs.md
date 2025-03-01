@@ -10,25 +10,22 @@ programs_title: "我们的项目"
   <h1>{{ page.programs_title }}</h1>
 </section>
 
-<section class="useful-info container content-container">
-  <h2>所有项目</h2>
-  <div class="events-and-blogs" style="margin-top: 2rem;">
-    <!-- 这里展示“项目列表” -->
-    <div class="recent-posts" style="flex: 1;">
-      <ul class="blog-list">
-        <!-- 遍历 _programs/zh 文件夹中的项目 -->
-        {% for program in site.programs_zh %}
-          <!-- 如果只想展示中文 lang 的，可加判断: program.lang == "zh" -->
-          <li class="blog-item">
-            <a class="post-link" href="{{ program.url }}">
-              <!-- 展示项目标题(中文) -->
-              {{ program.title_zh }}
-            </a>
-            <!-- 日期可选，不需要就去掉 -->
-            <span class="blog-date"> - {{ program.date | date: "%Y-%m-%d" }}</span>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+<section class="page-content container content-container programs-content">
+
+  <p>欢迎查看我们最新的项目列表：</p>
+
+  <ul>
+  {% for item in site.programs_zh %}
+    <li>
+      <!-- 标题，链接到项目详情页 -->
+      <a href="{{ item.url }}">{{ item.title_zh }}</a>
+      <!-- 可按需补充显示地点或时间等信息 -->
+      <br>
+      <small>地点：{{ item.location }} | 时间：{{ item.date | date: '%Y-%m-%d' }}</small>
+    </li>
+    <hr>
+  {% endfor %}
+  </ul>
+
 </section>
+

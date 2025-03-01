@@ -9,11 +9,14 @@ future: true
 
 timezone: Asia/Shanghai
 
-# 声明新的 collection：programs_zh
+# 声明新的 collection：programs_zh & programs_en
 collections:
   programs_zh:
     output: true
-    permalink: /zh/programs/:title/  # URL格式可根据需要调整
+    permalink: /zh/programs/:title/
+  programs_en:
+    output: true
+    permalink: /en/programs/:title/
 
 # -- 1) 对 /zh 和 /en 文件夹下的页面做默认设置 --
 defaults:
