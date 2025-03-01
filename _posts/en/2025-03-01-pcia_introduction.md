@@ -5,7 +5,7 @@ date: 2025-03-01T03:41:21.486Z
 title: PCIA_Introduction
 title_en: "The Person-Centered Institute of Asia: We want to make the world a
   little better"
-body_en: >-
+---
   Yi Liu, Annzo
 
 
@@ -109,7 +109,3 @@ body_en: >-
 
 
   **How you can get involved:** Join our projects, become a volunteer, contribute new project ideas, or give us feedback and suggestions.
-
-
-  ​
----

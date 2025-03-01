@@ -4,7 +4,7 @@ lang: en
 date: 2025-03-01T15:28:46.422Z
 title: Core_Value
 title_en: The Core Values of the Person-Centered Approach
-body_en: >-
+---
   Jerold D. Bozarth\
 
   University of Georgia, Athens, Georgia
@@ -185,4 +185,3 @@ body_en: >-
 
 
   Rogers, Carl R. (1986) “A Comment from Carl Rogers” *Person-Centered Review,* Vol. 1, No.1.
----

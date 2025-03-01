@@ -6,7 +6,7 @@ title: Year_Presentations
 title_en: 12 presentations a year on Person-Centered Apporach
 location: Online
 time: 2025-03-01T20:01:09.723Z
-body_en: >-2
+---
     ## Person-Centered Approach is confusing
 
 
@@ -164,4 +164,3 @@ body_en: >-2
 
 
     Is the Person-Centered approach suitable for everyone? Is it only suitable for people with mild psychological problems, or is it also suitable for people with severe psychological problems such as schizophrenia? We will introduce the ‘early treatment’ method specifically created for severe psychological problems in the Person-Centered approach, and discuss some serious cases and the unique contributions of Person-Centered scholar Margaret Warner in terms of psychotic visitors.
----
