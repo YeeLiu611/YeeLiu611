@@ -65,13 +65,14 @@ alternate_url: "/zh/index"
       <div class="recent-posts">
         <h3>Recent Blog Posts</h3>
         <ul class="blog-list">
-          {% for post in site.posts limit:3 %}
-            {% if post.lang == "en" %}
-              <li class="blog-item">
-                <a class="post-link" href="{{ post.url }}">{{ post.title_en }}</a>
-                <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-              </li>
-            {% endif %}
+          {% assign en_posts = site.posts | where: "lang", "en" | sort: "date" | reverse %}
+          {% for post in en_posts limit:4 %}
+            <li class="blog-item">
+              <a class="post-link" href="{{ post.url }}">
+                {{ post.title_en }}
+              </a>
+              <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+            </li>
           {% endfor %}
         </ul>
       </div>
