@@ -157,8 +157,6 @@ header {
 
 /* ========== 主视觉 (Hero) ========== */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
-              url('../images/image.jpg') center/cover no-repeat;
   height: 90vh;
   display: flex;
   align-items: center;
