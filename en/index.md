@@ -61,7 +61,6 @@ alternate_url: "/zh/index"
           <a href="/en/programs/">Learn More</a>
         </div>
       </div>
-
       <!-- Recent Blog Posts -->
       <div class="recent-posts">
         <h3>Recent Blog Posts</h3>
