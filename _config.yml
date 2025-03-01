@@ -5,6 +5,10 @@ markdown: kramdown
 
 permalink: /:categories/:title/
 
+future: true
+
+timezone: Asia/Shanghai
+
 # 声明新的 collection：programs_zh
 collections:
   programs_zh:
@@ -60,6 +64,3 @@ defaults:
     values:
       lang: en
       categories: en
-
-future: true
-timezone: Asia/Shanghai
