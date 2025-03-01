@@ -164,7 +164,7 @@ header {
   transform: scale(1.02);
 }
 
-/* ========== Hero 轮播区域 ========== */
+/* ========== Hero 区域 ========== */
 .hero {
   position: relative;
   width: 100%;
@@ -172,15 +172,17 @@ header {
   overflow: hidden;
 }
 
+/* Swiper 容器 */
 .swiper-container {
   width: 100%;
   height: 100%;
 }
 
+/* 每个轮播 slide */
 .swiper-slide {
   display: flex;
-  align-items: center; /* 垂直居中 */
-  justify-content: center; /* 水平居中 */
+  align-items: center;       /* 垂直居中 */
+  justify-content: center;   /* 水平居中 */
   flex-direction: column;
   text-align: center;
   background-size: cover;
@@ -188,6 +190,7 @@ header {
   position: relative;
 }
 
+/* 轮播 slide 的半透明遮罩 */
 .swiper-slide::before {
   content: "";
   position: absolute;
@@ -200,28 +203,62 @@ header {
 }
 
 /* slide-content 用于包裹文字和按钮 */
-.slide-content > * {
+.slide-content {
   position: relative;
   z-index: 2;
-  color: var(--color-light);
   max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
-  /* 重点：确保水平居中 */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+/* 标题 */
 .slide-content h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
 }
 
+/* 段落 */
 .slide-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+/* 按钮样式 */
+.slide-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slide-content button:hover {
+  background-color: #e05500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  .slide-content {
+    padding: 15px;
+  }
+  .slide-content h1 {
+    font-size: 2.5rem;
+  }
+  .slide-content p {
+    font-size: 1rem;
+  }
 }
 
 /* ========== 页面头部区域 (如 About, Programs 等) ========== */
