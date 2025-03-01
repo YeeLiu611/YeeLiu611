@@ -447,8 +447,7 @@ footer {
 }
 
 .post-title {
-  font-size: 2.5rem; /* 调整为合适的字号 */
-  margin-bottom: 1rem;
+  font-size: 2rem; /* 调整为合适的字号 */
   border: none;     /* 去除不需要的边框 */
   padding: 0;
   font-weight: bold;
