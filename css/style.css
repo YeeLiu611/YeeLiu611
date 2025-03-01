@@ -433,9 +433,11 @@ footer {
 /* ===== Post 页面样式 ===== */
 .post-container {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 1rem auto;      /* 减小上下外边距 */
+  padding: 1rem;          /* 减少内边距 */
   background-color: #fff;
+  border: none;           /* 移除边框 */
+  box-shadow: none;       /* 移除阴影 */
 }
 
 .post-header {
