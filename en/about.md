@@ -1,14 +1,11 @@
 ---
-layout: default
-lang: zh
-title: "关于我们 | 亚洲人本研究院"
-alternate_url: "/en/about"
+layout: page
+lang: en
+title: "About Us | The Person-Centered Institute of Asia"
+alternate_url: "/zh/about"
+
+body: >-
+  This is the English About page.
+  You can edit freely in Netlify CMS -> “英文页面 -> about”.
+  Insert headings, images, lists, etc.
 ---
-
-<section class="page-header">
-  <h1>{{ page.title }}</h1>
-</section>
-
-<section class="container content-container">
-  {{ content }}
-</section>

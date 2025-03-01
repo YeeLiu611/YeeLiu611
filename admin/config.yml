@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: yeeliu611/YeeLiu611       # 请替换成你的 GitHub 仓库地址
+  repo: yeeliu611/YeeLiu611       # 这里务必改成你的 GitHub 仓库地址
   branch: main
   proxy: false
   auth:
@@ -21,12 +21,7 @@ collections:
     fields:
       - { name: "lang", label: "语言", widget: "hidden", default: "zh" }
       - { name: "title", label: "页面标题", widget: "string" }
-      - { name: "alternate_url", label: "对应英文页面链接", widget: "hidden", default: "/en/", required: false }
-      - { name: "hero_title", label: "首页大标题", widget: "string", required: false }
-      - { name: "hero_subtitle", label: "副标题", widget: "string", required: false }
-      - { name: "hero_btn", label: "按钮文字", widget: "string", required: false }
-      - { name: "intro_title", label: "介绍标题", widget: "string", required: false }
-      - { name: "intro_text", label: "介绍文本", widget: "text", required: false }
+      - { name: "alternate_url", label: "对应英文页面链接", widget: "string", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
 
   # ================================
@@ -40,12 +35,7 @@ collections:
     fields:
       - { name: "lang", label: "语言", widget: "hidden", default: "en" }
       - { name: "title", label: "页面标题", widget: "string" }
-      - { name: "alternate_url", label: "对应中文页面链接", widget: "hidden", default: "/zh/", required: false }
-      - { name: "hero_title", label: "首页大标题", widget: "string", required: false }
-      - { name: "hero_subtitle", label: "副标题", widget: "string", required: false }
-      - { name: "hero_btn", label: "按钮文字", widget: "string", required: false }
-      - { name: "intro_title", label: "介绍标题", widget: "string", required: false }
-      - { name: "intro_text", label: "介绍文本", widget: "text", required: false }
+      - { name: "alternate_url", label: "对应中文页面链接", widget: "string", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
 
   # ================================
