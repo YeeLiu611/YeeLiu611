@@ -29,28 +29,57 @@ layout: default
 
 <!-- 上一篇 / 下一篇导航，只显示同语言的文章 -->
 <nav class="post-nav">
-  {% if page.previous and page.previous.lang == page.lang %}
-    <a class="post-nav-link prev" href="{{ page.previous.url }}">
-      上一篇:
-      {% if page.lang == "zh" %}
-        {{ page.previous.title_zh }}
+  <!-- 1) 收集同语言所有文章，按新到旧排序 -->
+  {% assign siblings = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
+
+  <!-- 2) 找到当前这篇文章在数组中的索引 -->
+  {% for p in siblings %}
+    {% if p.url == page.url %}
+      {% assign current_index = forloop.index0 %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- 3) 前一篇和后一篇对应的数组下标 -->
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+  {% assign previous_post = siblings[prev_index] %}
+  {% assign next_post = siblings[next_index] %}
+
+  <!-- 4) 如果有 previous_post 就显示链接，否则显示“无上一篇” -->
+  {% if previous_post %}
+    <a class="post-nav-link prev" href="{{ previous_post.url }}">
+      {% if page.lang == 'zh' %}
+        上一篇: {{ previous_post.title_zh }}
       {% else %}
-        {{ page.previous.title_en }}
+        Previous: {{ previous_post.title_en }}
       {% endif %}
     </a>
   {% else %}
-    <span class="post-nav-link prev disabled">No Previous 无上一篇</span>
+    <span class="post-nav-link prev disabled">
+      {% if page.lang == 'zh' %}
+        无上一篇
+      {% else %}
+        No Previous
+      {% endif %}
+    </span>
   {% endif %}
-  {% if page.next and page.next.lang == page.lang %}
-    <a class="post-nav-link next" href="{{ page.next.url }}">
-      下一篇:
-      {% if page.lang == "zh" %}
-        {{ page.next.title_zh }}
+
+  <!-- 5) 同理，下一篇链接 -->
+  {% if next_post %}
+    <a class="post-nav-link next" href="{{ next_post.url }}">
+      {% if page.lang == 'zh' %}
+        下一篇: {{ next_post.title_zh }}
       {% else %}
-        {{ page.next.title_en }}
+        Next: {{ next_post.title_en }}
       {% endif %}
     </a>
   {% else %}
-    <span class="post-nav-link next disabled">No Next 无下一篇</span>
+    <span class="post-nav-link next disabled">
+      {% if page.lang == 'zh' %}
+        无下一篇
+      {% else %}
+        No Next
+      {% endif %}
+    </span>
   {% endif %}
 </nav>
