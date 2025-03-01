@@ -36,6 +36,23 @@ p {
   padding: 0 15px;
 }
 
+/* 全局链接样式：蓝绿色带下划线 */
+a {
+  color: var(--color-primary);    /* 你的主题蓝绿色，例如 #0E5F60 */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* 覆盖导航、按钮及其链接的样式，保持原样 */
+.nav-links a,
+.btn,
+.btn-lang,
+a.nav-ignore {
+  color: inherit;
+  text-decoration: none;
+}
+
+
 /* ========== 导航栏 ========== */
 header {
   background-color: var(--color-light);
