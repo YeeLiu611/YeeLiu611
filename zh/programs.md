@@ -10,10 +10,6 @@ programs_title: "我们的项目"
   <h1>{{ page.programs_title }}</h1>
 </section>
 
-<section class="page-header">
-  <h1>我们的项目</h1>
-</section>
-
 <section class="useful-info container content-container">
   <h2>所有项目</h2>
   <div class="events-and-blogs" style="margin-top: 2rem;">
