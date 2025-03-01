@@ -16,7 +16,6 @@ alternate_url: "/zh/index"
           <a href="/en/about.html" class="btn">Learn More</a>
         </div>
       </div>
-
       <!-- Slide 2 -->
       <div class="swiper-slide" style="background-image: url('/images/slide2.jpg');">
         <div class="slide-content">
@@ -26,7 +25,6 @@ alternate_url: "/zh/index"
         </div>
       </div>
     </div>
-
     <!-- If you want pagination -->
     <div class="swiper-pagination"></div>
     <!-- If you want next/prev arrows -->
