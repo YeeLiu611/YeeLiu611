@@ -28,43 +28,29 @@ layout: default
 </article>
 
 <!-- 上一篇 / 下一篇导航，只显示同语言的文章 -->
-{% assign lang_posts = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
-{% assign index = lang_posts | index: page %}
-
-<div class="post-nav">
-  <!-- 上一篇 / Previous -->
-  {% if index > 0 %}
-    {% assign previous_post = lang_posts[index | minus: 1] %}
-    {% if page.lang == "zh" %}
-      <a href="{{ previous_post.url }}" class="post-nav-link">上一篇</a>
-    {% else %}
-      <a href="{{ previous_post.url }}" class="post-nav-link">Previous post</a>
-    {% endif %}
-  {% else %}
-    <span class="post-nav-link disabled">
+<nav class="post-nav">
+  {% if page.previous and page.previous.lang == page.lang %}
+    <a class="post-nav-link prev" href="{{ page.previous.url }}">
+      上一篇:
       {% if page.lang == "zh" %}
-        上一篇
+        {{ page.previous.title_zh }}
       {% else %}
-        Previous post
+        {{ page.previous.title_en }}
       {% endif %}
-    </span>
-  {% endif %}
-
-  <!-- 下一篇 / Next -->
-  {% if index < lang_posts.size | minus: 1 %}
-    {% assign next_post = lang_posts[index | plus: 1] %}
-    {% if page.lang == "zh" %}
-      <a href="{{ next_post.url }}" class="post-nav-link">下一篇</a>
-    {% else %}
-      <a href="{{ next_post.url }}" class="post-nav-link">Next post</a>
-    {% endif %}
+    </a>
   {% else %}
-    <span class="post-nav-link disabled">
-      {% if page.lang == "zh" %}
-        下一篇
-      {% else %}
-        Next post
-      {% endif %}
-    </span>
+    <span class="post-nav-link prev disabled">No Previous 无上一篇</span>
   {% endif %}
-</div>
+  {% if page.next and page.next.lang == page.lang %}
+    <a class="post-nav-link next" href="{{ page.next.url }}">
+      下一篇:
+      {% if page.lang == "zh" %}
+        {{ page.next.title_zh }}
+      {% else %}
+        {{ page.next.title_en }}
+      {% endif %}
+    </a>
+  {% else %}
+    <span class="post-nav-link next disabled">No Next 无下一篇</span>
+  {% endif %}
+</nav>
