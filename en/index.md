@@ -3,29 +3,46 @@ layout: default
 lang: en
 title: "The Person Centered Institute of Asia | Home"
 alternate_url: "/zh/index"
-hero_title: "In Light We Grow"
-hero_subtitle: "Training | Education | Conferences | Journals | Encounter-Groups"
-hero_btn: "Learn More"
-intro_title: "Our Mission"
-intro_text: "We are dedicated to helping individuals and organizations unlock their potential and grow, building a community rooted in care, respect, and understanding."
 ---
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>{{ page.hero_title }}</h1>
-    <p>{{ page.hero_subtitle }}</p>
-    <a href="/en/about.html" class="btn">{{ page.hero_btn }}</a>
+<div class="hero">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide" style="background-image: url('/images/slide1.jpg');">
+        <div class="slide-content">
+          <h1>Welcome to PCIA</h1>
+          <p>Training | Education | Conferences | Journals | Encounter-Groups</p>
+          <a href="/en/about.html" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide" style="background-image: url('/images/slide2.jpg');">
+        <div class="slide-content">
+          <h1>In Light We Grow</h1>
+          <p>Caring · Trust · Understanding</p>
+          <a href="/en/programs/" class="btn">View Our Programs</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- If you want pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If you want next/prev arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-</section>
+</div>
 
 <section class="intro">
   <div class="container">
-    <h2>{{ page.intro_title }}</h2>
-    <p>{{ page.intro_text }}</p>
+    <h2>Our Mission</h2>
+    <p>We are dedicated to helping individuals and organizations unlock their potential and grow, building a community rooted in care, respect, and understanding.</p>
   </div>
 </section>
 
-<!-- New: Latest Updates Section -->
+<!-- Latest Updates -->
 <section class="useful-info">
   <div class="container content-container">
     <h2>Latest Updates</h2>
@@ -46,6 +63,7 @@ intro_text: "We are dedicated to helping individuals and organizations unlock th
           <a href="/en/programs/">Learn More</a>
         </div>
       </div>
+
       <!-- Recent Blog Posts -->
       <div class="recent-posts">
         <h3>Recent Blog Posts</h3>

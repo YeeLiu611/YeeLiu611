@@ -4,22 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
+
+  <!-- Swiper CSS（必须在自己主CSS之前或之后都行，这里先放上） -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- 你自己项目的主CSS -->
   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
   <meta property="og:title" content="亚洲人本研究院|The Person-centered Institute of Asia" />
   <meta property="og:description" content="促进以人为中心方法在亚洲的发展|Advancing person-centered approaches in Asia" />
   <meta property="og:image" content="{{ '/images/logo.png' | relative_url }}" />
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:type" content="website" />
+
+  <!-- 你已有的脚本 -->
   <script src="{{ '/js/lang.js' | relative_url }}" defer></script>
   <script src="{{ '/js/menu.js' | relative_url }}" defer></script>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   {% include header.html %}
+
   <main>
     {{ content }}
   </main>
+
   {% include footer.html %}
+
+  <!-- Swiper JS（从 unpkg 引入） -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- 轮播初始化脚本 -->
+  <script src="{{ '/js/hero-carousel.js' | relative_url }}"></script>
 </body>
 </html>

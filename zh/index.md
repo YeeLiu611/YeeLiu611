@@ -1,31 +1,48 @@
 ---
 layout: default
 lang: zh
-title: "亚洲人本研究院 | PCIA - The Person Centered Institute of Asia"
+title: "亚洲人本研究院 | PCIA - 首页"
 alternate_url: "/en/index"
-hero_title: "生长自有光"
-hero_subtitle: "以人为中心 培训 教育 会议 期刊 会心团体"
-hero_btn: "了解更多"
-intro_title: "我们的使命"
-intro_text: "我们致力于通过以人为中心方法，帮助个人和组织发掘潜力、促进成长，构建以关怀、尊重、理解为核心的亚洲人本教育社区。"
 ---
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>{{ page.hero_title }}</h1>
-    <p>{{ page.hero_subtitle }}</p>
-    <a href="/zh/about.html" class="btn">{{ page.hero_btn }}</a>
+<div class="hero">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide" style="background-image: url('/images/slide1.jpg');">
+        <div class="slide-content">
+          <h1>欢迎来到亚洲人本研究院</h1>
+          <p>以人为中心 培训 教育 会议 期刊 会心团体</p>
+          <a href="/zh/about.html" class="btn">了解更多</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide" style="background-image: url('/images/slide2.jpg');">
+        <div class="slide-content">
+          <h1>生长自有光</h1>
+          <p>关怀 · 信任 · 理解</p>
+          <a href="/zh/programs/" class="btn">查看我们的项目</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 分页器（小圆点） -->
+    <div class="swiper-pagination"></div>
+    <!-- 左右箭头，如果要的话 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-</section>
+</div>
 
 <section class="intro">
   <div class="container">
-    <h2>{{ page.intro_title }}</h2>
-    <p>{{ page.intro_text }}</p>
+    <h2>我们的使命</h2>
+    <p>我们致力于通过以人为中心方法，帮助个人和组织发掘潜力、促进成长，构建以关怀、尊重、理解为核心的亚洲人本教育社区。</p>
   </div>
 </section>
 
-<!-- 新建：最新动态区块 -->
+<!-- 最新动态区块 -->
 <section class="useful-info">
   <div class="container content-container">
     <h2>最新动态</h2>
@@ -46,6 +63,7 @@ intro_text: "我们致力于通过以人为中心方法，帮助个人和组织�
           <a href="/zh/programs/">查看详情</a>
         </div>
       </div>
+
       <!-- 最新博客文章 -->
       <div class="recent-posts">
         <h3>最新博客</h3>
