@@ -430,6 +430,41 @@ footer {
   transform: scale(1.02);
 }
 
+/* ===== Blog Listing Page Styles ===== */
+.blog-listing .blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-listing .blog-item {
+  margin-bottom: 1.5rem;
+}
+
+.blog-listing .blog-item .post-link {
+  color: var(--color-primary);  /* 蓝绿色 */
+  font-size: 1.5rem;            /* 稍大字体 */
+  line-height: 2;               /* 2 倍行距 */
+  margin-bottom: 1.5rem;        /* 较大的段后距 */
+  display: block;
+  text-decoration: none;
+}
+
+/* ===== Homepage Header Adjustments ===== */
+.navbar {
+  padding-left: 1rem;   /* 左侧内边距 */
+  padding-right: 1rem;  /* 右侧内边距 */
+}
+
+/* ===== Post Navigation Buttons ===== */
+.post-nav {
+  max-width: 800px;     /* 与文章显示宽度一致 */
+  margin: 1.5rem auto;  /* 居中显示 */
+  display: flex;
+  justify-content: space-between;
+}
+
+
 /* ===== Post 页面样式 ===== */
 .post-container {
   max-width: 800px;
