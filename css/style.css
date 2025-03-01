@@ -306,17 +306,23 @@ header {
   margin: 0;
 }
 .blog-listing .blog-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .blog-listing .blog-item .post-link {
   color: var(--color-primary);
   font-size: 1rem;
-  line-height: 2;
-  margin-bottom: 1.5rem;
-  display: block;
   text-decoration: underline;
   text-decoration-color: var(--color-primary);
   text-decoration-thickness: 2px;
+  margin: 0;
+}
+.blog-listing .blog-item .blog-date {
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
 }
 
 /* ========== 博客文章页面布局 ========== */
