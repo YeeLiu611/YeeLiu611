@@ -1,7 +1,7 @@
 ---
 layout: page
 lang: en
-title: About Us | The Person-Centered Institute of Asia
+title: The Person-Centered Institute of Asia
 alternate_url: /zh/about
 ---
 ## **About us**
