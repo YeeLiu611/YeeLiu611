@@ -69,3 +69,36 @@ collections:
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_en", label: "文章标题（英文）", widget: "string" }
       - { name: "body_en", label: "正文（英文）", widget: "markdown" }
+
+  # ================================
+  # 4) 项目列表（中文）
+  # ================================
+
+  - name: "programs_zh"
+    label: "项目（中文）"
+    folder: "_programs/zh"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout",  widget: "hidden",   default: "post" }
+      - { name: "lang",    widget: "hidden",   default: "zh" }
+      - { name: "date",    label: "发布日期",   widget: "datetime" }
+      - { name: "title",   label: "URL 标识",   widget: "string" }
+      - { name: "title_zh",label: "项目标题（中文）", widget: "string" }
+      - { name: "body_zh", label: "正文（中文）", widget: "markdown" }
+
+  # ================================
+  # 5) 项目列表（英文）
+  # ================================
+  - name: "programs_en"
+    label: "项目（英文）"
+    folder: "_programs/en"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout",  widget: "hidden",   default: "post" }
+      - { name: "lang",    widget: "hidden",   default: "en" }
+      - { name: "date",    label: "发布日期",   widget: "datetime" }
+      - { name: "title",   label: "URL 标识",   widget: "string" }
+      - { name: "title_en",label: "项目标题（英文）", widget: "string" }
+      - { name: "body_en", label: "正文（英文）", widget: "markdown" }

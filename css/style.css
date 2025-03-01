@@ -355,15 +355,20 @@ header {
 .post-body p {
   margin-bottom: 1rem;
 }
-.post-body h1,
-.post-body h2,
-.post-body h3,
-.post-body h4,
-.post-body h5,
-.post-body h6 {
+.post-body h1 {
   text-align: center;
   color: var(--color-primary);
   line-height: 2;
+}
+.post-body h2 {
+  color: var(--color-primary);
+  text-align: left;
+  line-height: 2;
+}
+.post-body h3 {
+  text-align: left;
+  line-height: 2;
+  text-decoration: italic;
 }
 .post-body strong,
 .post-body b {

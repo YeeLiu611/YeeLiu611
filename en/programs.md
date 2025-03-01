@@ -10,26 +10,25 @@ programs_title: "我们的项目"
   <h1>{{ page.programs_title }}</h1>
 </section>
 
-<section class="programs-content">
-  <div class="container content-container">
-    <div class="program-item">
-      <h2>人本教育工作坊</h2>
-      <p>这里是关于人本教育工作坊的占位文本，描述工作坊的主要内容和学习目标。</p>
-      <hr class="program-divider">
-    </div>
-    <div class="program-item">
-      <h2>心理咨询师培训</h2>
-      <p>这里是关于心理咨询师培训的占位文本，介绍培训课程、师资和报名方式。</p>
-      <hr class="program-divider">
-    </div>
-    <div class="program-item">
-      <h2>组织与团队发展课程</h2>
-      <p>这里是关于组织与团队发展课程的占位文本，讲述如何提升团队协作与组织效能。</p>
-      <hr class="program-divider">
-    </div>
-    <div class="program-item">
-      <h2>国际研讨会</h2>
-      <p>这里是关于国际研讨会的占位文本，概述活动主题和参会嘉宾信息。</p>
+<section class="useful-info container content-container">
+  <h2>All Programs</h2>
+  <div class="events-and-blogs" style="margin-top: 2rem;">
+    <!-- 这里展示“项目列表” -->
+    <div class="recent-posts" style="flex: 1;">
+      <ul class="blog-list">
+        <!-- 遍历 _programs/zh 文件夹中的项目 -->
+        {% for program in site.programs_zh %}
+          <!-- 如果只想展示中文 lang 的，可加判断: program.lang == "zh" -->
+          <li class="blog-item">
+            <a class="post-link" href="{{ program.url }}">
+              <!-- 展示项目标题(中文) -->
+              {{ program.title_zh }}
+            </a>
+            <!-- 日期可选，不需要就去掉 -->
+            <span class="blog-date"> - {{ program.date | date: "%Y-%m-%d" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>
