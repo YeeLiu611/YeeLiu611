@@ -304,6 +304,7 @@ header {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  line-height: 2;
 }
 .events-and-blogs h3 {
   margin-bottom: 1rem;
