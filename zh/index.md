@@ -48,20 +48,24 @@ alternate_url: "/en/index"
     <!-- 近期活动 -->
       <div class="upcoming-events">
         <h3>近期活动</h3>
-        {% assign latest_projects = site.programs_zh | sort: "date" | reverse | slice: 0, 2 %}
-        {% for project in latest_projects %}
-        <div class="event-item">
-          <h4>{{ project.title_zh }}</h4>
-          <p>
-            时间：{{ project.date | date: "%Y 年 %m 月 %d 日" }}
-            {% if project.time %}
-              - {{ project.time | date: "%Y 年 %m 月 %d 日" }}
-            {% endif %}
-          </p>
-          <p>地点：{{ project.location }}</p>
-          <a href="{{ project.url }}">查看详情</a>
-        </div>
-        {% endfor %}
+        {% if site.programs_zh and site.programs_zh.size > 0 %}
+          {% assign latest_projects = site.programs_zh | sort: "date" | reverse | slice: 0, 2 %}
+          {% for project in latest_projects %}
+            <div class="event-item">
+              <h4>{{ project.title_zh }}</h4>
+              <p>
+                时间：{{ project.date | date: "%Y 年 %m 月 %d 日" }}
+                {% if project.time %}
+                  - {{ project.time | date: "%Y 年 %m 月 %d 日" }}
+                {% endif %}
+              </p>
+              <p>地点：{{ project.location }}</p>
+              <a href="{{ project.url }}">查看详情</a>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p>暂无近期活动。</p>
+        {% endif %}
       </div>
       <!-- 最新博客文章 -->
       <div class="recent-posts">

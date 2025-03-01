@@ -48,20 +48,24 @@ alternate_url: "/zh/index"
       <!-- Upcoming Projects -->
       <div class="upcoming-events">
         <h3>Upcoming Projects</h3>
-        {% assign latest_projects = site.programs_en | sort: "date" | reverse | slice: 0, 2 %}
-        {% for project in latest_projects %}
-        <div class="event-item">
-          <h4>{{ project.title_en }}</h4>
-          <p>
-            Date: {{ project.date | date: "%B %d, %Y" }}
-            {% if project.time %}
-              - {{ project.time | date: "%B %d, %Y" }}
-            {% endif %}
-          </p>
-          <p>Location: {{ project.location }}</p>
-          <a href="{{ project.url }}">Learn More</a>
-        </div>
-        {% endfor %}
+        {% if site.programs_en and site.programs_en.size > 0 %}
+          {% assign latest_projects = site.programs_en | sort: "date" | reverse | slice: 0, 2 %}
+          {% for project in latest_projects %}
+            <div class="event-item">
+              <h4>{{ project.title_en }}</h4>
+              <p>
+                Date: {{ project.date | date: "%B %d, %Y" }}
+                {% if project.time %}
+                  - {{ project.time | date: "%B %d, %Y" }}
+                {% endif %}
+              </p>
+              <p>Location: {{ project.location }}</p>
+              <a href="{{ project.url }}">Learn More</a>
+            </div>
+          {% endfor %}
+        {% else %}
+          <p>No upcoming projects available.</p>
+        {% endif %}
       </div>
       <!-- Recent Blog Posts -->
       <div class="recent-posts">
