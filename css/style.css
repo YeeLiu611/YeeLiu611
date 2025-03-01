@@ -437,47 +437,68 @@ footer {
   padding: 1rem;
   background-color: #fff;
   border: none;
-  box-shadow: none !important;  /* 使用 !important 强制移除阴影 */
+  box-shadow: none !important;
 }
 
-
-.post-header {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-}
-
+/* 文章主标题 */
 .post-title {
-  font-size: 2rem; /* 调整为合适的字号 */
-  border: none;     /* 去除不需要的边框 */
+  text-align: center;               /* 标题居中 */
+  color: var(--color-primary);      /* 标题颜色 */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  border: none;
   padding: 0;
   font-weight: bold;
 }
 
+/* 文章元信息（日期等） */
 .post-meta {
   color: #999;
   font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.post-divider {
-  margin: 1rem 0;
-  border: none;
-  border-top: 1px solid #ddd;
-}
-
+/* 正文容器 */
 .post-body {
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
+/* 正文段落下方间距 */
 .post-body p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-/* 导航按钮样式 */
+/* 正文内的各级标题居中 + 蓝绿色 */
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+/* 正文中加粗文字蓝绿色 */
+.post-body strong,
+.post-body b {
+  color: var(--color-primary);
+}
+
+/* 插入的图片自适应宽度，居中显示 */
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto; /* 若想图片靠左，可去掉 margin */
+}
+
+/* 上一篇 / 下一篇导航 */
 .post-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .post-nav-link {
