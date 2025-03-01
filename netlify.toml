@@ -12,3 +12,8 @@
   status = 200
   force = true
 
+[[redirects]]
+  from = "/about"
+  to = "/zh/about/"
+  status = 301
+  force = true
