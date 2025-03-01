@@ -1,7 +1,7 @@
 ---
 layout: page
 lang: zh
-title: 关于我们 | 亚洲人本研究院
+title: 亚洲人本研究院
 alternate_url: /en/about
 ---
 ## **关于我们**
