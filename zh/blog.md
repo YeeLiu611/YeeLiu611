@@ -11,20 +11,21 @@ alternate_url: "/en/blog"
 
 <section class="container content-container">
   <div class="blog-listing">
+    <h2>🚀 调试信息：检查 site.blog_zh.docs</h2>
+    <p>博客文章数据: {{ site.blog_zh.docs | inspect }}</p>
+
     <ul class="blog-list">
-      {% if page.lang == "zh" %}
-        {% assign blog_posts = site.blog_zh.docs | default: [] | sort: 'date' | reverse %}
+      {% if site.blog_zh.docs and site.blog_zh.docs.size > 0 %}
+        {% assign blog_posts = site.blog_zh.docs | sort: 'date' | reverse %}
       {% else %}
-        {% assign blog_posts = site.blog_en.docs | default: [] | sort: 'date' | reverse %}
+        <p>⚠️ 没有找到博客文章！请确认 `_blog_zh/` 目录下有正确格式的 Markdown 文件，并检查 `_config.yml` 配置。</p>
+        {% assign blog_posts = "" %}
       {% endif %}
+
       {% for post in blog_posts %}
         <li class="blog-item">
           <a class="post-link" href="{{ post.url }}">
-            {% if page.lang == "zh" %}
-              {{ post.title_zh }}
-            {% else %}
-              {{ post.title_en }}
-            {% endif %}
+            {{ post.title }}
           </a>
           <span class="blog-date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
         </li>
@@ -32,3 +33,4 @@ alternate_url: "/en/blog"
     </ul>
   </div>
 </section>
+
