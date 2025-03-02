@@ -2,7 +2,7 @@
 layout: post
 lang: en
 date: 2025-03-02T04:01:54.801Z
-title: Core_Value
+title: CoreValue
 title_en: The Core Values of the Person-Centered Approach
 ---
 Jerold D. Bozarth\
