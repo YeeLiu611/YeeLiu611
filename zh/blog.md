@@ -13,11 +13,10 @@ alternate_url: "/en/blog"
   <div class="blog-listing">
     <ul class="blog-list">
       {% if page.lang == "zh" %}
-        {% assign blog_posts = site.collections.blog_zh.docs | default: [] | sort: 'date' | reverse %}
+        {% assign blog_posts = site.blog_zh.docs | default: [] | sort: 'date' | reverse %}
       {% else %}
-        {% assign blog_posts = site.collections.blog_en.docs | default: [] | sort: 'date' | reverse %}
+        {% assign blog_posts = site.blog_en.docs | default: [] | sort: 'date' | reverse %}
       {% endif %}
-      
       {% for post in blog_posts %}
         <li class="blog-item">
           <a class="post-link" href="{{ post.url }}">

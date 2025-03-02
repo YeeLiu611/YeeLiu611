@@ -43,7 +43,7 @@ collections:
   # ================================
   - name: "blog_zh"
     label: "博客文章（中文）"
-    folder: "_posts_zh"   # 改成跟你的硬盘文件夹对应
+    folder: "_blog_zh"   # 改成跟你的硬盘文件夹对应
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -59,7 +59,7 @@ collections:
   # ================================
   - name: "blog_en"
     label: "博客文章（英文）"
-    folder: "_posts_en"
+    folder: "_blog_en"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
