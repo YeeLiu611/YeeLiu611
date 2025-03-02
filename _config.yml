@@ -11,6 +11,16 @@ timezone: Asia/Shanghai
 
 # 声明新的 collection：programs_zh & programs_en
 collections:
+  blog_zh:
+    output: true
+    # 这里很重要：对上我们刚才重命名后的文件夹
+    folder: _posts_zh
+    permalink: /blog_zh/:title/
+  blog_en:
+    output: true
+    folder: _posts_en
+    permalink: /blog_en/:title/
+    
   programs_zh:
     output: true
     permalink: /zh/programs/:title/
