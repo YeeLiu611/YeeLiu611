@@ -26,7 +26,11 @@ layout: default
   <!-- 上一篇 / 下一篇导航，只显示同语言的文章 -->
   <nav class="post-nav">
     <!-- 1) 收集同语言所有文章，按新到旧排序 -->
-    {% assign siblings = site.posts | where: "lang", page.lang | sort: "date" | reverse %}
+    {% if page.lang == 'zh' %}
+      {% assign siblings = site.blog_zh | sort: 'date' | reverse %}
+    {% else %}
+      {% assign siblings = site.blog_en | sort: 'date' | reverse %}
+    {% endif %}
 
     <!-- 2) 找到当前这篇文章在 siblings 数组中的索引，并立即 break 避免重复匹配 -->
     {% assign current_index = 0 %}
