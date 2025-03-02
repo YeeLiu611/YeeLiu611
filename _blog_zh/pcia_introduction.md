@@ -1,7 +1,7 @@
 ---
 layout: post
 lang: zh
-date: 2025-03-02T00:57:42.719Z
+date: 2025-03-02
 title: PCIA_Introduction
 title_zh: 亚洲人本研究院：我们想让这个世界好一点点
 ---
