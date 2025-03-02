@@ -4,6 +4,7 @@ lang: zh
 date: 2025-03-01T15:31:50.757Z
 title: Core_Value
 title_zh: 以人为中心方法的核心价值观念
+alternate_url: "/en/blog/{{ title }}/"
 ---
 杰罗德·D·博扎斯\
 

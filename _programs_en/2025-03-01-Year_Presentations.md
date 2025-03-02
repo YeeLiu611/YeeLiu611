@@ -6,6 +6,7 @@ title: Year_Presentations
 title_en: 12 presentations a year on Person-Centered Apporach
 location: Online
 time: 2025-03-01T20:01:09.723Z
+alternate_url: "/zh/programs/{{ title }}/"
 ---
 ## Person-Centered Approach is confusing
 

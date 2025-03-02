@@ -3,7 +3,7 @@ baseurl: ""
 url: "https://pcia.asia"
 markdown: kramdown
 
-permalink: /:categories/:title/
+permalink: /:lang/:title/
 
 future: true
 
@@ -26,7 +26,6 @@ defaults:
       type: "pages"
     values:
       lang: zh
-      categories: zh
 
   # （B）静态页面：/en 目录
   - scope:
@@ -34,7 +33,6 @@ defaults:
       type: "pages"
     values:
       lang: en
-      categories: en
 
   # （C）博客文章：_posts/zh
   - scope:
@@ -42,7 +40,6 @@ defaults:
       type: "posts"
     values:
       lang: zh
-      categories: zh
 
   # （D）博客文章：_posts/en
   - scope:
@@ -50,7 +47,6 @@ defaults:
       type: "posts"
     values:
       lang: en
-      categories: en
 
   # （E）项目（中文）：_programs/zh
   - scope:
@@ -58,7 +54,6 @@ defaults:
       type: "programs_zh"
     values:
       lang: zh
-      categories: zh
 
   # （F）项目（英文）：_programs/en
   - scope:
@@ -66,4 +61,3 @@ defaults:
       type: "programs_en"
     values:
       lang: en
-      categories: en

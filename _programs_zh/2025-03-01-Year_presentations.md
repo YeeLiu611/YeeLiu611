@@ -6,6 +6,7 @@ title: Year_Presentations
 title_zh: 以人为中心年度12场讲座 （2025）
 location: 腾讯会议在线参与
 time: 2025-03-01T19:59:52.104Z
+alternate_url: "/en/programs/{{ title }}/"
 ---
 
 ## 以人为中心方法让人困惑

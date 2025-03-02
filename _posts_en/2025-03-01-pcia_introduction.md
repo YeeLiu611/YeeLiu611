@@ -3,8 +3,8 @@ layout: post
 lang: en
 date: 2025-03-01T03:41:21.486Z
 title: PCIA_Introduction
-title_en: "The Person-Centered Institute of Asia: We want to make the world a
-  little better"
+title_en: "The Person-Centered Institute of Asia: We want to make the world a little better"
+alternate_url: "/zh/blog/{{ title }}/"
 ---
 Yi Liu, Annzo
 
