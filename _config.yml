@@ -7,9 +7,10 @@ permalink: /:lang/:title/
 
 future: true
 
+slugify: "default"
+
 timezone: Asia/Shanghai
 
-collections_dir: .
 
 # ✅ 声明新的 collection，正确指向 _blog_en/ 和 _blog_zh/
 collections:
