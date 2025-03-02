@@ -12,7 +12,7 @@ alternate_url: "/zh/blog"
 <section class="container content-container">
   <div class="blog-listing">
     <ul class="blog-list">
-      {% for post in site.posts %}
+      {% for post in site.collections.blog_zh.docs %}
         {% if post.lang == page.lang %}
           <li class="blog-item">
             <a class="post-link" href="{{ post.url }}">
