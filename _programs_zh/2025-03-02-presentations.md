@@ -6,7 +6,6 @@ title: Presentations
 title_zh: 年度12场讲座 （2025）
 location: 在线
 time: 2025-03-02T00:55:42.302Z
-alternate_url: /en/programs/{{title}}/
 ---
 
 ## 以人为中心方法让人困惑

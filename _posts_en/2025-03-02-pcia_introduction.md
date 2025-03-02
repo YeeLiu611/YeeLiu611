@@ -5,7 +5,6 @@ date: 2025-03-02T00:59:24.921Z
 title: PCIA_Introduction
 title_en: "The Person-Centered Institute of Asia: We want to make the world a
   little better"
-alternate_url: /zh/blog/{{title}}/
 ---
 ## Introduction
 
