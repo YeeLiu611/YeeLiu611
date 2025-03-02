@@ -9,7 +9,7 @@ future: true
 
 timezone: Asia/Shanghai
 
-# 声明新的 collection：programs_zh & programs_en
+# ✅ 声明新的 collection，正确指向 _blog_en/ 和 _blog_zh/
 collections:
   blog_zh:
     output: true
@@ -17,7 +17,7 @@ collections:
   blog_en:
     output: true
     permalink: /blog_en/:title/
-    
+
   programs_zh:
     output: true
     permalink: /zh/programs/:title/
@@ -25,7 +25,7 @@ collections:
     output: true
     permalink: /en/programs/:title/
 
-# -- 1) 对 /zh 和 /en 文件夹下的页面做默认设置 --
+# ✅ 修正 defaults，确保 _blog_en/ 和 _blog_zh/ 里的文章能被识别
 defaults:
   # （A）静态页面：/zh 目录
   - scope:
@@ -41,17 +41,17 @@ defaults:
     values:
       lang: en
 
-  # （C）博客文章：_posts/zh
+  # ✅ 修正博客文章：_blog_zh 目录
   - scope:
-      path: "_posts/zh"
-      type: "posts"
+      path: "_blog_zh"
+      type: "blog_zh"
     values:
       lang: zh
 
-  # （D）博客文章：_posts/en
+  # ✅ 修正博客文章：_blog_en 目录
   - scope:
-      path: "_posts/en"
-      type: "posts"
+      path: "_blog_en"
+      type: "blog_en"
     values:
       lang: en
 
