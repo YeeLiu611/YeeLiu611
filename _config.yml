@@ -57,14 +57,14 @@ defaults:
 
   # （E）项目（中文）：_programs/zh
   - scope:
-      path: "_programs/zh"
+      path: "_programs_zh"
       type: "programs_zh"
     values:
       lang: zh
 
   # （F）项目（英文）：_programs/en
   - scope:
-      path: "_programs/en"
+      path: "_programs_en"
       type: "programs_en"
     values:
       lang: en
