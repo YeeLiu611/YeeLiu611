@@ -24,8 +24,9 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  {% include header.html %}
-
+  {% unless page.disable_nav %}
+    {% include header.html %}
+    {% endunless %}
   <main>
     {{ content }}
   </main>
