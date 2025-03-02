@@ -52,6 +52,7 @@ collections:
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_zh", label: "文章标题（中文）", widget: "string" }
+      - { name: "body", label: "正文内容", widget: "markdown" }
       - name: "alternate_url"
         label: "自动生成英文链接"
         widget: "hidden"
@@ -71,6 +72,7 @@ collections:
       - { name: "date", label: "发布日期", widget: "datetime" }
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_en", label: "文章标题（英文）", widget: "string" }
+      - { name: "body", label: "正文内容", widget: "markdown" }
       - name: "alternate_url"
         label: "自动生成中文链接"
         widget: "hidden"
@@ -92,6 +94,7 @@ collections:
       - { name: "title_zh", label: "项目标题（中文）", widget: "string" }
       - { name: "location", label: "项目地点", widget: "string" }
       - { name: "time", label: "项目时间", widget: "datetime" }
+      - { name: "body", label: "正文内容", widget: "markdown" }
       - name: "alternate_url"
         label: "自动生成英文链接"
         widget: "hidden"
@@ -113,6 +116,7 @@ collections:
       - { name: "title_en", label: "Project Title (English)", widget: "string" }
       - { name: "location", label: "Project Location", widget: "string" }
       - { name: "time", label: "Project Time", widget: "datetime" }
+      - { name: "body", label: "正文内容", widget: "markdown" }
       - name: "alternate_url"
         label: "Auto-generated Chinese URL"
         widget: "hidden"
