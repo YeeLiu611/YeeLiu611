@@ -13,9 +13,9 @@ alternate_url: "/en/blog"
   <div class="blog-listing">
     <ul class="blog-list">
       {% if page.lang == "zh" %}
-        {% assign blog_posts = site.collections.blog_zh.docs | sort: 'date' | reverse %}
+        {% assign blog_posts = site.collections.blog_zh.docs | default: [] | sort: 'date' | reverse %}
       {% else %}
-        {% assign blog_posts = site.collections.blog_en.docs | sort: 'date' | reverse %}
+        {% assign blog_posts = site.collections.blog_en.docs | default: [] | sort: 'date' | reverse %}
       {% endif %}
       
       {% for post in blog_posts %}
