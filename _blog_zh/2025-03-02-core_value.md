@@ -2,7 +2,7 @@
 layout: post
 lang: zh
 date: 2025-03-02T04:00:58.528Z
-title: Core_Value
+title: Core-Value
 title_zh: 以人为中心方法的核心价值
 ---
 杰罗德·D·博扎斯\
