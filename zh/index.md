@@ -71,7 +71,7 @@ alternate_url: "/en/index"
       <div class="recent-posts">
         <h3>最新博客</h3>
         <ul class="blog-list">
-          {% assign zh_posts = site.posts | where: "lang", "zh" | sort: "date" | reverse %}
+          {% assign zh_posts = site.blog_zh | where: "lang", "zh" | sort: "date" | reverse %}
           {% for post in zh_posts limit:4 %}
             <li class="blog-item">
               <a class="post-link" href="{{ post.url }}">
