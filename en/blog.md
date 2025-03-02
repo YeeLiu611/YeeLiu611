@@ -17,11 +17,15 @@ alternate_url: "/zh/blog"
       {% else %}
         <p>⚠️ No blog posts found! Check if _blog_en/ contains markdown files with correct front matter.</p>
       {% endif %}
-      
+
       {% for post in blog_posts %}
         <li class="blog-item">
           <a class="post-link" href="{{ post.url }}">
-            {{ post.title }}
+            {% if page.lang == "zh" %}
+              {{ post.title_zh }}
+            {% else %}
+              {{ post.title_en }}
+            {% endif %}
           </a>
           <span class="blog-date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
         </li>
