@@ -15,10 +15,10 @@ collections_dir: .
 collections:
   blog_zh:
     output: true
-    permalink: /blog_zh/:title/
+    permalink: zh/blog/:title/
   blog_en:
     output: true
-    permalink: /blog_en/:title/
+    permalink: en/blog/:title/
 
   programs_zh:
     output: true
@@ -37,7 +37,7 @@ defaults:
       lang: zh
 
   # （B）静态页面：/en 目录
-  - scope:
+  - scope: 
       path: "en"
       type: "pages"
     values:
