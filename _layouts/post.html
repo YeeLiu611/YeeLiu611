@@ -22,7 +22,9 @@ layout: default
   </div>
 </article>
 
-{% unless page.disable_nav %}
+{% if page.disable_nav == true or page.disable_nav == "true" %}
+  <!-- 不显示导航 -->
+{% else %}
   <!-- 上一篇 / 下一篇导航，只显示同语言的文章 -->
   <nav class="post-nav">
     <!-- 1) 收集同语言所有文章，按新到旧排序 -->
@@ -91,4 +93,4 @@ layout: default
       </span>
     {% endif %}
   </nav>
-{% endunless %}
+{% endif %}
