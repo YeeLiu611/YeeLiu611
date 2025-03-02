@@ -16,7 +16,7 @@ alternate_url: "/zh/blog"
 
     <ul class="blog-list">
       {% if site.blog_en and site.blog_en.size > 0 %}
-        {% assign blog_posts = site.blog_en.docs | sort: 'date' | reverse %}
+        {% assign blog_posts = site.blog_en | sort: 'date' | reverse %}
       {% else %}
         <p>⚠️ No blog posts found! Check if _blog_en/ contains markdown files with correct front matter.</p>
       {% endif %}
