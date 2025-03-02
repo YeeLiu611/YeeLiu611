@@ -11,12 +11,9 @@ alternate_url: "/en/blog"
 
 <section class="container content-container">
   <div class="blog-listing">
-    <h2>🚀 调试信息：检查 site.blog_zh.docs</h2>
-    <p>博客文章数据: {{ site.blog_zh.docs | inspect }}</p>
-
     <ul class="blog-list">
-      {% if site.blog_zh.docs and site.blog_zh.docs.size > 0 %}
-        {% assign blog_posts = site.blog_zh.docs | sort: 'date' | reverse %}
+      {% if site.blog_zh and site.blog_zh.size > 0 %}
+        {% assign blog_posts = site.blog_zh | sort: 'date' | reverse %}
       {% else %}
         <p>⚠️ 没有找到博客文章！请确认 `_blog_zh/` 目录下有正确格式的 Markdown 文件，并检查 `_config.yml` 配置。</p>
         {% assign blog_posts = "" %}
