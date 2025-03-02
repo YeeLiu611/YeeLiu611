@@ -1,9 +1,11 @@
 ---
 layout: default
-disable_nav: "{{ page.disable_nav }}"
 ---
 
 <p>DEBUG: disable_nav = {{ page.disable_nav }}</p>
+
+{% assign disable_nav_flag = page.disable_nav %}
+<p>DEBUG in post.html: disable_nav = "{{ disable_nav_flag }}"</p>
 
 <article class="post-container">
   <div class="post-header">
