@@ -3,11 +3,11 @@ baseurl: ""
 url: "https://pcia.asia"
 markdown: kramdown
 
+slugify: "raw"
+
 permalink: /:lang/:title/
 
 future: true
-
-slugify: "default"
 
 timezone: Asia/Shanghai
 
