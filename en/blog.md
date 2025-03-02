@@ -12,10 +12,10 @@ alternate_url: "/zh/blog"
 <section class="container content-container">
   <div class="blog-listing">
     <h2>🚀 Debug: Checking blog_en.docs</h2>
-    <p>Site Blog EN Docs: {{ site.blog_en.docs | inspect }}</p>
+    <p>Site Blog EN Docs: {{ site.blog_en | inspect }}</p>
 
     <ul class="blog-list">
-      {% if site.blog_en.docs and site.blog_en.docs.size > 0 %}
+      {% if site.blog_en and site.blog_en.size > 0 %}
         {% assign blog_posts = site.blog_en.docs | sort: 'date' | reverse %}
       {% else %}
         <p>⚠️ No blog posts found! Check if _blog_en/ contains markdown files with correct front matter.</p>
