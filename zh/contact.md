@@ -6,8 +6,8 @@ alternate_url: "/en/contact"
 contact_title: "联系我们"
 contact_intro: "若您对我们的项目感兴趣，或希望与我们建立合作关系，请随时与我们联系！"
 contact_phone: "+1 778-636-2517"
-contact_email: "yee611@outlook.com"
-contact_address: "中国广东省深圳市龙华新区观澜街道隆添利工业区 H 栋 4 楼灯火辉煌科技有限公司"
+contact_email: "info@pcia.asia"
+contact_address: "Hong Kong"
 ---
 
 <section class="page-header">

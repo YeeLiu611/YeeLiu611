@@ -4,10 +4,10 @@ lang: en
 title: "联系我们 | 亚洲人本研究院"
 alternate_url: "/zh/contact"
 contact_title: "Contact Us"
-contact_intro: "Test！"
+contact_intro: "Contact Us"
 contact_phone: "+1 778-636-2517"
-contact_email: "yee611@outlook.com"
-contact_address: "Test"
+contact_email: "info@pcia.asia"
+contact_address: "Hong Kong"
 ---
 
 <section class="page-header">
