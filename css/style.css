@@ -514,10 +514,10 @@ footer {
     margin: 1rem;
   }
   .btn-lang {
-    margin-right: 0.5rem;
+    margin-right: 0rem;
     padding: 0.7rem 0.9rem;  /* 缩小上下和左右的内边距 */
     font-size: 0.85rem;  /* 让字体变小一点 */
-    border-radius: 3px;  /* 圆角略微缩小 */
+    border-radius: 4px;  /* 圆角略微缩小 */
   }
   .hero h1 {
     font-size: 2rem;
