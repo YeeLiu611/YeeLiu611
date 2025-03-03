@@ -12,75 +12,76 @@
         </span>
       </a>
     </div>
-    <ul class="nav-links" id="nav-links">
-      <!-- 首页链接 -->
-      <li>
-        <a href="{{ '/' | append: page.lang | append: '/' | relative_url }}">
-          {% if page.lang == "zh" %} 首页 {% else %} Home {% endif %}
-        </a>
-      </li>
-      <!-- 关于我们 -->
-      <li>
-        <a href="{{ '/' | append: page.lang | append: '/about/' | relative_url }}">
-          {% if page.lang == "zh" %} 关于我们 {% else %} About Us {% endif %}
-        </a>
-      </li>
-      <!-- 项目 -->
-      <li>
-        <a href="{{ '/' | append: page.lang | append: '/programs/' | relative_url }}">
-          {% if page.lang == "zh" %} 项目 {% else %} Programs {% endif %}
-        </a>
-      </li>
-      <!-- 联系我们 -->
-      <li>
-        <a href="{{ '/' | append: page.lang | append: '/contact/' | relative_url }}">
-          {% if page.lang == "zh" %} 联系我们 {% else %} Contact {% endif %}
-        </a>
-      </li>
-      <!-- 文章 -->
-      <li>
-        <a href="{{ '/' | append: page.lang | append: '/blog/' | relative_url }}">
-          {% if page.lang == "zh" %} 文章 {% else %} Articles {% endif %}
-        </a>
-      </li>
-      <!-- 加入我们 / Volunteer -->
-      <li>
-        <a href="{{ '/' | append: page.lang | append: '/volunteer/' | relative_url }}">
-          {% if page.lang == "zh" %} 加入我们 {% else %} Join Us {% endif %}
-        </a>
-      </li>
-    </ul>
     <div class="nav-right">
-      {% if page.alternate_url %}
-        <a href="{{ page.alternate_url }}" id="lang-toggle-btn" class="btn-lang">
-          {% if page.lang == "zh" %} EN {% else %} 中文 {% endif %}
-        </a>
-      {% elsif page.title %}
-        {% comment %}
-          当没有 alternate_url，但有 title 时，根据页面类型自动构造链接
-        {% endcomment %}
-        {% if page.layout == "post" %}
-          {% if page.lang == "zh" %}
-            <a href="/en/blog/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">EN</a>
+      <ul class="nav-links" id="nav-links">
+        <!-- 首页链接 -->
+        <li>
+          <a href="{{ '/' | append: page.lang | append: '/' | relative_url }}">
+            {% if page.lang == "zh" %} 首页 {% else %} Home {% endif %}
+          </a>
+        </li>
+        <!-- 关于我们 -->
+        <li>
+          <a href="{{ '/' | append: page.lang | append: '/about/' | relative_url }}">
+            {% if page.lang == "zh" %} 关于我们 {% else %} About Us {% endif %}
+          </a>
+        </li>
+        <!-- 项目 -->
+        <li>
+          <a href="{{ '/' | append: page.lang | append: '/programs/' | relative_url }}">
+            {% if page.lang == "zh" %} 项目 {% else %} Programs {% endif %}
+          </a>
+        </li>
+        <!-- 联系我们 -->
+        <li>
+          <a href="{{ '/' | append: page.lang | append: '/contact/' | relative_url }}">
+            {% if page.lang == "zh" %} 联系我们 {% else %} Contact {% endif %}
+          </a>
+        </li>
+        <!-- 文章 -->
+        <li>
+          <a href="{{ '/' | append: page.lang | append: '/blog/' | relative_url }}">
+            {% if page.lang == "zh" %} 文章 {% else %} Articles {% endif %}
+          </a>
+        </li>
+        <!-- 加入我们 / Volunteer -->
+        <li>
+          <a href="{{ '/' | append: page.lang | append: '/volunteer/' | relative_url }}">
+            {% if page.lang == "zh" %} 加入我们 {% else %} Join Us {% endif %}
+          </a>
+        </li>
+      </ul>
+
+        {% if page.alternate_url %}
+          <a href="{{ page.alternate_url }}" id="lang-toggle-btn" class="btn-lang">
+            {% if page.lang == "zh" %} EN {% else %} 中文 {% endif %}
+          </a>
+        {% elsif page.title %}
+          {% comment %}
+            当没有 alternate_url，但有 title 时，根据页面类型自动构造链接
+          {% endcomment %}
+          {% if page.layout == "post" %}
+            {% if page.lang == "zh" %}
+              <a href="/en/blog/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">EN</a>
+            {% else %}
+              <a href="/zh/blog/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">中文</a>
+            {% endif %}
+          {% elsif page.layout == "project" %}
+            {% if page.lang == "zh" %}
+              <a href="/en/programs/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">EN</a>
+            {% else %}
+              <a href="/zh/programs/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">中文</a>
+            {% endif %}
           {% else %}
-            <a href="/zh/blog/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">中文</a>
-          {% endif %}
-        {% elsif page.layout == "project" %}
-          {% if page.lang == "zh" %}
-            <a href="/en/programs/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">EN</a>
-          {% else %}
-            <a href="/zh/programs/{{ page.title | slugify: "raw" }}/" id="lang-toggle-btn" class="btn-lang">中文</a>
+            {# 如果页面既不是 post 也不是 project，就使用一个默认的链接（或不显示切换按钮） #}
+            <a href="#" id="lang-toggle-btn" class="btn-lang">切换语言</a>
           {% endif %}
         {% else %}
-          {# 如果页面既不是 post 也不是 project，就使用一个默认的链接（或不显示切换按钮） #}
-          <a href="#" id="lang-toggle-btn" class="btn-lang">切换语言</a>
+          {# 如果既没有 alternate_url 也没有 title，就隐藏语言切换按钮 #}
+          <!-- 没有可用的语言切换链接 -->
         {% endif %}
-      {% else %}
-        {# 如果既没有 alternate_url 也没有 title，就隐藏语言切换按钮 #}
-        <!-- 没有可用的语言切换链接 -->
-      {% endif %}
-      <!-- 移动端菜单按钮 -->
-      <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <!-- 移动端菜单按钮 -->
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
     </div>
   </nav>
 </header>
