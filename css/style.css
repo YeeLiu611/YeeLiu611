@@ -458,17 +458,20 @@ footer {
 }
 
 /* ========== 小屏幕扩展 ========== */
+.hamburger {
+  display: none;
+}
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    background: none;
+    background: var(--color-primary);
     border: none;
     font-size: 2rem;
     cursor: pointer;
     z-index: 2000;
     position: relative;
     padding: 0.25rem;
-    color: var(--color-primary);
+    color: white;
   }
   .nav-links {
     display: none; /* 初始隐藏，点汉堡后再展开 */
