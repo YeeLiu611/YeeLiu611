@@ -43,6 +43,21 @@ a {
   transition: color 0.3s ease;
 }
 
+ul, ol {
+  padding-left: 20px; /* 调整左侧缩进 */
+  margin-left: 0;
+  max-width: 100%; /* 防止溢出 */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+li {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: block; /* 确保不会被 flex 影响 */
+}
+
 /* 覆盖导航、按钮及其链接的样式，保持原样 */
 .nav-links a,
 .btn,
@@ -464,14 +479,14 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    background: var(--color-primary);
+    background: none;
     border: none;
     font-size: 2rem;
     cursor: pointer;
     z-index: 2000;
     position: relative;
     padding: 0.25rem;
-    color: white;
+    color: var(--color-primary);
   }
   .nav-links {
     display: none; /* 初始隐藏，点汉堡后再展开 */
