@@ -20,7 +20,12 @@ programs_title: "我们的项目"
         </a>
       </h2>
       <p>Location: {{ project.location }}</p>
-      <p>Time: {{ project.time | date: "%Y-%m-%d" }}</p>
+      <p>      
+        {{ page.date | date: "%Y-%m-%d" }}
+        {% if page.time %}
+        --- {{ page.time | date: "%Y-%m-%d"}}
+        {% endif %}
+      </p>
       <div>
         {{ project.body_zh | markdownify }}
       </div>
