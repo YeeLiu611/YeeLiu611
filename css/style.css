@@ -135,46 +135,26 @@ header {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    background: none;
-    border: none;
-    /* 其他属性合并 */
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 2000;
-    position: relative;
-    padding: 0.25rem;
-    color: var(--color-primary);
   }
   .nav-links {
-    display: none; /* 初始隐藏，点汉堡后再展开 */
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0;
     width: 100%;
+    flex-direction: column;
+    gap: 1rem;
     background-color: var(--color-light);
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
     z-index: 800;
   }
   .nav-links.active {
-    display: block;
-  }
-  .nav-links li {
-    margin: 1rem;
-  }
-  .btn-lang {
-    margin-right: 1rem;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .intro {
-    padding: 2rem 1rem;
-  }
-  .useful-info {
-    padding: 2rem 1rem;
+    max-height: 300px;
   }
 }
-
 
 /* ========== 通用按钮样式 ========== */
 .btn {
