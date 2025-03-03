@@ -489,6 +489,7 @@ footer {
   .hamburger {
     display: flex;
     justify-content: center;
+    padding: 3px 0;
     background: none;
     border: none;
     font-size: 3rem;
