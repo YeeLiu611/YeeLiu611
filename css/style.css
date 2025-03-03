@@ -527,7 +527,8 @@ footer {
     border-radius: 8px;
     font-weight: bold;
     font-size: 1rem;
-    margin-right: 5px; /* 确保和汉堡菜单有合适间距 */
+    margin-right: 3px;
+    margin-left: 3px; /* 确保和汉堡菜单有合适间距 */
     padding: 0; /* 避免额外的空白 */
 }
   .hero h1 {
