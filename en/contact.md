@@ -18,9 +18,16 @@ contact_address: "Hong Kong"
   <div class="container content-container">
     <p>{{ page.contact_intro }}</p>
     <div class="contact-info">
-      <p><strong>电话：</strong>{{ page.contact_phone }}</p>
-      <p><strong>邮箱：</strong>{{ page.contact_email }}</p>
-      <p><strong>地址：</strong>{{ page.contact_address }}</p>
+      <p><strong>Phone: </strong>{{ page.contact_phone }}</p>
+      <p><strong>Email: </strong>{{ page.contact_email }}</p>
+      <p><strong>Address: </strong>{{ page.contact_address }}</p>
     </div>
   </div>
 </section>
+
+<form name="contact" method="POST" data-netlify="true">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
