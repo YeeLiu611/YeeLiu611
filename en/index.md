@@ -14,6 +14,15 @@ carousel:
     description: Please click the button below to view details
     button_text: Learn More
     button_link: https://pcia.asia/en/programs/presentations/
+  - title: The Core Values of the Person-Centered Approach
+    description: The central hypothesis of this approach can be briefly stated. It
+      is that the individual has within him or her self vast resources for
+      self-understanding, for altering her or his self-concept, attitudes, and
+      self-directed behavior–and that these resources can be tapped if only a
+      definable climate of facilitative psychological attitudes can be provided.
+    button_text: Read Article
+    button_link: https://pcia.asia/en/blog/core_values/
+    image: /images/uploads/cleanshot-2025-03-02-at-21.36.56.jpg
 ---
 
 <div class="hero">
