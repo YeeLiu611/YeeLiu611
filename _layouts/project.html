@@ -6,9 +6,9 @@ layout: post
   <div class="event-item">
     <h4>{{ page.title_zh | default: page.title_en }}</h4>
     <p>
-      {{ page.date | date: "%Y - %m - %d" }}
+      {{ page.date | date: "%Y-%m-%d" }}
       {% if page.time %}
-       - {{ page.time }}
+       - {{ page.time | date: "%Y-%m-%d"}}
       {% endif %}
     </p>
     <p> {{ page.location }} </p>
