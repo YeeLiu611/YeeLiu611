@@ -17,6 +17,8 @@ carousel:
     <div class="swiper-wrapper">
       {% for slide in page.carousel %}
         <div class="swiper-slide" style="background-image: url('{{ slide.image }}');">
+          <!-- 这里加一个遮罩层 -->
+          <div class="overlay"></div>
           <div class="slide-content">
             <h1>{{ slide.title }}</h1>
             <p>{{ slide.description }}</p>
