@@ -12,7 +12,7 @@ carousel:
   - image: /images/uploads/640.jpg
     title: 欢迎参加2025年度12场讲座项目
     description: 请点击下方按钮查看详情
-    button_text: 所有项目
+    button_text: 了解详情
     button_link: https://pcia.asia/zh/about/
 ---
 
