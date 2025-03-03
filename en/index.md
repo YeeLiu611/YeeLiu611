@@ -3,31 +3,36 @@ layout: default
 lang: en
 title: "The Person Centered Institute of Asia | Home"
 alternate_url: "/zh/index"
+carousel:
+  - image: "/images/uploads/slide1.jpg"
+    title: "欢迎来到我们的网站"
+    description: "这里是网站的介绍内容"
+  - image: "/images/uploads/slide2.jpg"
+    title: "探索更多内容"
+    description: "点击这里查看最新文章"
+  - image: "/images/uploads/slide3.jpg"
+    title: "联系我们"
+    description: "有任何问题？请随时联系我们！"
 ---
 
 <div class="hero">
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide" style="background-image: url('/images/slide1.jpg');">
-        <div class="slide-content">
-          <h1>In Light We Grow</h1>
-          <p>Training | Education | Conferences | Journals | Encounter-Groups</p>
-          <a href="/en/about.html" class="btn">Learn More</a>
+      {% for slide in page.carousel %}
+        <div class="swiper-slide" style="background-image: url('{{ slide.image }}');">
+          <div class="slide-content">
+            <h1>{{ slide.title }}</h1>
+            <p>{{ slide.description }}</p>
+            {% if slide.button_text and slide.button_link %}
+              <a href="{{ slide.button_link }}" class="btn">{{ slide.button_text }}</a>
+            {% endif %}
+          </div>
         </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="swiper-slide" style="background-image: url('/images/slide2.jpg');">
-        <div class="slide-content">
-          <h1>Welcome to PCIA</h1>
-          <p>Training | Education | Conferences | Journals | Encounter-Groups</p>
-          <a href="/en/programs/" class="btn">View Our Programs</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
-    <!-- Pagination dots -->
+    <!-- 分页器（小圆点） -->
     <div class="swiper-pagination"></div>
-    <!-- Navigation arrows -->
+    <!-- 左右箭头（可选） -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>

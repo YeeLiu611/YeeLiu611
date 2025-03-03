@@ -3,27 +3,32 @@ layout: default
 lang: zh
 title: "亚洲人本研究院 | PCIA - 首页"
 alternate_url: "/en/index"
+carousel:
+  - image: "/images/uploads/slide1.jpg"
+    title: "生长自有光"
+    description: "以人为中心 培训 教育 会议 期刊 会心团体"
+  - image: "/images/uploads/slide2.jpg"
+    title: "探索更多内容"
+    description: "点击这里查看最新文章"
+  - image: "/images/uploads/slide3.jpg"
+    title: "联系我们"
+    description: "有任何问题？请随时联系我们！"
 ---
 
 <div class="hero">
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide" style="background-image: url('/images/slide1.jpg');">
-        <div class="slide-content">
-          <h1>生长自有光</h1>
-          <p>以人为中心 培训 教育 会议 期刊 会心团体</p>
-          <a href="/zh/about.html" class="btn">了解更多</a>
+      {% for slide in page.carousel %}
+        <div class="swiper-slide" style="background-image: url('{{ slide.image }}');">
+          <div class="slide-content">
+            <h1>{{ slide.title }}</h1>
+            <p>{{ slide.description }}</p>
+            {% if slide.button_text and slide.button_link %}
+              <a href="{{ slide.button_link }}" class="btn">{{ slide.button_text }}</a>
+            {% endif %}
+          </div>
         </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="swiper-slide" style="background-image: url('/images/slide2.jpg');">
-        <div class="slide-content">
-          <h1>欢迎来到亚洲人本研究院</h1>
-          <p>以人为中心 培训 教育 会议 期刊 会心团体</p>
-          <a href="/zh/programs/" class="btn">查看我们的项目</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <!-- 分页器（小圆点） -->
     <div class="swiper-pagination"></div>
