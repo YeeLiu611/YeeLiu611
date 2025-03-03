@@ -1,11 +1,11 @@
 ---
 layout: project
 lang: en
-date: 2025-03-02T00:56:26.112Z
+date: 2025-01-26T00:56:26.112Z
 title: Presentations
 title_en: 12 presentations a year on Person-Centered Approach
 location: Online
-time: 2025-03-02T00:56:26.116Z
+time: 2025-12-28T00:56:26.116Z
 ---
 
 ## Person-Centered Approach is confusing

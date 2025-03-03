@@ -1,11 +1,11 @@
 ---
 layout: project
 lang: zh
-date: 2025-03-02T00:55:42.297Z
+date: 2025-01-26T00:55:42.297Z
 title: Presentations
 title_zh: 年度12场讲座 （2025）
 location: 在线
-time: 2025-03-02T00:55:42.302Z
+time: 2025-12-28T00:55:42.302Z
 ---
 
 ## 以人为中心方法让人困惑
