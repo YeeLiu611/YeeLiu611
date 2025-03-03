@@ -23,15 +23,15 @@ title_en: The Core Values of the Person-Centered Approach
     
 - The Supporting Assertions
     
-    - - Human nature is basically constructive. It is not destructive 
-    - - Human nature is basically social
-    - - Self-regard is a basic human need and self-regard, autonomy and individual sensitivity are to be protected in helping relationships
-    - - Persons are basically motivated to perceive realistically and to pursue the truth of situations
-    - - Perceptions are a major determinant of personal experience and behavior, and, thus, to understand a person one must attempt to understand them empathically
-    - - Individuals, not groups, are participants in a relationship 
-    - - Belief in the concept of the whole person
-    - - Persons are realizing their potentialities and protecting themselves as best they can at any given time and under the internal and external circumstances that exist at that time
-    - - Belief in abdication of the pursuit of control or authority over other persons and, instead, a commitment to share power and control 
+     - Human nature is basically constructive. It is not destructive 
+     - Human nature is basically social
+     - Self-regard is a basic human need and self-regard, autonomy and individual sensitivity are to be protected in helping relationships
+     - Persons are basically motivated to perceive realistically and to pursue the truth of situations
+     - Perceptions are a major determinant of personal experience and behavior, and, thus, to understand a person one must attempt to understand them empathically
+     - Individuals, not groups, are participants in a relationship 
+     - Belief in the concept of the whole person
+     - Persons are realizing their potentialities and protecting themselves as best they can at any given time and under the internal and external circumstances that exist at that time
+     - Belief in abdication of the pursuit of control or authority over other persons and, instead, a commitment to share power and control 
 - Conclusion
     
 - References
