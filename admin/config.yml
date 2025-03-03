@@ -30,6 +30,8 @@ collections:
           - { label: "图片", name: "image", widget: "image", choose_url: false }
           - { label: "标题", name: "title", widget: "string", required: false }
           - { label: "描述", name: "description", widget: "text", required: false }
+          - { label: "按钮文字", name: "button_text", widget: "string", required: false }
+          - { label: "按钮链接", name: "button_link", widget: "string", required: false }
 
   # ================================
   # 2) 英文页面
@@ -51,6 +53,8 @@ collections:
           - { label: "Image", name: "image", widget: "image", choose_url: false }
           - { label: "Title", name: "title", widget: "string", required: false }
           - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "按钮文字", name: "button_text", widget: "string", required: false }
+          - { label: "按钮链接", name: "button_link", widget: "string", required: false }
 
   # ================================
   # 3) 博客文章（中文）
