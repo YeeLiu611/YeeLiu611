@@ -11,7 +11,7 @@ programs_title: "我们的项目"
 </section>
 
 <div class="programs-content container content-container">
-  <!-- 遍历 _programs/zh 集合中的所有项目 -->
+  <!-- 遍历 _programs/en 集合中的所有项目 -->
   {% for project in site.programs_zh %}
     <div class="program-item">
       <h2>
@@ -19,15 +19,16 @@ programs_title: "我们的项目"
           {{ project.title_zh }}
         </a>
       </h2>
-      <p>Location: {{ project.location }}</p>
+      <p>地点： {{ project.location }}</p>
       <p>      
-        {{ page.date | date: "%Y-%m-%d" }}
-        {% if page.time %}
-        --- {{ page.time | date: "%Y-%m-%d"}}
+        时间：
+        {{ project.date | date: "%Y-%m-%d" }}
+        {% if project.time %}
+         至 {{ project.time | date: "%Y-%m-%d"}}
         {% endif %}
       </p>
       <div>
-        {{ project.body_zh | markdownify }}
+        {{ project.body_en | markdownify }}
       </div>
       <hr class="program-divider" />
     </div>

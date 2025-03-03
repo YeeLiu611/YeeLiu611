@@ -21,9 +21,9 @@ programs_title: "Our Programs"
       </h2>
       <p>Location: {{ project.location }}</p>
       <p>      
-        {{ page.date | date: "%Y-%m-%d" }}
-        {% if page.time %}
-        --- {{ page.time | date: "%Y-%m-%d"}}
+        {{ project.date | date: "%Y-%m-%d" }}
+        {% if project.time %}
+         to {{ project.time | date: "%Y-%m-%d"}}
         {% endif %}
       </p>
       <div>
