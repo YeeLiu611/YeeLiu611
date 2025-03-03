@@ -8,7 +8,7 @@ carousel:
     title: 生长自有光
     description: 以人为中心 培训 教育 会议 期刊 会心团体
     button_text: 了解更多
-    button_link: https://pcia.asia/en/about/
+    button_link: https://pcia.asia/zh/about/
   - image: /images/uploads/640.jpg
     title: 欢迎参加2025年度12场讲座项目
     description: 请点击下方按钮查看详情
