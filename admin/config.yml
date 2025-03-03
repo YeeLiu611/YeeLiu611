@@ -23,6 +23,13 @@ collections:
       - { name: "title", label: "页面标题", widget: "string" }
       - { name: "alternate_url", label: "对应英文页面链接", widget: "string", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
+      - label: "轮播图"
+        name: "carousel"
+        widget: "list"
+        fields:
+          - { label: "图片", name: "image", widget: "image", choose_url: false }
+          - { label: "标题", name: "title", widget: "string", required: false }
+          - { label: "描述", name: "description", widget: "text", required: false }
 
   # ================================
   # 2) 英文页面
@@ -37,6 +44,13 @@ collections:
       - { name: "title", label: "页面标题", widget: "string" }
       - { name: "alternate_url", label: "对应中文页面链接", widget: "string", required: false }
       - { name: "body", label: "正文内容", widget: "markdown" }
+      - label: "Carousel"
+        name: "carousel"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image", choose_url: false }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
 
   # ================================
   # 3) 博客文章（中文）
