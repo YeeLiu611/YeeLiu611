@@ -168,6 +168,41 @@ header.hide {
   transform: scale(1.05);
 }
 
+/* ========== 表格样式 =========*/
+
+.form {
+  max-width: 500px;  /* 限制表单宽度 */
+  margin: 20px auto;  /* 居中 */
+  padding: 20px;
+  background: #ffffff; /* 白色背景 */
+  border-radius: 10px; /* 圆角 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form label {
+  display: block; /* 让标签独占一行 */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form input,
+.form textarea {
+  width: 100%; /* 让输入框占满 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form textarea {
+  resize: vertical; /* 允许垂直调整大小 */
+}
+
 /* ========== 通用按钮样式 ========== */
 .btn {
   background-color: var(--color-primary);
@@ -305,7 +340,7 @@ header.hide {
 .page-header {
   background-color: var(--color-primary);
   color: var(--color-light);
-  padding: 2rem 0;
+  padding: 3rem 0 1rem;
   text-align: center;
   margin-bottom: 2rem;
 }
