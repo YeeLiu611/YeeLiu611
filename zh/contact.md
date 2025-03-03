@@ -4,7 +4,7 @@ lang: zh
 title: "联系我们 | 亚洲人本研究院"
 alternate_url: "/en/contact"
 contact_title: "联系我们"
-contact_intro: "若您对我们的项目感兴趣，或希望与我们建立合作关系，请随时与我们联系！"
+contact_intro: "您可以通过这些信息联系我们"
 contact_phone: "+1 778-636-2517"
 contact_email: "info@pcia.asia"
 contact_address: "Hong Kong"
@@ -14,20 +14,26 @@ contact_address: "Hong Kong"
   <h1>{{ page.contact_title }}</h1>
 </section>
 
-<section class="contact-content">
-  <div class="container content-container">
-    <p>{{ page.contact_intro }}</p>
+<section class="container">
+  <div class="content-container">
+    <h2 style="text-align: center">{{ page.contact_intro }}</h2>
+    <br>
     <div class="contact-info">
       <p><strong>电话：</strong>{{ page.contact_phone }}</p>
-      <p><strong>邮箱：</strong>{{ page.contact_email }}</p>
-      <p><strong>地址：</strong>{{ page.contact_address }}</p>
+      <p><strong>邮箱：</strong>{{ page.contact_email }}  &nbsp; &nbsp;</p>
+      <p><strong>地址：</strong>{{ page.contact_address }} &nbsp; &nbsp; &nbsp; &nbsp;</p>
     </div>
+    <br>
+    <h2 style="text-align: center">或在下方提交表单，我们会尽快与您联系</h2>
+    <br>
   </div>
 </section>
 
+
+
 <form class="form" name="contact" method="POST" data-netlify="true"  action="/ThankYou" netlify>
-  <input class="form-group" type="text" name="name" placeholder="Your Name" required>
-  <input class="form-group" type="email" name="email" placeholder="Your Email" required>
-  <textarea class="form-group" name="message" placeholder="Your Message" required></textarea>
+  <input class="form-group" type="text" name="name" placeholder="你的名字" required>
+  <input class="form-group" type="email" name="email" placeholder="你的邮箱" required>
+  <textarea class="form-group" name="message" placeholder="你要给我们发送的消息" required></textarea>
   <button class="btn" type="submit">Send</button>
 </form>

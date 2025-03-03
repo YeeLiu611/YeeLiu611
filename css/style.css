@@ -34,7 +34,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0px 80px;
 }
 
 /* 全局链接样式：蓝绿色带下划线 */
@@ -203,6 +203,12 @@ header.hide {
   resize: vertical; /* 允许垂直调整大小 */
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
 /* ========== 通用按钮样式 ========== */
 .btn {
   background-color: var(--color-primary);
@@ -407,17 +413,33 @@ header.hide {
 
 /* ========== 关于我们 / 项目 / 联系我们等公共区块 ========== */
 .about-content,
-.programs-content,
-.contact-content {
+.programs-content {
   padding: 2rem 0;
   line-height: 2;
   margin-bottom: 20px;
   margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* ========== 联系我们区块(非表单) ========== */
+
+.contact-info {
+  text-align: center; /* 居中显示 */
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
 .contact-info p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
 }
 
 /* ========== 博客列表页面 ========== */
@@ -528,10 +550,13 @@ header.hide {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--color-primary);
 }
 .program-item {
   margin-bottom: 2rem;
+}
+.program-item a {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 .program-divider {
   margin: 1.5rem 0;

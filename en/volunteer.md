@@ -9,7 +9,7 @@ alternate_url: "/zh/volunteer"
   <h1>Join Us</h1>
 </section>
 
-<section class="container content-container" style="padding: 2rem 0;">
+<section class="container content-container">
   <h2>Become a Volunteer or Partner</h2>
   <p>
     Here, you can participate in planning and organizing person-centered events,
@@ -28,9 +28,9 @@ alternate_url: "/zh/volunteer"
 
   <h2>How to apply?</h2>
   <p>
-    1. <strong>Fill out the application form:</strong> (Put the form link or QR code here if available)<br>
+    1. <strong>Fill out the application form:</strong> <br>
     2. <strong>Send an email:</strong> Alternatively, you can email your brief introduction, areas of interest, 
-       and available time to <a href="mailto:yee611@outlook.com">yee611@outlook.com</a><br>
+       and available time to <a href="mailto:info@pcia.asia">info@pcia.asia</a><br>
     3. Wait for our volunteer coordinator to respond. Once confirmed, you can join our team.
   </p>
   
