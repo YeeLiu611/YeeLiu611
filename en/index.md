@@ -1,18 +1,15 @@
 ---
 layout: default
 lang: en
-title: "The Person Centered Institute of Asia | Home"
-alternate_url: "/zh/index"
+title: The Person Centered Institute of Asia | Home
+alternate_url: /zh/index
 carousel:
-  - image: "/images/uploads/slide1.jpg"
-    title: "欢迎来到我们的网站"
-    description: "这里是网站的介绍内容"
-  - image: "/images/uploads/slide2.jpg"
-    title: "探索更多内容"
-    description: "点击这里查看最新文章"
-  - image: "/images/uploads/slide3.jpg"
-    title: "联系我们"
-    description: "有任何问题？请随时联系我们！"
+  - image: /images/uploads/06ef73d050c4fb7f57c110819ad6f9bfd73303090dac9f0c954ec79860094601.png
+    title: In Light We Grow
+    description: PCA | Training | Education | Conference | Journal | Encounter Group
+  - image: /images/uploads/640.jpg
+    title: 探索更多内容
+    description: 点击这里查看最新文章
 ---
 
 <div class="hero">
