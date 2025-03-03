@@ -488,17 +488,16 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-    align-items: center; /* 让 `☰` 在垂直方向居中 */
-    justify-content: center; /* 让 `☰` 在水平方向居中 */
-    width: 50px; /* 确保按钮有固定宽度 */
-    height: 50px; /* 确保按钮有固定高度 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    width: 50px; /* 确保按钮有固定大小 */
+    height: 50px;
     background: none;
     border: none;
-    font-size: 3rem; /* 控制 `☰` 的大小 */
     cursor: pointer;
-    z-index: 2000;
-    position: relative;
-    line-height: 1;
+    font-size: 2rem; /* 控制 `☰` 大小 */
+    line-height: 1; /* 避免额外行高影响 */
+    padding: 0; /* 防止额外 padding 影响对齐 */
     color: var(--color-primary);
   }
   .nav-links {
