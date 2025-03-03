@@ -496,7 +496,7 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 2.8rem; /* 让 ☰ 和 "中文" 大小匹配 */
+    font-size: 3rem; /* 让 ☰ 和 "中文" 大小匹配 */
     line-height: 1; /* 避免字体默认行高影响 */
     color: var(--color-primary);
   }
