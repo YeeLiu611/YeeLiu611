@@ -13,8 +13,7 @@ The Person-Centered Institute of Asia Logo
 
 The Person-Centered Institute of Asia (PCIA) is the full name of The Person-Centered Institute of Asia. Our legal entity is registered in Hong Kong. PCIA's WeChat number is currently hosted by Carl Rogers (Shenzhen) Consulting Services Ltd. Contents of this article: 1. Vision 2. Specific Project 
 
-## 
-We want to make the world a better place
+## We want to make the world a better place
 
 
 Last autumn Annzo and I went to Chicago to visit our person-centred teachers. One afternoon we sat down with Margret Warner. We asked her, 'Why is there such a high percentage of gays and lesbians in the Person-Centered community? She said, 'Because in the 1950s the Carl Rogers Counselling Centre was the only place in North America where homosexuality was not considered a disease. When she said that, it was as if something hit me inside and my whole being suddenly sank into an indescribable emptiness and a deep sense of acceptance. At that moment it was as if I had seen those people who, more than half a century ago, had been rejected, alienated and treated as 'sick' in mainstream society, finally having a space where they did not have to hide and were not humiliated. This is not the first time I have been deeply moved by this. A few years ago, at the ADPCA conference, Gay Leah Barfield, the ninety-year-old director of Rogers' World Peace Project, told us a story: 'Many, many years ago, in one of our congregations, there was an ex-Nazi officer and a concentration camp guard. A former Nazi officer and a concentration camp survivor. They started out with a hatred for each other that they could never let go of. But by the end of a week of heart-to-heart group, they loved each other deeply. There was silence in the meeting room. What is the power that allows hatred to dissolve, wounds to heal, and two people who should be at odds to love each other?
@@ -34,8 +33,7 @@ This is the vision of the Person-Centered Institute of Asia. The person-centred 
 
 Next, I'll explain in more detail the programmes and activities of the Person-Centered Institute of Asia, and how everyone can get involved:
 
-## 
-Goal One: Connecting Person-Centered Communities in the Asian Region and Worldwide
+## Goal One: Connecting Person-Centered Communities in the Asian Region and Worldwide
 
 
 **Projects:** Asia Society, Asian Person-Centered Conference, Person-Centered Asia Journal, Roundtable Forums
@@ -50,8 +48,7 @@ We have also contacted the Person-Centered World Association (PCE-World). PCE-Wo
 
 **How you can get involved:** In addition to registering for conferences, forums and submitting articles to journals in the future, we welcome you to join our Board as a volunteer. As a volunteer you will gain experience, support and additional resources as you go through the process of setting up these projects in a team that upholds a person-centred philosophy. We are happy to provide volunteers with proof of volunteering and references if required.
 
-## 
-Goal  2: To support the ideas and creativity of individuals and organisation
+## Goal  2: To support the ideas and creativity of individuals and organisation
 
 
 **Projects:** Person-centred incubator projects, co-branded projects, internal foundations
@@ -69,8 +66,7 @@ Incubator projects can also be for-profit (e.g. a counsellor who wants to run pa
 
 **How to get involved:** You can apply for a project as an individual or organisation, make a donation to our foundation or volunteer for one of our incubator projects.
 
-## 
-Goal 3: Support the learning and growth of person-centred counsellors
+## Goal 3: Support the learning and growth of person-centred counsellors
 
 
 **Projects:** Asia Society Person-Centered Counsellor Registration System and Program Certification System, 12 annual presentations on person-centeredness, 2-year systematic training on person-centered counselling, introduction to the fundamentals of person-centered counselling, supervision of person-centered groups, community heart groups, etc.
@@ -85,8 +81,7 @@ Currently we have started our '12 Presentations a Year' programme, so watch out 
 
 **How you can get involved:** Attend our courses and trainings, become a member of the Asian Person-Centered Association in the future, learn about the registration and certification system that will be online in the future, and communicate with us and give us your input.
 
-## 
-Goal 4: Work outside the counselling profession such as education, interpersonal, conflict resolution, etc.
+## Goal 4: Work outside the counselling profession such as education, interpersonal, conflict resolution, etc.
 
 
 **Projects:** Listening labs, education projects, mediator projects and more to come!
