@@ -49,6 +49,15 @@ ul, ol {
   max-width: 100%; /* 防止溢出 */
   word-wrap: break-word;
   overflow-wrap: break-word;
+  list-style: inside; /* 修复 ul 与 ol 的默认内外边距 */
+}
+
+ul {
+  list-style-type: disc; /* 实心圆点 */
+}
+
+ol {
+  list-style-type: decimal; /* 数字 */
 }
 
 li {
