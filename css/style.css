@@ -487,14 +487,15 @@ footer {
 }
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: flex;
+    justify-content: center;
     background: none;
     border: none;
     font-size: 3rem;
     cursor: pointer;
     z-index: 2000;
     position: relative;
-    padding: 0px;
+    line-height: 1;
     color: var(--color-primary);
   }
   .nav-links {
