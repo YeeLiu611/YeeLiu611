@@ -1,0 +1,26 @@
+[build]
+  command = "bundle install && bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  RUBY_VERSION = "3.1.2"
+  NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/en/about/"
+  status = 301
+  force = true
+
+[[redirects]]
+
+  from = "/programs"
+  to = "/en/programs/"
+  status = 301
+  force = true

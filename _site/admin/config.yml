@@ -1,0 +1,125 @@
+backend:
+  name: git-gateway
+  repo: yeeliu611/YeeLiu611       # 这里务必改成你的 GitHub 仓库地址
+  branch: main
+  proxy: false
+  auth:
+    client_id: Ov23lil8yXEgwjwxg75d
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # ================================
+  # 1) 中文页面
+  # ================================
+  - name: "pages_zh"
+    label: "中文页面"
+    folder: "zh"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "lang", label: "语言", widget: "hidden", default: "zh" }
+      - { name: "title", label: "页面标题", widget: "string" }
+      - { name: "alternate_url", label: "对应英文页面链接", widget: "string", required: false }
+      - { name: "body", label: "正文内容", widget: "markdown" }
+      - label: "轮播图"
+        name: "carousel"
+        widget: "list"
+        fields:
+          - { label: "图片", name: "image", widget: "image", choose_url: false }
+          - { label: "标题", name: "title", widget: "string", required: false, pattern: ['^.{1,10}$', "标题不能超过 10 个字符"]}
+          - { label: "描述", name: "description", widget: "text", required: false, pattern: ['^.{1,50}$', "描述不能超过 50 个字符"]}
+          - { label: "按钮文字", name: "button_text", widget: "string", required: false }
+          - { label: "按钮链接", name: "button_link", widget: "string", required: false }
+
+  # ================================
+  # 2) 英文页面
+  # ================================
+  - name: "pages_en"
+    label: "英文页面"
+    folder: "en"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "lang", label: "语言", widget: "hidden", default: "en" }
+      - { name: "title", label: "页面标题", widget: "string" }
+      - { name: "alternate_url", label: "对应中文页面链接", widget: "string", required: false }
+      - { name: "body", label: "正文内容", widget: "markdown" }
+      - label: "Carousel"
+        name: "carousel"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image", choose_url: false }
+          - { label: "Title", name: "title", widget: "string", required: false, pattern: ['^.{1,10}$', "Title cannot be longer than 10 characters"]}
+          - { label: "Description", name: "description", widget: "text", required: false, pattern: ['^.{1,50}$', "描述不能超过 50 个字符"]}
+          - { label: "按钮文字", name: "button_text", widget: "string", required: false }
+          - { label: "按钮链接", name: "button_link", widget: "string", required: false }
+
+  # ================================
+  # 3) 博客文章（中文）
+  # ================================
+  - name: "blog_zh"
+    label: "博客文章（中文）"
+    folder: "_blog_zh"   # 改成跟你的硬盘文件夹对应
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", widget: "hidden", default: "post" }
+      - { name: "lang", widget: "hidden", default: "zh" }
+      - { name: "date", label: "发布日期", widget: "datetime" }
+      - { name: "title", label: "URL 标识", widget: "string" }
+      - { name: "title_zh", label: "文章标题（中文）", widget: "string" }
+      - { name: "body", label: "正文内容", widget: "markdown" }
+
+  # ================================
+  # 4) 博客文章（英文）
+  # ================================
+  - name: "blog_en"
+    label: "博客文章（英文）"
+    folder: "_blog_en"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", widget: "hidden", default: "post" }
+      - { name: "lang", widget: "hidden", default: "en" }
+      - { name: "date", label: "发布日期", widget: "datetime" }
+      - { name: "title", label: "URL 标识", widget: "string" }
+      - { name: "title_en", label: "文章标题（英文）", widget: "string" }
+      - { name: "body", label: "正文内容", widget: "markdown" }
+
+  # ================================
+  # 5) 项目列表（中文）
+  # ================================
+  - name: "programs_zh"
+    label: "项目（中文）"
+    folder: "_programs_zh"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", widget: "hidden", default: "project" }
+      - { name: "lang", widget: "hidden", default: "zh" }
+      - { name: "date", label: "开始日期", widget: "datetime" }
+      - { name: "title", label: "URL 标识", widget: "string" }
+      - { name: "title_zh", label: "项目标题（中文）", widget: "string" }
+      - { name: "location", label: "项目地点", widget: "string" }
+      - { name: "time", label: "截止日期", widget: "datetime" }
+      - { name: "body", label: "正文内容", widget: "markdown" }
+
+  # ================================
+  # 6) 项目列表（英文）
+  # ================================
+  - name: "programs_en"
+    label: "Projects (English)"
+    folder: "_programs_en"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "layout", widget: "hidden", default: "project" }
+      - { name: "lang", widget: "hidden", default: "en" }
+      - { name: "date", label: "Publish Date", widget: "datetime" }
+      - { name: "title", label: "URL Identifier", widget: "string" }
+      - { name: "title_en", label: "Project Title (English)", widget: "string" }
+      - { name: "location", label: "Project Location", widget: "string" }
+      - { name: "time", label: "Project Time", widget: "datetime" }
+      - { name: "body", label: "正文内容", widget: "markdown" }

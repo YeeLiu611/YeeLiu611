@@ -11,3 +11,5 @@ gem "jekyll-sass-converter", "~> 2.2"
 
 # 可选：若报 “Could not find a valid gem 'sassc' ...” 或需要 SassC
 gem "sassc", "~> 2.4"
+
+gem "bigdecimal"
