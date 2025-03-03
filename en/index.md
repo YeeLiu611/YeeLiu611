@@ -7,9 +7,13 @@ carousel:
   - image: /images/uploads/06ef73d050c4fb7f57c110819ad6f9bfd73303090dac9f0c954ec79860094601.png
     title: In Light We Grow
     description: PCA | Training | Education | Conference | Journal | Encounter Group
+    button_text: About Us
+    button_link: https://pcia.asia/en/about/
   - image: /images/uploads/640.jpg
-    title: 探索更多内容
-    description: 点击这里查看最新文章
+    title: Welcome to the 12-presentation series in 2025
+    description: Please click the button below to view details
+    button_text: Learn More
+    button_link: https://pcia.asia/en/programs/presentations/
 ---
 
 <div class="hero">

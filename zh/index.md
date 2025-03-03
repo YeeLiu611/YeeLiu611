@@ -7,12 +7,13 @@ carousel:
   - image: /images/uploads/06ef73d050c4fb7f57c110819ad6f9bfd73303090dac9f0c954ec79860094601.png
     title: 生长自有光
     description: 以人为中心 培训 教育 会议 期刊 会心团体
+    button_text: 了解更多
+    button_link: https://pcia.asia/en/about/
   - image: /images/uploads/640.jpg
-    title: 全部项目
-    description: 点击这里查看最新文章
-  - image: /images/uploads/logo-缩小-01.png
-    title: 联系我们
-    description: 有任何问题？请随时联系我们！
+    title: 欢迎参加2025年度12场讲座项目
+    description: 请点击下方按钮查看详情
+    button_text: 了解详情
+    button_link: https://pcia.asia/zh/about/
 ---
 
 <div class="hero">
