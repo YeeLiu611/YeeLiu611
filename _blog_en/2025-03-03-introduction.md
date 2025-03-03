@@ -4,7 +4,7 @@ lang: en
 date: 2025-03-03T03:01:26.034Z
 title: Introduction
 title_en: "The Person-Centered Institute of Asia: We want to make the world a
-  better place"
+  little better"
 ---
 ## Introduction
 Last autumn Annzo and I went to Chicago to visit our person-centred teachers. One afternoon we sat down to talk with Margret Warner. We asked her, "Why is there such a high percentage of homosexuals in the Person-Centered community? She said, 'Because in the 1950s, Carl Rogers' counselling centre was the only place in North America that did not consider homosexuality to be a disease. As she said this, something struck my heart and I suddenly sank into an indescribable emptiness and a deep sense of acceptance. In that moment, I seemed to see those who had been excluded, alienated and labelled 'sick' by mainstream society more than half a century ago, finally having a space where they did not have to pretend and were not humiliated. It was not the first time I had been deeply moved in this way. A few years ago, at the ADPCA conference, Gay Leah Barfield, then in her nineties and director of Rogers' 'Peace Project', told us a story: 'Many, many years ago, a former Nazi officer and a concentration camp survivor came to one of our meetings. At first they had an implacable hatred for each other. But by the end of the week they loved each other deeply. There was silence in the room. What was the force that made hatred dissolve, that made wounds heal, that made two people who should have been enemies fall in love?
