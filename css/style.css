@@ -488,11 +488,13 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* 让 `☰` 在垂直方向居中 */
+    justify-content: center; /* 让 `☰` 在水平方向居中 */
+    width: 50px; /* 确保按钮有固定宽度 */
+    height: 50px; /* 确保按钮有固定高度 */
     background: none;
     border: none;
-    font-size: 3rem;
+    font-size: 3rem; /* 控制 `☰` 的大小 */
     cursor: pointer;
     z-index: 2000;
     position: relative;
