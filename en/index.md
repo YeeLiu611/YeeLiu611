@@ -17,8 +17,7 @@ carousel:
   - title: The Core Values of the Person-Centered Approach
     description: The individual has within him or her self vast resources for
       self-understanding, for altering her or his self-concept, attitudes, and
-      self-directed behavior–and that these resources can be tapped if only a
-      definable climate of facilitative psychological attitudes can be provided.
+      self-directed behavior
     button_text: Read Article
     button_link: https://pcia.asia/en/blog/core_values/
     image: /images/uploads/cleanshot-2025-03-02-at-21.36.56.jpg
