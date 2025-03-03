@@ -7,6 +7,7 @@ title_en: "The Person-Centered Institute of Asia: We want to make the world a
   little better"
 ---
 ## Introduction
+
 Last autumn Annzo and I went to Chicago to visit our person-centred teachers. One afternoon we sat down to talk with Margret Warner. We asked her, "Why is there such a high percentage of homosexuals in the Person-Centered community? She said, 'Because in the 1950s, Carl Rogers' counselling centre was the only place in North America that did not consider homosexuality to be a disease. As she said this, something struck my heart and I suddenly sank into an indescribable emptiness and a deep sense of acceptance. In that moment, I seemed to see those who had been excluded, alienated and labelled 'sick' by mainstream society more than half a century ago, finally having a space where they did not have to pretend and were not humiliated. It was not the first time I had been deeply moved in this way. A few years ago, at the ADPCA conference, Gay Leah Barfield, then in her nineties and director of Rogers' 'Peace Project', told us a story: 'Many, many years ago, a former Nazi officer and a concentration camp survivor came to one of our meetings. At first they had an implacable hatred for each other. But by the end of the week they loved each other deeply. There was silence in the room. What was the force that made hatred dissolve, that made wounds heal, that made two people who should have been enemies fall in love?
 
 Over the years I have thought about what is at the heart of a person-centred approach. There seem to be too many different answers to this question, but what must remain constant in all of them is a deep respect and trust for people, an attitude that treats people as people. To treat people as people and life as life is not easy. Growing up in China today, I don't really understand what it feels like to be allowed to be yourself. A person does not have the right to define himself, but is defined by exam results, marriage and childbirth, behavioural norms, wealth and status. Despite decades of economic boom, the phenomenon of 'not treating people as people' has intensified; in the crowd that chases the wind, there are always those who are ruthlessly left behind.
@@ -25,8 +26,7 @@ The full name of The Person-Centered Institute of Asia (PCIA) is The Person-Cent
 
 ## Goal 1: To connect person-centred communities in the Asian region and around the world.
 
-Projects: Asia Society, Person-Centered Congress in Asia, Person-Centered Asia Journal, Roundtable Forum
-
+**Projects:** Asia Society, Person-Centered Congress in Asia, Person-Centered Asia Journal, Roundtable Forum
 
 We have already made contact with representatives in Japan and Vietnam. In the future we will continue to make contact with communities in other Asian countries and regions. We plan to hold an annual person-centred conference in Asia, offering workshops, affinity groups and forums in different languages, so that person-centred practitioners from different countries have the opportunity to exchange ideas at a conference based in Asia. We plan to hold one or more roundtable forums, inviting person-centred practitioners from different countries to exchange ideas on a pressing issue of the day. We plan to establish an Asia-based person-centred academic journal within 3 years.
 
