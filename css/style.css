@@ -490,9 +490,9 @@ footer {
     display: flex;
     align-items: center; /* 垂直居中 */
     justify-content: center; /* 水平居中 */
-    margin-top: -2px;
-    width: 60px; /* 让按钮大小匹配 "中文" 按钮 */
-    height: 60px;
+    margin-top: -4px; /* 修正垂直居中 */
+    width: 40px; /* 让按钮大小匹配 "中文" 按钮 */
+    height: 40px;
     background: none;
     border: none;
     cursor: pointer;
