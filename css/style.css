@@ -490,6 +490,7 @@ footer {
     display: flex;
     align-items: center; /* 垂直居中 */
     justify-content: center; /* 水平居中 */
+    margin-top: -2px;
     width: 60px; /* 让按钮大小匹配 "中文" 按钮 */
     height: 60px;
     background: none;
@@ -526,7 +527,7 @@ footer {
     border-radius: 8px;
     font-weight: bold;
     font-size: 1rem;
-    margin-right: 10px; /* 确保和汉堡菜单有合适间距 */
+    margin-right: 5px; /* 确保和汉堡菜单有合适间距 */
     padding: 0; /* 避免额外的空白 */
 }
   .hero h1 {
