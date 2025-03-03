@@ -3,124 +3,128 @@ layout: post
 lang: zh
 date: 2025-03-03T03:04:37.277Z
 title: core_values
-title_zh: The Core Values of the Person-Centered Approach
+title_zh: 以人为中心方法的核心价值
 ---
-> Jerold D. Bozarth\
-> University of Georgia, Athens, Georgia
->
-> Barbara Temaner Brodley\
-> Illinois School of Professional Psychology, Chicago
->
-> This paper was presented at the First Annual Meeting of the Association for the Development of the Person-Centered Approach (ADPCA), at the University of Chicago, International House, in September, 1986.
->
-> **Citation:** Bozarth, J. D. & Bradley, B. T. (1986) *The Core Values of the Person-Centered Approach.* APDCA.
+**杰罗德·D·博扎斯**  
+佐治亚大学（美国佐治亚州雅典）
 
-## Table of Contents
+**芭芭拉·特曼纳·布罗德利**  
+专业心理学学院（美国伊利诺伊州芝加哥）
 
-* The Person-Centered Approach
-* The Core Values and Theory
-* The Supporting Assertions
+_本文于1986年9月在芝加哥大学国际大厦举办的“以人为中心方法发展协会”（ADPCA）第一届年会上发表。_  
+_引用：Bozarth, J. D. & Bradley, B. T. (1986). The Core Values of the Person-Centered Approach. ADPCA._
 
-  * * Human nature is basically constructive. It is not destructive  
-  * * Human nature is basically social
-  * * Self-regard is a basic human need and self-regard, autonomy and individual sensitivity are to be protected in helping relationships
-  * * Persons are basically motivated to perceive realistically and to pursue the truth of situations
-  * * Perceptions are a major determinant of personal experience and behavior, and, thus, to understand a person one must attempt to understand them empathically
-  * * Individuals, not groups, are participants in a relationship 
-  * * Belief in the concept of the whole person
-  * * Persons are realizing their potentialities and protecting themselves as best they can at any given time and under the internal and external circumstances that exist at that time
-  * * Belief in abdication of the pursuit of control or authority over other persons and, instead, a commitment to share power and control 
-* Conclusion
-* References
+---
 
-## The Person-Centered Approach
+## 目录
 
-Applications of the person-centered approach – in psychotherapy, group work, organizations, communities, businesses, educational settings, clinics, the fields of medicine and nursing, couple work, families, pastoral counseling, etc. – share a common core of values and theory.
+1. 以人为中心方法
+2. 核心价值和理论
+3. 支持性主张
+    - 人性本质上是建设性的，而非破坏性的
+    - 人性本质上是社会性的
+    - 自我关注是人类的基本需求，在帮助他人的关系中，自我关注、自主性和个人敏感性应得到保护
+    - 人们基本上都有真实感知和追求真相的动机
+    - 感知是个人经验和行为的主要决定因素，因此要理解一个人，就必须尝试共情地理解他们
+    - 个人，而不是群体，是关系的真正参与者
+    - 相信全人概念
+    - 人们在特定时间和当时的内外环境中正最大限度地发挥潜能并保护自己
+    - 放弃对他人控制或权威的追求，转而致力于分享权力和控制
+4. 结论
+5. 参考资料
 
-## The Core Values and Theory
+---
 
-Rogers (1986, p. 115) has recently stated the most basic and common elements in the person-centered approach as follows:
+## 以人为中心方法
 
-> The central hypothesis of this approach can be briefly stated. It is that the individual has within him or her self vast resources for self-understanding, for altering her or his self-concept, attitudes, and self-directed behavior–and that these resources can be tapped if only a definable climate of facilitative psychological attitudes can be provided.
->
-> There are three conditions which constitute this growth-promoting climate, whether we are speaking of the relationship between therapist and client, parent and child, leader and group, teacher and student, or administrator and staff. The conditions apply, in fact, in any situation in which the development of the person is a goal. I have described these conditions at length in previous writings (Rogers, 1959, 1961), I present here a brief summary from the point of view of psychotherapy, but the description applies to all of the foregoing relationships.
->
-> The first element has to do with genuineness, realness, or congruence. The more the therapist is him or herself in the relationship, putting up no professional front or personal facade, the greater is the likelihood that the client will change and grow in a constructive manner ….
->
-> The second attitude of importance in creating a climate for change is acceptance or caring or prizing–unconditional positive regard. It means that when the therapist is experiencing a positive, non-judgmental, accepting attitude toward whatever the client *is* at that moment, therapeutic movement or change is more likely ….
->
-> The third facilitative aspect of the relationship is empathic understanding. This means that the therapist senses accurately the feelings and personal meanings that are being experienced by the client and communicates this acceptant understanding to the client.
+“以人为中心方法”广泛应用于心理治疗、团体工作、组织、社区、企业、教育环境、诊所、医疗和护理、伴侣、家庭以及牧师辅导等众多领域。这些不同领域的应用都共享一组核心价值和理论。
 
-We might stop with this clear statement of the essence of the person-centered approach. We believe, however, that there are some additional assertions that surround, support or follow from Rogers’ central statement of the hypothesis of the inherent growth principle and the theory of the facilitative conditions for constructive change.
+---
 
-## The Supporting Assertions
+## 核心价值和理论
 
-### Human nature is basically constructive. It is not destructive 
+罗杰斯（Rogers, 1986, p.115）最近对以人为中心方法中最基本、最常见的要素作了简洁的总结：
 
-The basic nature of the person is constructive, growthful, developing and self-preserving, not basically destructive. Destructive behavior and feelings are manifestations of the growthful and self-preserving person under unfavorable circumstances. (Like the crooked twists and turns a plant may take endeavoring to face the sun.) The aggressive and destructive capabilities are interpreted as resources which the person brings into action in striving to realize and/or preserve himself under difficult, even terrible, circumstances.
+> “以人为中心方法有一个核心假设：每个人都蕴藏着强大的自我理解能力，能够改变自我概念、态度以及自我导向的行为。只要我们能够提供一种可界定的、有促进作用的心理氛围，这些潜能就会被激发出来。”
 
-### Human nature is basically social
+罗杰斯指出，为促成这种成长氛围，需要三个条件。无论是在治疗师与来访者之间，还是在父母与子女、领导与团队、教师与学生、管理者与员工的关系中，这三个条件同样适用。事实上，这些条件适用于任何以个人成长为终极目标的场合。在此前的著作（Rogers, 1959, 1961）中，罗杰斯对这三个条件做过详细阐述。这里，他以心理治疗为例进行简要介绍，但同样适用于其他关系情境：
 
-The human person is basically social – protective, caring and empathic toward other persons. The dependence of human infants upon prolonged physical and emotional care for their survival, the dependence of adult persons upon others for their food, shelter, companionship and culture, and the innate capacity of humans to infer the experience of others like themselves to be similar to their own experience – empathy – all of these things are involved in the innate social nature of man.
+1. **真诚、真实或一致性**：治疗师在关系中越能如实地展现自己，不用专业或个人的“面具”来应对，来访者就越可能以富有建设性的方式发生改变或成长。
+    
+2. **接纳、关怀或重视——无条件积极关注**：当治疗师能够对来访者此刻的状态抱持积极、非评判、完全接纳的态度时，就更有可能促成来访者的改变和成长。
+    
+3. **共情理解**：治疗师能够准确地捕捉来访者在此刻经历的情感和个人意义，并把这种接纳且理解的态度传达给来访者。
+    
 
-### Self-regard is a basic human need and self-regard, autonomy and individual sensitivity are to be protected in helping relationships
+到此为止，我们或许就已经点明了以人为中心方法的核心。然而，在罗杰斯关于“内在成长原则”以及“促进建设性改变的条件”的假设之外，还有其他论断同样重要。它们在支持或补充这一核心观点的同时，也为以人为中心方法提供了更完整的理论背景。
 
-The hypothesis of a powerful, inborn growth principle in human beings leads to an extreme position of respect for and confidence in persons. Persons are autonomous, resourceful, sensitive and have an important sense of self-regard. Along with the feelings of respect for and trust in these qualities of the person, the person-centered approach entails a consciousness and mindfulness, in relationships, to not violate these qualities of the person and to protect and support them. In interactions and in situations that affect others, one is attuned to the values of the other person and to the things the person identifies with his self-regard and self-respect. Self-regard is a basic human need.
+---
 
-### Persons are basically motivated to perceive realistically and to pursue the truth of situations
+## 支持性论断
 
-Human beings have a basic motivation to perceive reality, to be aware, and to grasp the truth of situations they are in. Humankind has, in effect, a scientific nature. Perceptions occur, hypotheses are formed to account for the perceptions. And subsequent perceptions confirm, modify or contradict these hypotheses. This is the way persons proceed in their interaction with the world outside themselves and the world of their own feelings, sensations and experiences.
+### 1. 人性本质上是建设性的，而非破坏性的
 
-### Perceptions are a major determinant of personal experience and behavior, and, thus, to understand a person one must attempt to understand them empathically
+人性的基本特质是建设性、成长性、发展性和自我保护，而非破坏性。人们表现出的破坏性情感或行为，可以被视为对困境或不利环境下的一种“反应性”展现，就如同植物会为了获得阳光而扭曲生长。同理，攻击或破坏的潜能其实是一种应对资源，当人们身处艰难甚至可怕的环境时，为了实现或保护自身，他们才会动用这种资源。
 
-We are always viewing realities through a lens composed of our unique mental capabilities, our past experiences, and our immediate conditions and motivations. To understand another person requires entering into that person’s world of perceptions, interpretations and perspectives.
+### 2. 人性本质上是社会性的
 
-### Individuals, not groups, are participants in a relationship 
+人性本质上带有社会性，人们会对他人怀有保护、关怀和共情的意愿。人类婴儿需要长期的身体和情感照护才能健康成长，成年人也需要他人在食物、住所、陪伴和文化上提供支持。人类与生俱来的共情能力，使我们能够推测他人的体验与我们自身存在相似之处。这些都体现了人类的社会本质。
 
-When promoting growth in the context of more than one person (e.g., couples, families, group therapies, organizations, etc.) , the person-centered approach remains primarily committed to promoting the growth of individuals. This assertion relates to two multiperson-connected issues – one, the interpretation of group realities and two, the relation of the individual in a group endeavor.
+### 3. 自我关注是人类的基本需求，在帮助他人的关系中，自我关注、自主性和个人敏感性应得到保护
 
-One – experiences may occur which can be characterized in terms of a group reality or in terms of patterns of interaction among participants. It is person-centered in these contexts to be mindful to relate to each individual, not to the group as an entity. 
+对人类与生俱来的强大成长能力的信任，必然带来对他人极大的尊重和信赖。人都具备自主性、智慧以及对自我关注的强烈需求。以人为中心方法不仅要求帮助者尊重、信任他人的这些特质，也提醒我们在人际关系中保持觉察与警惕，不要侵犯、忽视或破坏他人的自主性和自我关注，而是努力保护、支持这些品质。在与他人互动或对他人产生影响时，我们会自然而然地与对方的价值观和对自我关注的认同相适应。毕竟，自我关注是人类不可或缺的需求。
 
-Group realities are analogous to unconscious forces in that identifying them involves a great deal of guesswork and it is difficult to achieve validation for the guesses. They are also similar to unconscious forces in that their interpretation may be felt as an uninvited intrusion into the motives or feelings of the individuals involved. Impressions of group realities are most person-centered when they are offered and owned as individual perceptions and then the others are invited to share their perceptions, if any, of the perceived reality.
+### 4. 人们基本上都有真实感知和追求真相的动机
 
-Two – when the stated purpose of an endeavor is the fostering of improvement in the well-being of a family, group, organization – any supra-individual entity – the person-centered approach maintains the primary goal of relating to and helping individuals. Planning or setting-up of situations for groups of people in a person-centered manner involves awareness of and information from the individuals to be involved, not reference to the organization or to a generalized conception of the individual – some average or typical specimen. When help is being given in relation to groups it is also person-centered to provide some forum for and the encouragement to self- representation. The person-centered approach fosters the development of individuals, regardless of the other aims or circumstances – and pains are taken to assure that individuals are not sacrificed or injured for group goals.
+人类具有基本的动机去探索真实、保持警觉，并了解自身所处环境的真相。换句话说，人性中存在“科学精神”的倾向：人们通过感知、产生假设，再通过后续的感知来验证、修正或推翻这些假设。我们与外在世界以及内在感受之间的关系，便是这样不断进行互动和调整的过程。
 
-### Belief in the concept of the whole person
+### 5. 感知是个人经验和行为的主要决定因素，因此要理解一个人，就必须尝试共情地理解他们
 
-Having the perspective of the whole person influences one’s interaction with other persons through the attitude it engenders. Having this concept involves having in mind that while a person is acting and being (at a given time and place) in a specific concrete reality, at the same time, the person has an experienced context of past experiences, of perceptions that are unique to him of the present situation, of expectations of a future, of capabilities and awarenesses that are not totally present, and a context of potentialities, experienced or not, that are not yet part of his life. This awareness of the concept of the whole person assumes the person has grown, is growing and changing, and will continue to grow and change in the future. As one relates to the person in the moments of the present and accepts and values the person in these present moments, we also have this sense of the whole person not being totally revealed to us and that the meanings of what is apparent may not be the total meanings.
+我们始终通过自己独特的心理结构、过往经历以及当下的动机与条件来“过滤”现实。因此，如果要理解一个人，就需要进入他的世界，理解他对现实的看法、诠释和观点。
 
-There is always a presently unknown-known-to-be-there *more* of a person than what we see. The concept of the whole person stimulates a variety of feelings towards a person–humility, patience, tolerance, optimism, trust and acceptance and, often, wonder. And this concept stimulates a striving, or motivation, to understand and enter into the person’s world to discover the person in his development.
+### 6. 个人，而不是群体，是关系的真正参与者
 
-### Persons are realizing their potentialities and protecting themselves as best they can at any given time and under the internal and external circumstances that exist at that time
+当我们在涉及多位个体的情境（如夫妻、家庭、团体治疗、组织等）中促进成长时，以人为中心方法依然首先聚焦于个人的成长。这里需要从两个层面理解：一是对“群体现实”的解释，一是“个人在团体中的关系”。
 
-The attitude of acceptance, unconditional positive regard -is partly predicated on the belief that persons are doing the best they can at any given moment under the external and internal circumstances of their existence at that time. Persons are not, characteristically, totally in control of themselves nor totally self-determining. From a person-centered perspective, it is appropriate neither to blame nor to give full credit to, people for what they do. There is, instead, a pervasive tendency to try to understand the factors at work in a person when their behavior is felt to be, from some vantage point, a problem, wrong or bad. We are responsible for what we do, even when we cannot help it. And we exercise responsibility, in part, by pursuing understandings of ourself as a means to change the circumstances, internal or external, that contribute to what we feel is wrong. The person-centered attitude is – ‘we do the best we can, if it is not so good there is a process that can bring change’. And in this way we take responsibility even though we do not have complete control.
+- **群体现实**：有时会出现以群体互动模式或群体整体体验为特征的现象。以人为中心方法更倾向于将注意力放在与每个具体个体建立真实的联结上，而不是把“群体”看作单一的整体。因为“群体现实”往往类似于无意识力量，需要大量推测才能识别，也难以得到确证或求证。若有人对“群体现实”提出个人看法，最以人为中心的做法是把这一看法呈现为个人认知，并邀请其他成员分享他们对这一情境的体验，而不是将其当作“权威解释”。
+    
+- **个人在团体中的关系**：即便团体、家庭或组织的目标是整体效能或福利，以人为中心方法依然把“联结和帮助个体”视作首要关注点。例如，若要为一个团体设计帮助方案，需要基于对各个参与者的充分了解，而不是仅参考对某一组织或类型个体的刻板定义。只有在确保个人不会为了“群体目标”而受到牺牲或伤害的前提下，才能真正实现团体目标中所说的“促进成长”。
+    
 
-### Belief in abdication of the pursuit of control or authority over other persons and, instead, a commitment to share power and control 
+### 7. 相信全人概念
 
-It is a major value in person-centered philosophy to abdicate seeking control over other persons. This includes a mindfulness about any imbalance in power in dyadic relationships and an attempt to equalize the power through awareness, dialogue and procedures that are corrective of the imbalance. In all group situations, as well, it is person-centered to share power or share control as equally as is possible with all others involved. This is a commitment to democratic and egalitarian solutions to group or societal problems. The person-centered approach tends, also, in this abdication of authoritarian means and avoidance, where possible, of hierarchical structures of power – to foster the least possible centralized organization to accomplish the goals of persons in groups or communities.
+“全人”视角在一个人与他人互动时会自然生发出某些态度和行为。它强调，当一个人在特定时间、地点以某种具体方式存在时，他实际上具有过往经验的积淀，对当下情境的独特理解，对未来的期望，以及还未充分觉察的能力或潜力。对“全人”的意识让我们认识到，人一直在成长和变化之中。即使在当下，我们看到的也只是某人的一部分或一个侧面。他所具有的其他潜能或背景信息尚未完全展露。
 
-## Conclusion
+这种全人概念往往激发我们对他人的谦逊、耐心、宽容、乐观、信任和接纳，也常常带来惊奇和期待。它促使我们努力用共情去理解，进入这个人不断发展和变化的世界。
 
-The core values of the person-centered approach – first, belief in the inherent growth principle and a “profound regard for the wisdom and constructive capacity inherent in the human organism” (Rogers, 1986Ap 3) , and second, the theory of attitudinal facilitative conditions that create “a safe climate where persons can gain insight, can change and grow and expand (and) empower themselves ” (Rogers, 1986,p   ) – most essentially differentiate the person-centered approach from other approaches.
+### 8. 人们在特定时间和当时存在的内外部环境下，正最大限度地发挥潜能并保护自己
 
-If a helping person deeply understands, absorbs and accepts these core values he will experience conflict if he has to or is drawn from within to apply other approaches. This conflict is illustrated vividly by Rogers (1977) .
+对他人的接纳和无条件积极关注部分基于这样的信念：任何人在任何特定时刻、在特定内外环境中，都在尽力发挥自己的潜能并进行自我保护。从某种意义上说，没有人能够完全掌控自己的一切，也无法完全自主。以人为中心方法认为，我们既不能全然谴责某人，也不能完全信任他们的可控性。当我们看到某些行为似乎存在问题或“错误”时，我们会尝试了解其中的内外因素。即使人们不能完全掌控自身行为，他们依然需要对自身行为负责，而改变的方式之一就是通过理解自己、改变内外环境，进而修正我们认为不恰当之处。以人为中心方法暗含着这样一种态度：“我们已经在尽力而为，如果还不理想，就让我们借助一个过程去改变。”在不可能绝对掌控的前提下，我们也依然承担责任。
 
-Rogers describes asking a psychologist who was questioning him in a meeting what the questioner meant by politics of client- centered therapy. The psychologist replied:
+### 9. 放弃对他人控制或权威的追求，转而致力于分享权力和控制
 
-> I spent three years of graduate school learning to be an expert in clinical psychology. I learned to make accurate diagnostic judgments. I learned the various techniques of altering the subject’s attitudes and behavior. I learned subtle modes of manipulation under the labels of interpretation and guidance. Then I began to read your material, which upset everything I had learned. You were saying that the power rests not in my mind but in his organism. You completely reversed the relationship of power and control which had built up in me over three years. And then you say there is no politics in the client-centered approach (p 3).
+放弃对他人控制或权威的追求是“以人为中心”理念的重要价值。这意味着，要时刻警惕双方关系中可能出现的权力不平等，并通过合理的认知、对话或程序去平衡这种权力。对于任何团体，以人为中心方法都鼓励在可能范围内与所有相关者平等地分享权力与控制。这体现了一种民主和平等的承诺，也意味着尽量减少专制手段，避免层级化、集权化的组织，转而建立分散式的架构，让团体或社区中的个人能够更好地实现自己的目标。
 
-We are concerned that this conflict and the issue of the location of power is not sufficiently experienced and so does not sufficiently influence people. We think there are people who want to and who are trying to operate on person-centered values, but who have not fully accepted this most basic person-centered value – *that authority about the person rests in the person not in an outside expert*. Or, if they do accept the value, they do not recognize the implication in it that they are not free to intervene and direct when they are acting as helpers.
+---
 
-It is when, no matter how subtly, the helping person begins to presume the authority of knowing better, than the person being helped –what hurts, what directions the person should go, or what problems are crucial to be solved–that the fundamental person-centered values are violated. It is, from our perspective, when the helping person usurps authority over the experience and autonomy of the helped person that the foundation of the approach is distorted and lost. 
+## 结论
 
-## References
+以人为中心方法有两大核心价值：首先，相信内在成长原则，对人的天生智慧和建设性抱持“深切尊重”（Rogers, 1986, p.3）；其次，贯彻态度促进条件的理论，创造一个安全环境，让人们能在其中获得洞见、改变、成长、拓展自我，并增强自主能力（Rogers, 1986）。这两方面将以人为中心方法与其他方法区分开来。
 
-Rogers, Carl R. (1959) “A Theory of Therapy, Personality, and Interpersonal Relationships, as Developed in the Client-centered Framework”, S. Koch (ed.) , *Psychology: A Study of a Science, Vol III, Formulations of the Person and the Social Context.* New York: McGraw-Hill, pp 184-256.
+当帮助者真正理解、接受并内化了这些核心价值观后，一旦他们“不得不”或“被迫”使用其他方法时，往往会感到冲突。罗杰斯（1977）曾生动描述过这种冲突：
 
-Rogers, Carl R. (1961) *On Becoming a Person: A Therapist’s View of Psychotherapy.* Boston. Houghton Mifflin.
+他提到一位在会议上提问的临床心理学家，这位心理学家在研究生院的三年里，学会了精准诊断、学会了各种态度和行为改变技巧，也学会了如何在解释或指导之名下进行微妙的操作。然而，当他阅读罗杰斯的著作时，却发现其中的思想颠覆了他先前三年里所接受的“权威与控制”的模式，让他明白，“权威不在治疗师或专家的头脑中，而在来访者自身的体验里”。对他来说，以人为中心方法挑战了他原本所拥有的权力与控制，而他却觉得“以人为中心方法毫无政治可言”（Rogers, 1977, p.3）。
 
-Rogers, Carl R. (1977) *Carl Rogers on Personal Power.* Delacorte Press, New York.
+我们认为，当下对这种冲突、对“谁拥有权力”的问题，还没有获得足够的体验和重视，这也就难以对人们产生真正的影响。我们看到，有些人虽然愿意并试图以这些价值观开展工作，但他们尚未完全接受“人的权威在于人自己，而非外部专家”这一最根本的价值主张。即便他们表面上认同，却忽略了当自己处于帮助者角色时，任何“主观上自以为比对方更清楚该怎么办”的操作，都会与以人为中心的基本价值观相违背。
 
-Rogers, Carl R. (1986) “Client-Centered Approach to Therapy”, in I.L. kutash and A. Wolf (eds.) , *Psychotherapist’s Casebook: Theory and Technique in Practice.* San Francisco: Jossey-Bass.
+当帮助者开始觉得自己“比被帮助者更了解来龙去脉、更清楚哪些问题需要解决、应该给什么指示”，或无论用多么微妙的方式把对方的体验与自主权“接管”过来，这其实就是对以人为中心核心价值观的侵蚀。在我们看来，一旦帮助者“夺走”了当事人的体验自主权，这个方法的根基也就被扭曲或丧失了。
 
-Rogers, Carl R. (1986) “A Comment from Carl Rogers” *Person-Centered Review,* Vol. 1, No.1.
+---
+
+## 参考资料
+
+- Rogers, C. R. (1959). “A Theory of Therapy, Personality and Interpersonal Relationships as Developed in the Client-Centered Framework.” In **S. Koch (Ed.)** _Psychology: A Study of a Science, Vol. 3. Formulations of the Person and the Social Context_. New York: McGraw-Hill, 184-256.
+- Rogers, C. R. (1961). _On Becoming a Person: A Therapist’s View of Psychotherapy._ Boston: Houghton Mifflin.
+- Rogers, C. R. (1977). _Carl Rogers on Personal Power._ New York: Delacorte Press.
+- Rogers, C. R. (1986a). “Client-Centered Therapy,” in **I. L. Kutash & A. Wolf (Eds.)** _Psychotherapist’s Casebook: Theory and Technique in the Practice of Modern Therapies._ San Francisco: Jossey-Bass.
+- Rogers, C. R. (1986b). “Comments by Carl Rogers,” in _Person-Centered Review_, 1(1).
