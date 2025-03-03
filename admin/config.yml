@@ -99,11 +99,11 @@ collections:
     fields:
       - { name: "layout", widget: "hidden", default: "project" }
       - { name: "lang", widget: "hidden", default: "zh" }
-      - { name: "date", label: "发布日期", widget: "datetime" }
+      - { name: "date", label: "开始日期", widget: "datetime" }
       - { name: "title", label: "URL 标识", widget: "string" }
       - { name: "title_zh", label: "项目标题（中文）", widget: "string" }
       - { name: "location", label: "项目地点", widget: "string" }
-      - { name: "time", label: "项目时间", widget: "datetime" }
+      - { name: "time", label: "截止日期", widget: "datetime" }
       - { name: "body", label: "正文内容", widget: "markdown" }
 
   # ================================

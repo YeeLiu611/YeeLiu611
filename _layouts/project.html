@@ -6,12 +6,12 @@ layout: post
   <div class="event-item">
     <h4>{{ page.title_zh | default: page.title_en }}</h4>
     <p>
-      时间：{{ page.date | date: "%Y 年 %m 月 %d 日" }}
+      {{ page.date | date: "%Y - %m - %d" }}
       {% if page.time %}
-        - {{ page.time | date: "%Y 年 %m 月 %d 日" }}
+       - {{ page.time }}
       {% endif %}
     </p>
-    <p>地点：{{ page.location }}</p>
+    <p> {{ page.location }} </p>
     <div class="project-body">
       {{ content | markdownify }}
     </div>
