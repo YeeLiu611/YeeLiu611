@@ -14,6 +14,11 @@ carousel:
     description: 请点击下方按钮查看详情
     button_text: 了解详情
     button_link: https://pcia.asia/zh/programs/presentations/
+  - image: /images/uploads/cleanshot-2025-03-02-at-21.36.56.jpg
+    title: 以人为中心方法的核心价值
+    button_text: 阅读文章
+    description: 以人为中心方法有一个核心假设：每个人都蕴藏着强大的自我理解能力，能够改变自我概念、态度以及自我导向的行为。只要我们能够提供一种可界定的、有促进作用的心理氛围，这些潜能就会被激发出来。
+    button_link: https://pcia.asia/zh/blog/core_values/
 ---
 
 <div class="hero">
