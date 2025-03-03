@@ -488,16 +488,15 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-    align-items: center; /* 垂直居中 */
-    justify-content: center; /* 水平居中 */
-    width: 50px; /* 确保按钮有固定大小 */
-    height: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 2rem; /* 控制 `☰` 大小 */
-    line-height: 1; /* 避免额外行高影响 */
-    padding: 0; /* 防止额外 padding 影响对齐 */
+    font-size: 3.5rem; /* 让 `☰` 和 EN 按钮匹配 */
+    line-height: 1;
     color: var(--color-primary);
   }
   .nav-links {
