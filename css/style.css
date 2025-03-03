@@ -494,7 +494,7 @@ footer {
     cursor: pointer;
     z-index: 2000;
     position: relative;
-    padding: 0.25rem;
+    padding: 0.5rem;
     color: var(--color-primary);
   }
   .nav-links {
