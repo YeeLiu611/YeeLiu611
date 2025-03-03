@@ -488,15 +488,15 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    width: 60px; /* 让按钮大小匹配 "中文" 按钮 */
     height: 60px;
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 3.5rem; /* 让 `☰` 和 EN 按钮匹配 */
-    line-height: 1;
+    font-size: 2.8rem; /* 让 ☰ 和 "中文" 大小匹配 */
+    line-height: 1; /* 避免字体默认行高影响 */
     color: var(--color-primary);
   }
   .nav-links {
@@ -516,11 +516,19 @@ footer {
     margin: 1rem;
   }
   .btn-lang {
-    margin-right: 0rem;
-    padding: 0.7rem 0.9rem;  /* 缩小上下和左右的内边距 */
-    font-size: 0.85rem;  /* 让字体变小一点 */
-    border-radius: 4px;  /* 圆角略微缩小 */
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 10px; /* 确保和汉堡菜单有合适间距 */
+    padding: 0; /* 避免额外的空白 */
+}
   .hero h1 {
     font-size: 2rem;
   }
