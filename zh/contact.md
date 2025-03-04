@@ -15,18 +15,16 @@ contact_address: "Hong Kong"
 </section>
 
 <section class="container">
-  <div class="content-container">
-    <h2 style="text-align: center">{{ page.contact_intro }}</h2>
-    <br>
-    <div class="contact-info">
-      <p><strong>电话：</strong>{{ page.contact_phone }}</p>
-      <p><strong>邮箱：</strong>{{ page.contact_email }}  &nbsp; &nbsp;</p>
-      <p><strong>地址：</strong>{{ page.contact_address }} &nbsp; &nbsp; &nbsp; &nbsp;</p>
-    </div>
-    <br>
-    <h2 style="text-align: center">或在下方提交表单，我们会尽快与您联系</h2>
-    <br>
+  <h2 style="text-align: center">{{ page.contact_intro }}</h2>
+  <br>
+  <div class="contact-info">
+    <p><strong>电话：</strong>{{ page.contact_phone }}</p>
+    <p><strong>邮箱：</strong>{{ page.contact_email }}  &nbsp; &nbsp;</p>
+    <p><strong>地址：</strong>{{ page.contact_address }} &nbsp; &nbsp; &nbsp; &nbsp;</p>
   </div>
+  <br>
+  <h2 style="text-align: center">或在下方提交表单，我们会尽快与您联系</h2>
+  <br>
 </section>
 
 

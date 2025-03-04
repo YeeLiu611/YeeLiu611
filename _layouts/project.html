@@ -4,14 +4,23 @@ layout: post
 
 <section class="project-details container content-container">
   <div class="event-item">
-    <h4>{{ page.title_zh | default: page.title_en }}</h4>
     <p>
-      {{ page.date | date: "%Y-%m-%d" }}
-      {% if page.time %}
-       &nbsp;&nbsp;-&nbsp;&nbsp; {{ page.time | date: "%Y-%m-%d"}}
+      {% if page.lang == "zh" %}
+        {{ page.date | date: "%Y年%m月%d日" }}
+        {% if page.time %}
+        &nbsp; 至 &nbsp; {{ page.time | date: "%Y年%m月%d日" }}
+        {% endif %}
+        <br>
+        地点：{{ page.location }}
+      {% else %}
+        {{ page.date | date: "%B %d, %Y" }}
+        {% if page.time %}
+        &nbsp; to &nbsp; {{ page.time | date: "%B %d, %Y" }}
+        {% endif %}
+        <br>
+        Location: {{ page.location }}
       {% endif %}
     </p>
-    <p> {{ page.location }} </p>
     <div class="project-body">
       {{ content | markdownify }}
     </div>

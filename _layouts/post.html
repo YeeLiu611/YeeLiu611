@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post-container">
+<article class="post-container container content-container">
   <div class="post-header">
     <h1 class="post-title">
       {% if page.lang == "zh" %}
@@ -11,11 +11,6 @@ layout: default
         {{ page.title_en }}
       {% endif %}
     </h1>
-    <p class="post-meta">
-      <span class="post-date">
-        {{ page.date | date: "%Y-%m-%d" }}
-      </span>
-    </p>
   </div>
   <div class="post-body">
     {{ content | markdownify }}

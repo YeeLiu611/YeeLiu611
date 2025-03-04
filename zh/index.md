@@ -48,7 +48,7 @@ carousel:
 
 <section class="intro">
   <div class="container">
-    <h2>我们的使命</h2>
+    <h2 class="post-body">我们的使命</h2>
     <p>我们致力于促进亚洲地区以人为中心方法的传播与实践，搭建跨国界的连接平台，支持个人与组织在真实、共情和尊重的环境中成长，并推动社会文化向更包容、更人性的方向迈进。</p>
   </div>
 </section>

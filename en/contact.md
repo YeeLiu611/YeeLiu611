@@ -15,7 +15,6 @@ contact_address: "Hong Kong"
 </section>
 
 <section class="container">
-  <div class="content-container">
     <h2 style="text-align: center">{{ page.contact_intro }}</h2>
     <div class="contact-info">
     <br>
@@ -26,7 +25,6 @@ contact_address: "Hong Kong"
     <br>
     <h2 style="text-align: center">Or submit the form below and we will contact you shortly</h2>
     <br>
-  </div>
 </section>
 
 <form class="form" name="contact" method="POST" data-netlify="true" action="/ThankYou" netlify>

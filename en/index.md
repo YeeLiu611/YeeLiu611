@@ -50,7 +50,7 @@ carousel:
 
 <section class="intro">
   <div class="container">
-    <h2>Our Mission</h2>
+    <h2 class="useful-info">Our Mission</h2>
     <p>We are committed to advancing the person-centered approach in Asia, creating cross-border connections, supporting individuals and organizations in an environment of authenticity, empathy, and respect, and fostering a more inclusive and humane society.</p>
   </div>
 </section>
