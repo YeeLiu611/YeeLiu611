@@ -171,7 +171,7 @@ header.hide {
 /* ========== 表格样式 =========*/
 
 .form {
-  max-width: 500px;  /* 限制表单宽度 */
+  max-width: 700px;  /* 限制表单宽度 */
   margin: 20px auto;  /* 居中 */
   padding: 20px;
   background: #ffffff; /* 白色背景 */
@@ -209,6 +209,47 @@ header.hide {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
+
+/* 确保复选框与文字对齐 */
+input[type="checkbox"] {
+  vertical-align: middle;  /* 让复选框和文字对齐 */
+  margin-right: 0.5rem;  /* 让复选框和文字之间有间距 */
+}
+
+/* 让 label 里的内容始终水平对齐 */
+.form label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 控制复选框和文字的间距 */
+  line-height: 1.5; /* 让文字和复选框更协调 */
+  margin: 5px 5px 5px 5px; /* 适当调整位置 */
+  white-space: nowrap; /* 避免换行 */
+}
+
+/* 让复选框的 label 里的内容水平排列 */
+/* 让 checkbox 文字不换行，保持在同一行 */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 让 checkbox 和文字有间距 */
+  white-space: nowrap; /* 避免换行 */
+}
+
+/* 确保 checkbox 本身对齐 */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem; /* 让 checkbox 和文字之间有合适的间距 */
+  transform: scale(1.2); /* 适当放大 */
+  margin: 10px 10px 10px 10px; /* 适当调整位置 */
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem; /* 让 radio 和文字之间有合适的间距 */
+  transform: scale(1.2); /* 适当放大 */
+  margin: 10px 10px 10px 10px; /* 适当调整位置 */
+}
+
 /* ========== 通用按钮样式 ========== */
 .btn {
   background-color: var(--color-primary);
@@ -547,7 +588,7 @@ header.hide {
 /* ========== Programs 页面样式 ========== */
 
 .programs-content {
-  padding: 0;src: ;
+  padding: 0;
 }
 
 .programs-content h2 {
@@ -705,7 +746,7 @@ header.hide {
     margin-right: 3px;
     margin-left: 15px; /* 确保和汉堡菜单有合适间距 */
     padding: 0; /* 避免额外的空白 */
-}
+  }
   .hero h1 {
     font-size: 2rem;
   }
@@ -715,3 +756,4 @@ header.hide {
   .useful-info {
     padding: 2rem 1rem;
   }
+}
