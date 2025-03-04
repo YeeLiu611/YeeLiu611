@@ -12,10 +12,10 @@ contact_address: "Hong Kong"
 
 
 <section class="page-header">
-    <h1>{% if page.lang == "zh" %} 联系我们 {% else %} Contact Us {% endif %}</h1>
+    <h1>联系我们</h1>
 </section>
   
 <div class="container">
-  <h1>{% if page.lang == "zh" %} 谢谢！ {% else %} Thank you! {% endif %}</h1>
-  <p>{% if page.lang == "zh" %} 你的表单已经收到，请等待我们与你联系{% else %} Your message has been received, please wait a little bit for us to contact you{% endif %}</p>
+  <h1>谢谢！</h1>
+  <p>你的表单已经收到，请等待我们与你联系</p>
 </div>
