@@ -17,19 +17,44 @@ alternate_url: "/en/blog"
       {% else %}
         <p>⚠️ No blog posts found! Check if _blog_en/ contains markdown files with correct front matter.</p>
       {% endif %}
+
+      {%- comment -%}
+      先输出标题以“*”开头的文章（置顶文章）
+      {%- endcomment -%}
       {% for post in blog_posts %}
-        <li class="blog-item">
-          <a class="post-link" href="{{ post.url }}">
-            {% if page.lang == "zh" %}
-              {{ post.title_zh }}
-            {% else %}
-              {{ post.title_en }}
-            {% endif %}
-          </a>
-          <span class="blog-date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
-        </li>
+        {% if page.lang == "zh" %}
+          {% assign title = post.title_zh %}
+        {% else %}
+          {% assign title = post.title_en %}
+        {% endif %}
+        {% if title | slice: 0, 1 == '*' %}
+          <li class="blog-item">
+            <a class="post-link" href="{{ post.url }}">
+              {{ title | remove_first: '*' }}
+            </a>
+            <span class="blog-date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+          </li>
+        {% endif %}
+      {% endfor %}
+
+      {%- comment -%}
+      再输出其他文章
+      {%- endcomment -%}
+      {% for post in blog_posts %}
+        {% if page.lang == "zh" %}
+          {% assign title = post.title_zh %}
+        {% else %}
+          {% assign title = post.title_en %}
+        {% endif %}
+        {% unless title | slice: 0, 1 == '*' %}
+          <li class="blog-item">
+            <a class="post-link" href="{{ post.url }}">
+              {{ title }}
+            </a>
+            <span class="blog-date"> - {{ post.date | date: "%Y-%m-%d" }}</span>
+          </li>
+        {% endunless %}
       {% endfor %}
     </ul>
   </div>
 </section>
-

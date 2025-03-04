@@ -6,30 +6,34 @@ alternate_url: "/zh/programs"
 programs_title: "Our Programs"
 ---
 
-<section class="page-header">
-  <h1>{{ page.programs_title }}</h1>
-</section>
 
-<div class="programs-content container content-container">
-  <!-- 遍历 _programs/en 集合中的所有项目 -->
-  {% for project in site.programs_en %}
-    <div class="program-item">
-      <h2>
-        <a href="{{ project.url }}">
-          {{ project.title_en }}
-        </a>
-      </h2>
-      <p>Location: {{ project.location }}</p>
-      <p>      
-        {{ project.date | date: "%Y-%m-%d" }}
-        {% if project.time %}
-         to {{ project.time | date: "%Y-%m-%d"}}
-        {% endif %}
-      </p>
-      <div>
-        {{ project.body_en | markdownify }}
+
+  <section class="page-header">
+    <h1>{{ page.programs_title }}</h1>
+  </section>
+<main class= "post-container container content-container">
+  <div class="programs-content container content-container">
+    <!-- 遍历 _programs/en 集合中的所有项目 -->
+    {% for project in site.programs_en %}
+      <div class="program-item">
+        <h2>
+          <a href="{{ project.url }}">
+            {{ project.title_en }}
+          </a>
+        </h2>
+        <p>Location: {{ project.location }}</p>
+        <p>      
+          {{ project.date | date: "%Y-%m-%d" }}
+          {% if project.time %}
+          to {{ project.time | date: "%Y-%m-%d"}}
+          {% endif %}
+        </p>
+        <div>
+          {{ project.body_en | markdownify }}
+        </div>
+        <hr class="program-divider" />
       </div>
-      <hr class="program-divider" />
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
+
+</main>
