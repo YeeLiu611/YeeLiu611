@@ -28,7 +28,7 @@ alternate_url: "/zh/volunteer"
 
   <h2>How to apply?</h2>
   <p>
-    1. <strong>Fill out the application form:</strong> <br>
+    1. <strong>Fill out the application form:</strong> <a class="post-link" href="/zh/form_volunteer"> <br>
     2. <strong>Send an email:</strong> Alternatively, you can email your brief introduction, areas of interest, 
        and available time to <a href="mailto:info@pcia.asia">info@pcia.asia</a><br>
     3. Wait for our volunteer coordinator to respond. Once confirmed, you can join our team.

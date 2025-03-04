@@ -27,7 +27,7 @@ alternate_url: "/en/volunteer"
 
   <h2>如何申请？</h2>
   <p>
-    1. <strong>填写申请表：</strong><br>
+    1. <strong>填写申请表：</strong><a class="post-link" href="/zh/form_volunteer">Application Form</a><br>
     2. <strong>发送邮件：</strong>也可直接将你的个人简介、感兴趣的方向、可投入的时间等信息
        发送至 <a href="mailto:info@pcia.asia">info@pcia.asia</a><br>
     3. 等待我们的志愿者负责人回复，确认后即可加入我们团队。
