@@ -27,7 +27,7 @@ contact_address: "Hong Kong"
     <br>
 </section>
 
-<form class="form" name="contact" method="POST" data-netlify="true" action="/ThankYou" netlify>
+<form class="form" name="contact" method="POST" data-netlify="true" action="/en/ThankYou" netlify>
   <input class="form-group" type="text" name="name" placeholder="Your Name" required>
   <input class="form-group" type="email" name="email" placeholder="Your Email" required>
   <textarea class="form-group" name="message" placeholder="Your Message" required></textarea>

@@ -29,7 +29,7 @@ contact_address: "Hong Kong"
 
 
 
-<form class="form" name="contact" method="POST" data-netlify="true"  action="/ThankYou" netlify>
+<form class="form" name="contact" method="POST" data-netlify="true"  action="/zh/ThankYou" netlify>
   <input class="form-group" type="text" name="name" placeholder="你的名字" required>
   <input class="form-group" type="email" name="email" placeholder="你的邮箱" required>
   <textarea class="form-group" name="message" placeholder="你要给我们发送的消息" required></textarea>
