@@ -623,7 +623,7 @@ input[type="radio"] {
   flex-wrap: wrap;  /* 保持水平排列，空间不足时一起换行 */
   justify-content: center;
   align-items: flex-start;  /* 保持顶部对齐 */
-  text-align: center;
+  text-align: left;
   padding: 2rem 5%;
   border-top: 1px solid #ddd;
 }
@@ -632,12 +632,9 @@ input[type="radio"] {
 .footer-section {
   flex: 1;
   min-width: 250px;
-  padding: 1rem;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
+  text-align: left;
   flex-wrap: none;
+  justify-content: center;
 }
 
 /* 让标题更精致 */
@@ -647,19 +644,15 @@ input[type="radio"] {
   margin-bottom: 1rem;
   border-bottom: 2px solid #ddd; /* 让下划线变淡 */
   display: inline-block;
-  padding-bottom: 5px;
 }
 
 /* 让列表变得更紧凑 */
 .footer-section ul {
-  list-style: none;
   padding: 0;
   margin: 0 auto;
   display: flex;  /* 让列表项均匀排列 */
   flex-direction: column;  /* 让它们纵向排列 */
-  align-items: center;  /* 确保内容在块内居中 */
-  text-align: center;  /* 保持文字居中 */
-  max-width: 90%;
+  text-align: left; 
 }
 
 .footer-section li {
