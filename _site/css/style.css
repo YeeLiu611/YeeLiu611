@@ -34,7 +34,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 80px;
+  padding: 0px 15px;
 }
 
 /* 全局链接样式：蓝绿色带下划线 */
@@ -401,12 +401,14 @@ input[type="radio"] {
 
 /* ========== 首页 - 介绍区域 ========== */
 .intro {
-  padding: 3rem 0;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
   background-color: var(--color-light);
   text-align: center;
+  color: var(--color-primary);
 }
 .intro h2 {
-  font-size: 2rem;
+  font-size: 1.55rem;
   margin-bottom: 1rem;
 }
 .intro p {
@@ -742,9 +744,6 @@ input[type="radio"] {
   }
   .hero h1 {
     font-size: 2rem;
-  }
-  .intro {
-    padding: 2rem 1rem;
   }
   .useful-info {
     padding: 2rem 1rem;
