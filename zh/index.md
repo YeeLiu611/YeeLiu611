@@ -17,7 +17,7 @@ carousel:
   - image: /images/uploads/cleanshot-2025-03-02-at-21.36.56.jpg
     title: 以人为中心方法的核心价值
     button_text: 阅读文章
-    description: 以人为中心方法有一个核心假设：每个人都蕴藏着强大的自我理解能力，能够改变自我概念、态度以及产生自我导向的行为
+    description: 每个人都蕴藏着强大的自我理解能力，能够改变自我概念、态度以及产生自我导向的行为
     button_link: https://pcia.asia/zh/blog/core_values/
 ---
 
