@@ -299,7 +299,7 @@ input[type="radio"] {
 
 /* 修改当前激活的圆点颜色 */
 .swiper-pagination-bullet-active {
-  background-color: var(--color-primary) !important; /* 选中的圆点为蓝色 */
+  background-color: var(--color-accent) !important; /* 选中的圆点为蓝色 */
 }
 
 /* 修改左箭头颜色 */
