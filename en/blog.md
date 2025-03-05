@@ -27,7 +27,8 @@ alternate_url: "/zh/blog"
         {% else %}
           {% assign title = post.title_en %}
         {% endif %}
-        {% if title | slice: 0, 1 == '*' %}
+        {% assign first_char = title | slice: 0, 1 %}
+        {% if first_char == '*' %}
           <li class="blog-item">
             <a class="post-link" href="{{ post.url }}">
               {{ title | remove_first: '*' }}
@@ -46,7 +47,8 @@ alternate_url: "/zh/blog"
         {% else %}
           {% assign title = post.title_en %}
         {% endif %}
-        {% unless title | slice: 0, 1 == '*' %}
+        {% assign first_char = title | slice: 0, 1 %}
+        {% unless first_char == '*' %}
           <li class="blog-item">
             <a class="post-link" href="{{ post.url }}">
               {{ title }}

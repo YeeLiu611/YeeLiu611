@@ -12,8 +12,8 @@ alternate_url: "/en/blog"
 <section class="container content-container">
   <div class="blog-listing">
     <ul class="blog-list">
-      {% if site.blog_zh and site.blog_zh.size > 0 %}
-        {% assign blog_posts = site.blog_zh | sort: 'date' | reverse %}
+      {% if site.blog_en and site.blog_en.size > 0 %}
+        {% assign blog_posts = site.blog_en | sort: 'date' | reverse %}
       {% else %}
         <p>⚠️ No blog posts found! Check if _blog_en/ contains markdown files with correct front matter.</p>
       {% endif %}
@@ -27,7 +27,8 @@ alternate_url: "/en/blog"
         {% else %}
           {% assign title = post.title_en %}
         {% endif %}
-        {% if title | slice: 0, 1 == '*' %}
+        {% assign first_char = title | slice: 0, 1 %}
+        {% if first_char == '*' %}
           <li class="blog-item">
             <a class="post-link" href="{{ post.url }}">
               {{ title | remove_first: '*' }}
@@ -46,7 +47,8 @@ alternate_url: "/en/blog"
         {% else %}
           {% assign title = post.title_en %}
         {% endif %}
-        {% unless title | slice: 0, 1 == '*' %}
+        {% assign first_char = title | slice: 0, 1 %}
+        {% unless first_char == '*' %}
           <li class="blog-item">
             <a class="post-link" href="{{ post.url }}">
               {{ title }}
