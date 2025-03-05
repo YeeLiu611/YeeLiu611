@@ -5,7 +5,6 @@ backend:
   # 以下 OAuth 设置需要与你在 GitHub OAuth 应用中获得的值一致
   auth_scope: repo
   client_id: Ov23lil8yXEgwjwxg75d
-  client_secret: 1ca8480e27af38dd6f3634a6a7dda7140d66edc4 # 如果需要的话，有时前端只需要 client_id
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
