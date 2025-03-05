@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: yeeliu611/YeeLiu611       # 你的 GitHub 用户名和仓库名
+  repo: Yeeliu611/YeeLiu611       # 你的 GitHub 用户名和仓库名
   branch: main
   # 以下 OAuth 设置需要与你在 GitHub OAuth 应用中获得的值一致
   auth_scope: repo
