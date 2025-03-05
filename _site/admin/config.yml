@@ -1,10 +1,7 @@
 backend:
   name: git-gateway
-  repo: yeeliu611/YeeLiu611       # 这里务必改成你的 GitHub 仓库地址
+  repo: Yeeliu611/YeeLiu611       # 你的 GitHub 用户名和仓库名
   branch: main
-  proxy: false
-  auth:
-    client_id: Ov23lil8yXEgwjwxg75d
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
