@@ -2,7 +2,7 @@
 layout: default
 lang: en
 title: The Person Centered Institute of Asia | Home
-alternate_url: /zh/index
+alternate_url: /zh/
 carousel:
   - image: /images/uploads/06ef73d050c4fb7f57c110819ad6f9bfd73303090dac9f0c954ec79860094601.png
     title: In Light We Grow

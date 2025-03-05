@@ -2,7 +2,7 @@
 layout: default
 lang: zh
 title: 亚洲人本研究院 | PCIA - 首页
-alternate_url: /en/index
+alternate_url: /en/
 carousel:
   - image: /images/uploads/06ef73d050c4fb7f57c110819ad6f9bfd73303090dac9f0c954ec79860094601.png
     title: 生长自有光
