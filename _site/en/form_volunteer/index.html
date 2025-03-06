@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form_Volunteer | The Person-Centered Institute of Asia</title>
+
+  <!-- Swiper CSS（必须在自己主CSS之前或之后都行，这里先放上） -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- 你自己项目的主CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="亚洲人本研究院|The Person-centered Institute of Asia" />
+  <meta property="og:description" content="促进以人为中心方法在亚洲的发展|Advancing person-centered approaches in Asia" />
+  <meta property="og:image" content="/images/logo.png" />
+  <meta property="og:url" content="http://localhost:4000/en/form_volunteer/" />
+  <meta property="og:type" content="website" />
+
+  <!-- 你已有的脚本 -->
+  <script src="/js/lang.js" defer></script>
+  <script src="/js/menu.js" defer></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <header>
+  <nav class="navbar container">
+    <div class="nav-left">
+      <a href="/zh/" class="logo">
+        <img src="/images/logo.png" alt="Logo" />
+        <span data-key="nav_institute_name">
+          
+            亚洲人本研究院
+          
+        </span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        <!-- 首页链接 -->
+        <li>
+          <a href="/zh/">
+             首页 
+          </a>
+        </li>
+        <!-- 关于我们 -->
+        <li>
+          <a href="/zh/about/">
+             关于我们 
+          </a>
+        </li>
+        <!-- 项目 -->
+        <li>
+          <a href="/zh/programs/">
+             项目 
+          </a>
+        </li>
+        <!-- 联系我们 -->
+        <li>
+          <a href="/zh/contact/">
+             联系我们 
+          </a>
+        </li>
+        <!-- 文章 -->
+        <li>
+          <a href="/zh/blog/">
+             文章 
+          </a>
+        </li>
+        <!-- 加入我们 / Volunteer -->
+        <li>
+          <a href="/zh/volunteer/">
+             加入我们 
+          </a>
+        </li>
+      </ul>
+
+        
+          <a href="/zh/form_volunteer" id="lang-toggle-btn" class="btn-lang">
+             EN 
+          </a>
+        
+        <!-- 移动端菜单按钮 -->
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <section class="page-header">
+    <h1>Volunteer Application Form</h1>
+  </section>
+
+<form class="form" name="volunteer-application" method="POST" data-netlify="true" action="en/ThankYou">
+  <input type="hidden" name="form-name" value="volunteer-application" />
+  
+  <h2>1. Personal Information</h2>
+  <label>Full Name: <input type="text" name="name" required="" /></label><br />
+  <label>Gender (optional): <input type="text" name="gender" /></label><br />
+  <label>Email: <input type="email" name="email" required="" /></label><br />
+  <label>Phone: <input type="tel" name="phone" /></label><br />
+  <label>WeChat/Other Contact (optional): <input type="text" name="wechat" /></label><br />
+  <label>City/Country: <input type="text" name="location" /></label><br />
+
+  <h2>2. Your Background</h2>
+  <fieldset>
+    <legend>Professional/Educational Background (Select all that apply):</legend>
+    <label><input type="checkbox" name="background" value="Psychology/Counseling" /> Psychology/Counseling</label><br />
+    <label><input type="checkbox" name="background" value="Education/Training" /> Education/Training</label><br />
+    <label><input type="checkbox" name="background" value="Social Work/Nonprofit" /> Social Work/Nonprofit</label><br />
+    <label><input type="checkbox" name="background" value="Media/Communications/Writing" /> Media/Communications/Writing</label><br />
+    <label><input type="checkbox" name="background" value="Design/Art/Multimedia" /> Design/Art/Multimedia</label><br />
+    <label><input type="checkbox" name="background" value="Technology/IT/Data Analysis" /> Technology/IT/Data Analysis</label><br />
+    <label>Other (please specify): <input type="text" name="background_other" /></label>
+  </fieldset>
+
+  <label>Do you have any volunteer experience?</label><br />
+  <textarea name="experience" rows="4"></textarea><br />
+
+  <h2>3. Your Interests &amp; Skills</h2>
+  <fieldset>
+    <legend>What volunteer activities are you skilled at or willing to participate in? (Select all that apply)</legend>
+    <label><input type="checkbox" name="skills" value="Writing" /> Writing</label><br />
+    <label><input type="checkbox" name="skills" value="Translation" /> Translation</label><br />
+    <label><input type="checkbox" name="skills" value="Online Community Management" /> Online Community Management</label><br />
+    <label><input type="checkbox" name="skills" value="Visual Design" /> Visual Design</label><br />
+    <label><input type="checkbox" name="skills" value="Website/Technical Support" /> Website/Technical Support</label><br />
+    <label><input type="checkbox" name="skills" value="Event/Meeting Organization" /> Event/Meeting Organization</label><br />
+    <label><input type="checkbox" name="skills" value="Research &amp; Data Compilation" /> Research &amp; Data Compilation</label><br />
+    <label>Other (please specify): <input type="text" name="skills_other" /></label>
+  </fieldset>
+
+  <h3>Your Second Language (if your first language is not English, please specify here)</h3>
+  <label>Language: <input type="text" name="second_language" /></label><br />
+  <fieldset>
+    <legend>Proficiency Level (Select one):</legend>
+    <label><input type="radio" name="language_proficiency" value="Basic Level" /> Basic Level</label><br />
+    <label><input type="radio" name="language_proficiency" value="Able to handle basic daily conversations and emails" /> Able to handle basic daily conversations and emails</label><br />
+    <label><input type="radio" name="language_proficiency" value="Able to engage in complex and in-depth conversations and emails" /> Able to engage in complex and in-depth conversations and emails</label><br />
+    <label><input type="radio" name="language_proficiency" value="Able to accurately and fluently interpret between the first and second language" /> Able to accurately and fluently interpret between the first and second language</label><br />
+  </fieldset>
+
+  <h2>4. Your Availability</h2>
+  <fieldset>
+    <legend>How much time can you commit as a volunteer?</legend>
+    <label><input type="checkbox" name="availability" value="Fixed weekly schedule" /> Fixed weekly schedule</label><br />
+    <label><input type="checkbox" name="availability" value="Only participate in specific projects" /> Only participate in specific projects</label><br />
+    <label><input type="checkbox" name="availability" value="Not sure yet" /> Not sure yet</label><br />
+    <label>Estimated hours available: <input type="text" name="available_hours" /></label>
+  </fieldset>
+
+  <label>Are you willing to participate in volunteer training or regular meetings?</label><br />
+  <label><input type="radio" name="training" value="Yes" /> Yes</label>
+  <label><input type="radio" name="training" value="No" /> No</label><br />
+
+  <h2>5. Your Expectations for the Volunteer Community</h2>
+  <label>Why do you want to join?</label><br />
+  <textarea name="why_join" rows="4"></textarea><br />
+
+  <label>Do you have any suggestions or expectations for the volunteer community?</label><br />
+  <textarea name="expectations" rows="4"></textarea><br />
+
+  <h2>6. Additional Information</h2>
+  <label>Other comments or additional information:</label><br />
+  <textarea name="additional_info" rows="4"></textarea><br />
+
+  <button class="btn" type="submit">Submit</button>
+</form>
+
+  </main>
+
+  
+    <div class="container footer-container">
+      <div class="footer-section footer-copyright">
+          <p>© 2025 亚洲人本研究院 (The Person Centered Institute of Asia). All rights reserved.</p>
+      </div>
+      <div class="footer-section footer-links">
+        <h3>快速跳转</h3>
+        <p><a href="/zh/about">关于我们</a></p>
+        <p><a href="/zh/programs">项目</a></p>
+        <p><a href="/zh/contact">联系我们</a></p>
+        <p><a href="/zh/articles">文章</a></p>
+        <p><a href="/zh/volunteer">加入我们</a></p>
+      </div>
+      
+      <div class="footer-section footer-contact">
+          <h3>联系方式</h3>
+          <p>邮箱: <a href="mailto:info@pcia.asia">info@pcia.asia</a></p>
+          <p>电话: +1 778-636-2517</p>
+          <p>地址: 香港</p>
+      </div>
+      
+      <div class="footer-section footer-friends">
+          <h3>友情链接</h3>
+          <p><a href="https://www.pce-world.org/" target="_blank">以人为中心世界协会</a></p>
+          <p><a href="https://www.pce-europe.org/" target="_blank">以人为中心欧洲协会</a></p>
+          <p><a href="https://centerfortheperson.org/" target="_blank">人的研究中心</a></p>
+          <p><a href="https://adpca.org/" target="_blank">ADPCA</a></p>
+      </div>
+    </div> 
+
+</footer>
+
+  <!-- Swiper JS（从 unpkg 引入） -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- 轮播初始化脚本 -->
+  <script src="/js/hero-carousel.js"></script>
+</body>
+</html>

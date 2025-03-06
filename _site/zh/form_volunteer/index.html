@@ -88,7 +88,11 @@
 </header>
 
   <main>
-    <form class="form" name="volunteer-application" method="POST" data-netlify="true" action="/ThankYou">
+    <section class="page-header">
+    <h1>志愿者申请表</h1>
+  </section>
+
+<form class="form" name="volunteer-application" method="POST" data-netlify="true" action="/zh/ThankYou">
   <input type="hidden" name="form-name" value="volunteer-application" />
   <h2>1. 个人信息</h2>
   <label>姓名：<input type="text" name="name" required="" /></label><br />
@@ -124,6 +128,16 @@
     <label><input type="checkbox" name="skills" value="会议或活动组织" /> 会议或活动组织</label><br />
     <label><input type="checkbox" name="skills" value="研究与资料整理" /> 研究与资料整理</label><br />
     <label>其他（请具体说明）：<input type="text" name="skills_other" /></label>
+  </fieldset>
+
+  <h3>你的第二语言</h3>
+  <label>语言：<input type="text" name="second_language" /></label><br />
+  <fieldset>
+    <legend>水平（单选）：</legend>
+    <label><input type="radio" name="language_proficiency" value="基础水平" /> 基础水平</label><br />
+    <label><input type="radio" name="language_proficiency" value="能完成日常基本对话和邮件沟通" /> 能完成日常基本对话和邮件沟通</label><br />
+    <label><input type="radio" name="language_proficiency" value="能进行复杂和深入的对话和邮件沟通" /> 能进行复杂和深入的对话和邮件沟通</label><br />
+    <label><input type="radio" name="language_proficiency" value="能在第一语言和第二语言之间进行准确流畅的互译" /> 能在第一语言和第二语言之间进行准确流畅的互译</label><br />
   </fieldset>
 
   <h2>4. 你的可用时间</h2>
