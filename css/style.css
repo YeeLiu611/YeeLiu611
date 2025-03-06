@@ -171,13 +171,14 @@ header.hide {
 /* ========== 表格样式 =========*/
 
 .form {
-  max-width: 700px;  /* 限制表单宽度 */
+  max-width: 600px;  /* 限制表单宽度 */
+  width: 90%;  /* 让表单占满容器 */
   margin: 20px auto;  /* 居中 */
+  text-wrap: wrap;  /* 避免溢出 */
   padding: 20px;
   background: #ffffff; /* 白色背景 */
   border-radius: 10px; /* 圆角 */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
-
 }
 
 .form-group {
