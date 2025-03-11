@@ -62,8 +62,12 @@ carousel:
       <!-- Upcoming Projects -->
       <div class="upcoming-events">
         <h3>Upcoming Projects</h3>
-        {% if site.programs_en and site.programs_en.size > 0 %}
-          {% assign latest_projects = site.programs_en | sort: "date" | reverse | slice: 0, 2 %}
+        {% assign projects_all = site.programs_en | sort: "date" | reverse %}
+        {% assign pinned_projects = projects_all | where_exp:"project", "project.title_en[0] == '*'" %}
+        {% assign normal_projects = projects_all | where_exp:"project", "project.title_en[0] != '*'" %}
+        {% assign sorted_projects = pinned_projects | concat: normal_projects %}
+        {% if sorted_projects and sorted_projects.size > 0 %}
+          {% assign latest_projects = sorted_projects | slice: 0, 2 %}
           {% for project in latest_projects %}
             <div class="event-item">
               <h4>{{ project.title_en }}</h4>
@@ -85,8 +89,11 @@ carousel:
       <div class="recent-posts">
         <h3>Recent Blog Posts</h3>
         <ul class="blog-list">
-          {% assign en_posts = site.blog_en | where: "lang", "en" | sort: "date" | reverse %}
-          {% for post in en_posts limit:4 %}
+          {% assign posts_all = site.blog_en | where: "lang", "en" | sort: "date" | reverse %}
+          {% assign pinned_posts = posts_all | where_exp:"post", "post.title_en[0] == '*'" %}
+          {% assign normal_posts = posts_all | where_exp:"post", "post.title_en[0] != '*'" %}
+          {% assign sorted_posts = pinned_posts | concat: normal_posts %}
+          {% for post in sorted_posts limit:4 %}
             <li class="blog-item">
               <a class="post-link" href="{{ post.url }}">
                 {{ post.title_en }}

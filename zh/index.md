@@ -61,8 +61,12 @@ carousel:
       <!-- 近期活动（项目） -->
       <div class="upcoming-events">
         <h3>近期活动</h3>
-        {% if site.programs_zh and site.programs_zh.size > 0 %}
-          {% assign latest_projects = site.programs_zh | sort: "date" | reverse | slice: 0, 2 %}
+        {% assign projects_all = site.programs_zh | sort: "date" | reverse %}
+        {% assign pinned_projects = projects_all | where_exp:"project", "project.title_zh[0] == '*'" %}
+        {% assign normal_projects = projects_all | where_exp:"project", "project.title_zh[0] != '*'" %}
+        {% assign sorted_projects = pinned_projects | concat: normal_projects %}
+        {% if sorted_projects and sorted_projects.size > 0 %}
+          {% assign latest_projects = sorted_projects | slice: 0, 2 %}
           {% for project in latest_projects %}
             <div class="event-item">
               <h4>{{ project.title_zh }}</h4>
@@ -84,8 +88,11 @@ carousel:
       <div class="recent-posts">
         <h3>最新博客</h3>
         <ul class="blog-list">
-          {% assign zh_posts = site.blog_zh | where: "lang", "zh" | sort: "date" | reverse %}
-          {% for post in zh_posts limit:4 %}
+          {% assign posts_all = site.blog_zh | where: "lang", "zh" | sort: "date" | reverse %}
+          {% assign pinned_posts = posts_all | where_exp:"post", "post.title_zh[0] == '*'" %}
+          {% assign normal_posts = posts_all | where_exp:"post", "post.title_zh[0] != '*'" %}
+          {% assign sorted_posts = pinned_posts | concat: normal_posts %}
+          {% for post in sorted_posts limit:4 %}
             <li class="blog-item">
               <a class="post-link" href="{{ post.url }}">
                 {{ post.title_zh }}
