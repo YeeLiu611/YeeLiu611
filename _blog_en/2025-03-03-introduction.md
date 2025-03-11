@@ -3,7 +3,7 @@ layout: post
 lang: en
 date: 2025-03-03T03:01:26.034Z
 title: Introduction
-title_en: "The Person-Centered Institute of Asia: We want to make the world a
+title_en: "*The Person-Centered Institute of Asia: We want to make the world a
   little better"
 ---
 ![](/images/uploads/logo-缩小-01.png)
