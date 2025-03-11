@@ -3,7 +3,7 @@ layout: post
 lang: zh
 date: 2025-03-03T02:58:08.915Z
 title: Introduction
-title_zh: 亚洲人本研究院：我们想让这个世界好一点点
+title_zh: "*亚洲人本研究院：我们想让这个世界好一点点"
 ---
 ![亚洲人本研究院的 Logo](/images/uploads/logo-缩小-01.png "亚洲人本研究院的 Logo")
 
