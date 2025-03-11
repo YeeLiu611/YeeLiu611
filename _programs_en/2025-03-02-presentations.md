@@ -7,7 +7,6 @@ title_en: 12 presentations a year on Person-Centered Approach
 location: Online
 time: 2025-12-28T00:56:26.116Z
 ---
-
 ## Person-Centered Approach is confusing
 
 Whenever I write something, the name is the thing that bothers me the most. The school of thought known as ‘humanistic’ is well known in the counselling industry, and many counsellors consider it the foundation of their work. However, humanistic is such a broad concept that it can actually be used to describe Gestalt psychology, narrative therapy, existential psychology, and even Buddhism. Generally speaking, as long as a certain ideology believes in the potential for human growth, values subjective human experience, emphasises free will and responsibility, and considers the human being to be an indivisible whole, then this ideology can be broadly described as humanistic. Therefore, humanism is actually such a broad term that it is often of little value. It is like if we were to call some clever quadrupedal mammal a pig, but in real life, the question we often need to solve is: ‘Which pig?’
@@ -40,13 +39,13 @@ Participation deadline: As each presentation is recorded, participants can choos
 
 Other suggestions: Our presentations are highly interactive, and the speakers will stop from time to time to interact with the audience. So we encourage everyone to turn on the microphone or camera directly to communicate. If that is not convenient, you can also communicate in writing.
 
+**Participate:** send email to info@pcia.asia
+
 ### January: 25th Saturday 9am-11am
+
 What is humanistic? What is Person-Centered?
 
-
 In this presentation, we will introduce the historical and theoretical context of Person-Centered approaches. We will talk about the origins and development of Person-Centered approaches. We will give an overview of Person-Centered counselling theory, personality theory, and the unique tension between counselling theory and personality theory.
-
-
 
 ### February: 22nd, Saturday, 9am-11am
 
@@ -54,12 +53,9 @@ What does consistency mean? Is consistency the same as authenticity?
 
 In this lecture, we will clarify some common misconceptions. We will distinguish between the concept of consistency in Person-Centered counseling theory and the social meaning of being honest, truthful, and not lying. We will mention that consistency is not a technique or an action, but an internal state. We will also talk about how to improve consistency.
 
-
-
 ### March: 22nd, Saturday, 9am-11am
 
 Empathy
-
 
 In this session, we will explore the concept of empathy
 
