@@ -63,12 +63,11 @@ carousel:
       <div class="upcoming-events">
         <h3>Upcoming Projects</h3>
         {% assign projects_all = site.programs_en | sort: "date" | reverse %}
-        {% assign pinned_projects = projects_all | where_exp:"project", "project.title_en[0] == '*'" %}
-        {% assign normal_projects = projects_all | where_exp:"project", "project.title_en[0] != '*'" %}
-        {% assign sorted_projects = pinned_projects | concat: normal_projects %}
-        {% if sorted_projects and sorted_projects.size > 0 %}
-          {% assign latest_projects = sorted_projects | slice: 0, 2 %}
-          {% for project in latest_projects %}
+        {% assign count = 0 %}
+        {%- comment -%} 先输出标题以星号开头的项目 {% endcomment -%}
+        {% for project in projects_all %}
+          {% assign first_char = project.title_en | slice:0,1 %}
+          {% if first_char == "*" and count < 2 %}
             <div class="event-item">
               <h4>{{ project.title_en }}</h4>
               <p>
@@ -80,29 +79,63 @@ carousel:
               <p>Location: {{ project.location }}</p>
               <a href="{{ project.url }}">Learn More</a>
             </div>
-          {% endfor %}
-        {% else %}
-          <p>No upcoming projects available.</p>
-        {% endif %}
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {%- comment -%} 再输出非置顶项目，直到总数达到2个 {% endcomment -%}
+        {% for project in projects_all %}
+          {% assign first_char = project.title_en | slice:0,1 %}
+          {% if first_char != "*" and count < 2 %}
+            <div class="event-item">
+              <h4>{{ project.title_en }}</h4>
+              <p>
+                Date: {{ project.date | date: "%B %d, %Y" }}
+                {% if project.time %}
+                  - {{ project.time | date: "%B %d, %Y" }}
+                {% endif %}
+              </p>
+              <p>Location: {{ project.location }}</p>
+              <a href="{{ project.url }}">Learn More</a>
+            </div>
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
       </div>
       <!-- Recent Blog Posts -->
       <div class="recent-posts">
         <h3>Recent Blog Posts</h3>
         <ul class="blog-list">
           {% assign posts_all = site.blog_en | where: "lang", "en" | sort: "date" | reverse %}
-          {% assign pinned_posts = posts_all | where_exp:"post", "post.title_en[0] == '*'" %}
-          {% assign normal_posts = posts_all | where_exp:"post", "post.title_en[0] != '*'" %}
-          {% assign sorted_posts = pinned_posts | concat: normal_posts %}
-          {% for post in sorted_posts limit:4 %}
-            <li class="blog-item">
-              <a class="post-link" href="{{ post.url }}">
-                {{ post.title_en }}
-              </a>
-              <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-            </li>
+          {% assign count = 0 %}
+          {%- comment -%} 先输出标题以星号开头的文章 {% endcomment -%}
+          {% for post in posts_all %}
+            {% assign first_char = post.title_en | slice:0,1 %}
+            {% if first_char == "*" and count < 4 %}
+              <li class="blog-item">
+                <a class="post-link" href="{{ post.url }}">
+                  {{ post.title_en }}
+                </a>
+                <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+              </li>
+              {% assign count = count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {%- comment -%} 再输出非置顶文章，直到总数达到4篇 {% endcomment -%}
+          {% for post in posts_all %}
+            {% assign first_char = post.title_en | slice:0,1 %}
+            {% if first_char != "*" and count < 4 %}
+              <li class="blog-item">
+                <a class="post-link" href="{{ post.url }}">
+                  {{ post.title_en }}
+                </a>
+                <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+              </li>
+              {% assign count = count | plus: 1 %}
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
     </div>
   </div>
 </section>
+</file>

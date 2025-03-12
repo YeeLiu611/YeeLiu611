@@ -20,7 +20,6 @@ carousel:
     description: 每个人都蕴藏着强大的自我理解能力，能够改变自我概念、态度以及产生自我导向的行为
     button_link: https://pcia.asia/zh/blog/core_values/
 ---
-
 <div class="hero">
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -60,45 +59,77 @@ carousel:
     <div class="events-and-blogs">
       <!-- 近期活动（项目） -->
       <div class="upcoming-events">
-        <h3>近期活动</h3>
+        <h3>Upcoming Projects</h3>
         {% assign projects_all = site.programs_zh | sort: "date" | reverse %}
-        {% assign pinned_projects = projects_all | where_exp:"project", "project.title_zh[0] == '*'" %}
-        {% assign normal_projects = projects_all | where_exp:"project", "project.title_zh[0] != '*'" %}
-        {% assign sorted_projects = pinned_projects | concat: normal_projects %}
-        {% if sorted_projects and sorted_projects.size > 0 %}
-          {% assign latest_projects = sorted_projects | slice: 0, 2 %}
-          {% for project in latest_projects %}
+        {% assign count = 0 %}
+        {%- comment -%}先输出标题以星号开头的项目{% endcomment %}
+        {% for project in projects_all %}
+          {% assign first_char = project.title_zh | slice:0,1 %}
+          {% if first_char == "*" and count < 2 %}
             <div class="event-item">
               <h4>{{ project.title_zh }}</h4>
               <p>
-                时间：{{ project.date | date: "%Y 年 %m 月 %d 日" }}
+                Date: {{ project.date | date: "%B %d, %Y" }}
                 {% if project.time %}
-                  - {{ project.time | date: "%Y 年 %m 月 %d 日" }}
+                  - {{ project.time | date: "%B %d, %Y" }}
                 {% endif %}
               </p>
-              <p>地点：{{ project.location }}</p>
-              <a href="{{ project.url }}">查看详情</a>
+              <p>Location: {{ project.location }}</p>
+              <a href="{{ project.url }}">Learn More</a>
             </div>
-          {% endfor %}
-        {% else %}
-          <p>暂无近期活动。</p>
-        {% endif %}
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {%- comment -%}再输出其余项目，直到总数达到2个{% endcomment %}
+        {% for project in projects_all %}
+          {% assign first_char = project.title_zh | slice:0,1 %}
+          {% if first_char != "*" and count < 2 %}
+            <div class="event-item">
+              <h4>{{ project.title_zh }}</h4>
+              <p>
+                Date: {{ project.date | date: "%B %d, %Y" }}
+                {% if project.time %}
+                  - {{ project.time | date: "%B %d, %Y" }}
+                {% endif %}
+              </p>
+              <p>Location: {{ project.location }}</p>
+              <a href="{{ project.url }}">Learn More</a>
+            </div>
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
       </div>
       <!-- 最新博客文章 -->
       <div class="recent-posts">
-        <h3>最新博客</h3>
+        <h3>Recent Blog Posts</h3>
         <ul class="blog-list">
           {% assign posts_all = site.blog_zh | where: "lang", "zh" | sort: "date" | reverse %}
-          {% assign pinned_posts = posts_all | where_exp:"post", "post.title_zh[0] == '*'" %}
-          {% assign normal_posts = posts_all | where_exp:"post", "post.title_zh[0] != '*'" %}
-          {% assign sorted_posts = pinned_posts | concat: normal_posts %}
-          {% for post in sorted_posts limit:4 %}
-            <li class="blog-item">
-              <a class="post-link" href="{{ post.url }}">
-                {{ post.title_zh }}
-              </a>
-              <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-            </li>
+          {% assign count = 0 %}
+          {%- comment -%}先输出标题以星号开头的文章{% endcomment %}
+          {% for post in posts_all %}
+            {% assign first_char = post.title_zh | slice:0,1 %}
+            {% if first_char == "*" and count < 4 %}
+              <li class="blog-item">
+                <a class="post-link" href="{{ post.url }}">
+                  {{ post.title_zh }}
+                </a>
+                <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+              </li>
+              {% assign count = count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {%- comment -%}再输出剩余文章，直到总数达到4篇{% endcomment %}
+          {% for post in posts_all %}
+            {% assign first_char = post.title_zh | slice:0,1 %}
+            {% if first_char != "*" and count < 4 %}
+              <li class="blog-item">
+                <a class="post-link" href="{{ post.url }}">
+                  {{ post.title_zh }}
+                </a>
+                <span class="blog-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+              </li>
+              {% assign count = count | plus: 1 %}
+            {% endif %}
           {% endfor %}
         </ul>
       </div>

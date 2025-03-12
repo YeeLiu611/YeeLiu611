@@ -1,6 +1,6 @@
 /* ========== 1) 全局 CSS 变量 ========== */
 :root {
-  --color-primary: #0E5F60;    /* 蓝绿色 */
+  --color-primary: #005F73;    /* 蓝绿色 */
   --color-secondary: #ba6503;  /* 橙色 */
   --color-accent: #62a8aa;     /* 深绿或其他相近色 */
   --color-dark: #333;
@@ -440,7 +440,7 @@ input[type="radio"] {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  line-height: 2;
+  line-height: 2.5;
 }
 .events-and-blogs h3 {
   margin-bottom: 1rem;
