@@ -1,14 +1,15 @@
 ---
-layout: default
+layout: page
 lang: zh
-title: "Form_Volunteer | The Person-Centered Institute of Asia"
+title: "志愿者申请表"
 alternate_url: "/en/form_volunteer"
 ---
 
-  <section class="page-header">
-    <h1>志愿者申请表</h1>
-  </section>
+## 志愿者招募暂时已满，请等待后续开放
 
+感谢您的支持，志愿者招募现在暂时已经满了。未来我们会继续开放。请关注我们的公众号：亚洲人本研究院 PCIA 等待后续消息。
+
+<!--
 <form class="form" name="volunteer-application" method="POST" data-netlify="true" action="/zh/ThankYou">
   <input type="hidden" name="form-name" value="volunteer-application">
   <h2>说明</h2>
@@ -98,3 +99,4 @@ alternate_url: "/en/form_volunteer"
 
   <button class="btn" type="submit">提交</button>
 </form>
+-->
