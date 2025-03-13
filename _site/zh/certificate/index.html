@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>证书领取</title>
+
+  <!-- Swiper CSS（必须在自己主CSS之前或之后都行，这里先放上） -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- 你自己项目的主CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="亚洲人本研究院|The Person-centered Institute of Asia" />
+  <meta property="og:description" content="促进以人为中心方法在亚洲的发展|Advancing person-centered approaches in Asia" />
+  <meta property="og:image" content="/images/logo.png" />
+  <meta property="og:url" content="http://localhost:4000/zh/certificate/" />
+  <meta property="og:type" content="website" />
+
+  <!-- 你已有的脚本 -->
+  <script src="/js/lang.js" defer></script>
+  <script src="/js/menu.js" defer></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <header>
+  <nav class="navbar container">
+    <div class="nav-left">
+      <a href="/zh/" class="logo">
+        <img src="/images/logo.png" alt="Logo" />
+        <span data-key="nav_institute_name">
+          
+            亚洲人本研究院
+          
+        </span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-links" id="nav-links">
+        <!-- 首页链接 -->
+        <li>
+          <a href="/zh/">
+             首页 
+          </a>
+        </li>
+        <!-- 关于我们 -->
+        <li>
+          <a href="/zh/about/">
+             关于我们 
+          </a>
+        </li>
+        <!-- 项目 -->
+        <li>
+          <a href="/zh/programs/">
+             项目 
+          </a>
+        </li>
+        <!-- 联系我们 -->
+        <li>
+          <a href="/zh/contact/">
+             联系我们 
+          </a>
+        </li>
+        <!-- 文章 -->
+        <li>
+          <a href="/zh/blog/">
+             文章 
+          </a>
+        </li>
+        <!-- 加入我们 / Volunteer -->
+        <li>
+          <a href="/zh/volunteer/">
+             加入我们 
+          </a>
+        </li>
+      </ul>
+
+        
+          
+          
+            <a href="#" id="lang-toggle-btn" class="btn-lang">切换语言</a>
+          
+        
+        <!-- 移动端菜单按钮 -->
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <section class="page-header">
+  <h1>证书领取</h1>
+</section>
+
+<section class="page-content container content-container">
+  <h1>证书领取</h1>
+
+<form id="certificateForm">
+  <label for="name">姓名：</label>
+  <input type="text" id="name" name="name" required="" />
+  
+  <label for="email">邮箱：</label>
+  <input type="email" id="email" name="email" required="" />
+  
+  <label for="password">领取密码：</label>
+  <input type="text" id="password" name="password" required="" />
+  
+  <button type="submit">领取证书</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+document.getElementById("certificateForm").addEventListener("submit", async function(event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  
+  const response = await fetch("/.netlify/functions/claimCertificate", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ name, email, password })
+  });
+  const data = await response.json();
+  document.getElementById("result").innerHTML = data.message + (data.certificateNumber ? "<br>证书编号: " + data.certificateNumber : "");
+});
+</script>
+
+
+</section>
+
+  </main>
+
+  
+    <div class="container footer-container">
+      <div class="footer-section footer-copyright">
+          <p>© 2025 亚洲人本研究院 (The Person Centered Institute of Asia). All rights reserved.</p>
+      </div>
+      <div class="footer-section footer-links">
+        <h3>快速跳转</h3>
+        <p><a href="/zh/about">关于我们</a></p>
+        <p><a href="/zh/programs">项目</a></p>
+        <p><a href="/zh/contact">联系我们</a></p>
+        <p><a href="/zh/articles">文章</a></p>
+        <p><a href="/zh/volunteer">加入我们</a></p>
+      </div>
+      
+      <div class="footer-section footer-contact">
+          <h3>联系方式</h3>
+          <p>邮箱: <a href="mailto:info@pcia.asia">info@pcia.asia</a></p>
+          <p>电话: +1 778-636-2517</p>
+          <p>地址: 香港</p>
+      </div>
+      
+      <div class="footer-section footer-friends">
+          <h3>友情链接</h3>
+          <p><a href="https://www.pce-world.org/" target="_blank">以人为中心世界协会</a></p>
+          <p><a href="https://www.pce-europe.org/" target="_blank">以人为中心欧洲协会</a></p>
+          <p><a href="https://centerfortheperson.org/" target="_blank">人的研究中心</a></p>
+          <p><a href="https://adpca.org/" target="_blank">ADPCA</a></p>
+      </div>
+    </div> 
+
+</footer>
+
+  <!-- Swiper JS（从 unpkg 引入） -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- 轮播初始化脚本 -->
+  <script src="/js/hero-carousel.js"></script>
+</body>
+</html>
